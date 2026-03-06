@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/docs/',
   title: "SwissReach Docs",
   description: "SwissReach is an interactive 4D isochrone visualization of the Swiss public transit network (SBB) using H3 hexagons. Developed for EPFL COM480.",
   themeConfig: {
