@@ -42,3 +42,6 @@ coverage/
 # Misc
 .vercel
 .netlify
+
+# Data
+data/raw_data/
