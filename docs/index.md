@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "SwissReach Docs"
   text: "Swiss Rail Accessibility for EPFL COM-480"
-  tagline: "A rail-first Milestone 1 prototype for nationwide reachability, station activity, and timetable-based storytelling."
+  tagline: "Milestone 1 documentation for a nationwide Swiss rail accessibility analysis."
   actions:
     - theme: brand
       text: Milestone 1
@@ -15,16 +15,16 @@ hero:
 
 features:
   - title: Nationwide scope
-    details: Start from the full Swiss GTFS feed, filter to Swiss territory, and preserve a country-scale view instead of a single-city case study.
+    details: The analysis starts from the full Swiss GTFS feed, filters the network to Swiss territory, and preserves a country-scale perspective.
   - title: Station-level modeling
-    details: Collapse platform-level GTFS stops into logical rail stations to keep the analysis map readable and front-end friendly.
+    details: Platform-level GTFS stops are collapsed into logical rail stations to support readable maps and efficient rendering.
   - title: Reachability storytelling
-    details: Combine station activity, single-origin reachability, and multi-origin comparisons to validate the visualization concept for the final project.
+    details: Station activity, single-origin reachability, and multi-origin comparisons provide the main analytical views.
 ---
 
 ## Project Snapshot
 
-SwissReach currently focuses on **Swiss rail accessibility**, not full multimodal journey planning. This keeps Milestone 1 aligned with the existing codebase and with the course requirement to demonstrate **feasibility, data understanding, and a clear visualization question**.
+SwissReach focuses on **Swiss rail accessibility** rather than full multimodal journey planning. This scope matches the current implementation and the Milestone 1 requirement to demonstrate **feasibility, data understanding, and a clear visualization question**.
 
 Key numbers from the current exported analysis:
 
@@ -38,8 +38,8 @@ Key numbers from the current exported analysis:
 
 ![Swiss rail reachability from Lausanne](/figures/lausanne_reachability_0800_6h.png)
 
-## What This Documentation Covers
+## Documentation Structure
 
 - [Milestone 1](/milestone1): dataset choice, project framing, exploratory findings, and scope decisions
 - [Methodology](/methodology): preprocessing pipeline, reachability model, and current limitations
-- [Related Work](/related-work): references, inspirations, and why this approach is still distinctive
+- [Related Work](/related-work): references, inspirations, and originality of the current approach
