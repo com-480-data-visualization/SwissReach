@@ -6,6 +6,8 @@ Each public function produces one self-contained figure.
 
 from __future__ import annotations
 
+import os
+
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -21,6 +23,22 @@ def apply_mpl_defaults():
 
 
 # ── Helpers ──────────────────────────────────────────────────────────
+
+def _finalize_figure(
+    fig: plt.Figure,
+    *,
+    output_path: str | None = None,
+    show: bool = True,
+) -> plt.Figure:
+    """Save and/or display a matplotlib figure."""
+    if output_path:
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        fig.savefig(output_path, dpi=200, bbox_inches="tight")
+    if show:
+        plt.show()
+    else:
+        plt.close(fig)
+    return fig
 
 def _minutes_to_clock(total_minutes: float) -> str:
     hours = int(total_minutes // 60) % 24
@@ -43,7 +61,10 @@ def _minutes_to_duration(total_minutes: float) -> str:
 def plot_stops_map(
     stops_gdf: gpd.GeoDataFrame,
     boundary_proj: gpd.GeoDataFrame,
-) -> None:
+    *,
+    output_path: str | None = None,
+    show: bool = True,
+) -> plt.Figure:
     """
     Plot all Swiss public-transport stops on the EPSG:2056 map.
     """
@@ -59,7 +80,7 @@ def plot_stops_map(
     )
     ax.axis("off")
     fig.tight_layout(pad=2)
-    plt.show()
+    return _finalize_figure(fig, output_path=output_path, show=show)
 
 
 # ── 2. Rail stations map ────────────────────────────────────────────
@@ -67,7 +88,10 @@ def plot_stops_map(
 def plot_rail_stations_map(
     train_stations_gdf: gpd.GeoDataFrame,
     boundary_proj: gpd.GeoDataFrame,
-) -> None:
+    *,
+    output_path: str | None = None,
+    show: bool = True,
+) -> plt.Figure:
     """
     Plot Swiss rail stations on the EPSG:2056 map.
     """
@@ -84,7 +108,7 @@ def plot_rail_stations_map(
     ax.legend(loc="lower left", fontsize=10, framealpha=0.85)
     ax.axis("off")
     fig.tight_layout(pad=2)
-    plt.show()
+    return _finalize_figure(fig, output_path=output_path, show=show)
 
 
 # ── 2b. Deduplicated rail stations map ──────────────────────────────
@@ -92,7 +116,10 @@ def plot_rail_stations_map(
 def plot_station_meta_map(
     station_meta: pd.DataFrame,
     boundary_proj: gpd.GeoDataFrame,
-) -> None:
+    *,
+    output_path: str | None = None,
+    show: bool = True,
+) -> plt.Figure:
     """
     Plot deduplicated rail stations (output of build_station_meta) on the EPSG:2056 map.
     Expects columns: stop_lat, stop_lon, station_name.
@@ -117,7 +144,7 @@ def plot_station_meta_map(
     ax.legend(loc="lower left", fontsize=10, framealpha=0.85)
     ax.axis("off")
     fig.tight_layout(pad=2)
-    plt.show()
+    return _finalize_figure(fig, output_path=output_path, show=show)
 
 
 # ── 3. Busiest stops bar chart ───────────────────────────────────────
@@ -128,7 +155,10 @@ def plot_busiest_stops(
     start_minutes: int = 6 * 60,
     end_minutes: int = 10 * 60,
     date_label: str | None = None,
-) -> None:
+    *,
+    output_path: str | None = None,
+    show: bool = True,
+) -> plt.Figure | None:
     """
     Horizontal bar chart of the 10 busiest rail stations in a minute-precision window.
     """
@@ -177,7 +207,7 @@ def plot_busiest_stops(
     ax.set_axisbelow(True)
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
-    plt.show()
+    return _finalize_figure(fig, output_path=output_path, show=show)
 
 
 # ── 4. Reachability map ─────────────────────────────────────────────
@@ -190,7 +220,10 @@ def plot_reachability_map(
     departure_minutes: int,
     elapsed_minutes: int,
     origin_label: str = "Lausanne",
-) -> None:
+    *,
+    output_path: str | None = None,
+    show: bool = True,
+) -> plt.Figure:
     """
     Choropleth-style scatter map showing rail reachability from an origin.
     """
@@ -269,4 +302,65 @@ def plot_reachability_map(
         f"Window: {_minutes_to_duration(elapsed_minutes)} | "
         f"Reachable: {reachable_count}/{total}"
     )
-    plt.show()
+    return _finalize_figure(fig, output_path=output_path, show=show)
+
+
+def plot_reachability_comparison_heatmap(
+    comparison_df: pd.DataFrame,
+    *,
+    value_col: str = "reachable_share",
+    output_path: str | None = None,
+    show: bool = True,
+) -> plt.Figure:
+    """
+    Heatmap comparing reachability across multiple origins and departure times.
+    Expects columns: origin, departure_label, reachable_share, reachable_count.
+    """
+    if comparison_df.empty:
+        raise ValueError("comparison_df must not be empty")
+
+    pivot = comparison_df.pivot(
+        index="origin",
+        columns="departure_label",
+        values=value_col,
+    )
+    count_pivot = comparison_df.pivot(
+        index="origin",
+        columns="departure_label",
+        values="reachable_count",
+    )
+
+    fig, ax = plt.subplots(figsize=(10, 4.8), facecolor="white")
+    im = ax.imshow(pivot.values, cmap="viridis", aspect="auto", vmin=0, vmax=1)
+
+    ax.set_xticks(np.arange(len(pivot.columns)), labels=pivot.columns)
+    ax.set_yticks(np.arange(len(pivot.index)), labels=pivot.index)
+    ax.set_xlabel("Departure time", fontsize=11)
+    ax.set_ylabel("Origin station", fontsize=11)
+    ax.set_title(
+        "Share of Swiss Rail Stations Reachable Within 6 Hours",
+        fontsize=13,
+        fontweight="bold",
+        pad=12,
+    )
+
+    for i in range(pivot.shape[0]):
+        for j in range(pivot.shape[1]):
+            share = pivot.iloc[i, j]
+            count = int(count_pivot.iloc[i, j])
+            ax.text(
+                j,
+                i,
+                f"{share:.0%}\n({count})",
+                ha="center",
+                va="center",
+                color="white" if share < 0.65 else "black",
+                fontsize=9,
+                fontweight="bold",
+            )
+
+    cbar = fig.colorbar(im, ax=ax, shrink=0.9, pad=0.02)
+    cbar.set_label("Reachable share", fontsize=10)
+    cbar.ax.tick_params(labelsize=9)
+    fig.tight_layout()
+    return _finalize_figure(fig, output_path=output_path, show=show)
