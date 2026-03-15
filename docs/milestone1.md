@@ -1,4 +1,4 @@
-# Milestone 1
+# Milestone 1 Report
 
 This document presents the current project state according to the four required sections in `README.md`: `Dataset`, `Problematic`, `Exploratory Data Analysis`, and `Related work`.
 

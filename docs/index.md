@@ -2,12 +2,11 @@
 layout: home
 
 hero:
-  name: "SwissReach Docs"
-  text: "Swiss Rail Accessibility for EPFL COM-480"
-  tagline: "Milestone 1 documentation for a nationwide Swiss rail accessibility analysis."
+  name: "SwissReach"
+  text: "Nationwide rail accessibility in Switzerland."
   actions:
     - theme: brand
-      text: Milestone 1
+      text: Milestone 1 Report
       link: /milestone1
     - theme: alt
       text: Methodology
@@ -24,7 +23,7 @@ features:
 
 ## Project Snapshot
 
-SwissReach focuses on **Swiss rail accessibility** rather than full multimodal journey planning. This scope matches the current implementation and the Milestone 1 requirement to demonstrate **feasibility, data understanding, and a clear visualization question**.
+SwissReach focuses on **Swiss rail accessibility** rather than full multimodal journey planning. The current documentation presents the dataset, preprocessing pipeline, and timetable-based reachability analysis behind the project.
 
 Key numbers from the current exported analysis:
 
@@ -37,9 +36,9 @@ Key numbers from the current exported analysis:
 ## Figure Preview
 
 ![Swiss rail reachability from Lausanne](/figures/lausanne_reachability_0800_6h.png)
-
 ## Documentation Structure
 
-- [Milestone 1](/milestone1): dataset choice, project framing, exploratory findings, and scope decisions
+- [Milestone 1 Report](/milestone1): dataset choice, project framing, exploratory findings, and scope decisions
 - [Methodology](/methodology): preprocessing pipeline, reachability model, and current limitations
 - [Related Work](/related-work): references, inspirations, and originality of the current approach
+

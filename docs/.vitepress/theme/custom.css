@@ -1,0 +1,24 @@
+:root {
+  --vp-c-brand-1: #c84f56;
+  --vp-c-brand-2: #d86269;
+  --vp-c-brand-3: #b8444b;
+  --vp-c-brand-soft: rgba(200, 79, 86, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #de6f74;
+  --vp-c-brand-2: #ea8589;
+  --vp-c-brand-3: #c95a60;
+  --vp-c-brand-soft: rgba(222, 111, 116, 0.16);
+}
+
+.VPHero .text {
+  font-size: 42px;
+  line-height: 1.15;
+  max-width: 920px;
+}
+
+.VPNavBarTitle .logo {
+  height: 28px;
+  width: auto;
+}

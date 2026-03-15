@@ -4,11 +4,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/docs/',
   title: "SwissReach Docs",
-  description: "Milestone 1 documentation for SwissReach, a nationwide Swiss rail accessibility visualization project for EPFL COM480.",
+  description: "Documentation for SwissReach, a nationwide Swiss rail accessibility visualization project for EPFL COM480.",
   themeConfig: {
+    logo: '/logo/SwissReach_vectorized.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Milestone 1', link: '/milestone1' },
+      { text: 'Milestone 1 Report', link: '/milestone1' },
       { text: 'Methodology', link: '/methodology' },
       { text: 'Related Work', link: '/related-work' },
     ],
@@ -18,7 +19,7 @@ export default defineConfig({
         text: 'SwissReach',
         items: [
           { text: 'Project Home', link: '/' },
-          { text: 'Milestone 1', link: '/milestone1' },
+          { text: 'Milestone 1 Report', link: '/milestone1' },
           { text: 'Methodology', link: '/methodology' },
           { text: 'Related Work', link: '/related-work' },
         ]
