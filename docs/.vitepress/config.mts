@@ -5,6 +5,9 @@ export default defineConfig({
   base: '/docs/',
   title: "SwissReach Docs",
   description: "Documentation for SwissReach, a nationwide Swiss rail accessibility visualization project for EPFL COM480.",
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo/SwissReach_vectorized.png' }],
+  ],
   themeConfig: {
     logo: '/logo/SwissReach_vectorized.png',
     nav: [
@@ -27,7 +30,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com' }
+      { icon: 'github', link: 'https://github.com/com-480-data-visualization/SwissReach' }
     ]
   }
 })
