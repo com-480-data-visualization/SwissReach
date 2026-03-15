@@ -6,6 +6,12 @@
 | Xinxian Ma | 407571 |
 | Jinghao Zheng | 406240 |
 
+Our project website is already partially available at [swissreach.online](https://swissreach.online/).
+
+Our documentation website is available at [swissreach.online/docs](https://swissreach.online/docs/).
+
+Our Milestone 1 report is available at [swissreach.online/docs/milestone1](https://swissreach.online/docs/milestone1).
+
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1 (20th March, 5pm)

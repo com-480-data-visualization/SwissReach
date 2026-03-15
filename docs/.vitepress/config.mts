@@ -4,26 +4,33 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/docs/',
   title: "SwissReach Docs",
-  description: "SwissReach is an interactive 4D isochrone visualization of the Swiss public transit network (SBB) using H3 hexagons. Developed for EPFL COM480.",
+  description: "Documentation for SwissReach, a nationwide Swiss rail accessibility visualization project for EPFL COM480.",
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo/SwissReach_vectorized.png' }],
+  ],
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo/SwissReach_vectorized.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Milestone 1 Report', link: '/milestone1' },
+      { text: 'Methodology', link: '/methodology' },
+      { text: 'Related Work', link: '/related-work' },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'SwissReach',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Project Home', link: '/' },
+          { text: 'Milestone 1 Report', link: '/milestone1' },
+          { text: 'Methodology', link: '/methodology' },
+          { text: 'Related Work', link: '/related-work' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/com-480-data-visualization/SwissReach' }
     ]
   }
 })

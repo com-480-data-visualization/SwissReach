@@ -45,3 +45,6 @@ coverage/
 
 # Data
 data/raw_data/
+
+# Python cache
+__pycache__
