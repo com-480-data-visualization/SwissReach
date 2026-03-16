@@ -114,6 +114,50 @@ def build_reachability_comparison(
     return pd.DataFrame(rows)
 
 
+def export_per_station_reachability(
+    swiss_train_meta: pd.DataFrame,
+    trip_instances: dict,
+    departures_by_station: dict,
+    departure_times_by_station: dict,
+    output_dir: Path,
+) -> None:
+    """
+    For each (origin, departure_time) combination, export a JSON file with
+    per-station reachability data suitable for frontend map rendering.
+
+    Output file: reachability_{origin_slug}_{HHMM}.json
+    Each record: {station_key, station_name, lat, lon, travel_minutes | null}
+    """
+    origins = ["Lausanne", "Bern", "Genève", "Zürich HB"]
+    departures = [6 * 60, 8 * 60, 12 * 60, 18 * 60]
+
+    # Also export a stations index once (lat/lon for all 1663 stations)
+    stations_index = swiss_train_meta[["station_key", "station_name", "stop_lat", "stop_lon"]].copy()
+    stations_index = stations_index.rename(columns={"stop_lat": "lat", "stop_lon": "lon"})
+    stations_index.to_json(output_dir / "stations.json", orient="records", indent=2)
+
+    for origin in origins:
+        origin_slug = origin.lower().replace(" ", "_").replace("ü", "u").replace("è", "e")
+        start_key, start_row = resolve_start_station(swiss_train_meta, swiss_train_meta, origin)
+        engine = ReachabilityEngine(
+            swiss_train_meta,
+            trip_instances,
+            departures_by_station,
+            departure_times_by_station,
+            start_key,
+        )
+        for dep in departures:
+            rf = engine.build_reachable_frame(dep, 6 * 60)
+            out = rf[["station_key", "station_name", "stop_lat", "stop_lon", "travel_minutes"]].copy()
+            out = out.rename(columns={"stop_lat": "lat", "stop_lon": "lon"})
+            # Replace NaN with None so JSON serialises as null
+            out["travel_minutes"] = out["travel_minutes"].where(out["travel_minutes"].notna(), other=None)
+            dep_label = f"{dep // 60:02d}{dep % 60:02d}"
+            filename = f"reachability_{origin_slug}_{dep_label}.json"
+            out.to_json(output_dir / filename, orient="records", indent=2)
+            print(f"  Exported {filename} ({int(rf['reachable'].sum())} reachable stations)")
+
+
 def main() -> None:
     apply_mpl_defaults()
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
@@ -243,6 +287,15 @@ def main() -> None:
         ).iloc[0].to_dict(),
     }
     (DATA_DIR / "milestone1_summary.json").write_text(json.dumps(summary, indent=2))
+
+    print("Exporting per-station reachability data for frontend...")
+    export_per_station_reachability(
+        swiss_train_meta,
+        trip_instances,
+        departures_by_station,
+        departure_times_by_station,
+        output_dir=DATA_DIR,
+    )
 
     print(f"Exported figures to: {FIGURES_DIR}")
     print(f"Exported tables to:   {DATA_DIR}")

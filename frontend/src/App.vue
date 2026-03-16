@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ReachabilityMap from '@/components/ReachabilityMap.vue'
+
 const docsUrl = 'https://swissreach.online/docs'
 const githubUrl = 'https://github.com/com-480-data-visualization/SwissReach'
 </script>
@@ -53,6 +55,11 @@ const githubUrl = 'https://github.com/com-480-data-visualization/SwissReach'
     </header>
 
     <main class="content">
+      <!-- Interactive reachability map -->
+      <section class="panel panel-map">
+        <ReachabilityMap />
+      </section>
+
       <section class="panel">
         <h2>About the project</h2>
         <p>
@@ -250,6 +257,12 @@ const githubUrl = 'https://github.com/com-480-data-visualization/SwissReach'
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 10px 40px rgba(44, 22, 24, 0.04);
+}
+
+/* Map panel: no inner padding — ReachabilityMap handles its own layout */
+.panel-map {
+  padding: 0;
+  overflow: hidden;
 }
 
 .panel h2 {

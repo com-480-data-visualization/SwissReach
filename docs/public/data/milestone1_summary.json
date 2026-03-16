@@ -1,18 +1,18 @@
 {
   "analysis_date": "2026-03-18",
-  "total_stops": 95415,
-  "stops_inside_switzerland": 75775,
-  "rail_stop_entries": 3628,
-  "rail_logical_stations": 1663,
-  "active_rail_services": 21711,
-  "active_rail_trips": 23164,
-  "rail_stop_time_records": 201467,
+  "total_stops": 96949,
+  "stops_inside_switzerland": 75910,
+  "rail_stop_entries": 3604,
+  "rail_logical_stations": 1664,
+  "active_rail_services": 21329,
+  "active_rail_trips": 23339,
+  "rail_stop_time_records": 203011,
   "lausanne_reachable_6h_0800": 1500,
   "comparison_best_row": {
     "origin": "Z\u00fcrich HB",
     "departure_minutes": 720,
     "departure_label": "12:00",
-    "reachable_count": 1535,
-    "reachable_share": 0.9230306674684305
+    "reachable_count": 1534,
+    "reachable_share": 0.921875
   }
 }

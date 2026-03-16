@@ -3,112 +3,112 @@
     "origin":"Lausanne",
     "departure_minutes":360,
     "departure_label":"06:00",
-    "reachable_count":1501,
-    "reachable_share":0.9025856885
+    "reachable_count":1500,
+    "reachable_share":0.9014423077
   },
   {
     "origin":"Lausanne",
     "departure_minutes":480,
     "departure_label":"08:00",
     "reachable_count":1500,
-    "reachable_share":0.9019843656
+    "reachable_share":0.9014423077
   },
   {
     "origin":"Lausanne",
     "departure_minutes":720,
     "departure_label":"12:00",
-    "reachable_count":1514,
-    "reachable_share":0.9104028863
+    "reachable_count":1513,
+    "reachable_share":0.9092548077
   },
   {
     "origin":"Lausanne",
     "departure_minutes":1080,
     "departure_label":"18:00",
     "reachable_count":1436,
-    "reachable_share":0.8634996993
+    "reachable_share":0.8629807692
   },
   {
     "origin":"Bern",
     "departure_minutes":360,
     "departure_label":"06:00",
-    "reachable_count":1526,
-    "reachable_share":0.9176187613
+    "reachable_count":1525,
+    "reachable_share":0.9164663462
   },
   {
     "origin":"Bern",
     "departure_minutes":480,
     "departure_label":"08:00",
-    "reachable_count":1523,
-    "reachable_share":0.9158147925
+    "reachable_count":1522,
+    "reachable_share":0.9146634615
   },
   {
     "origin":"Bern",
     "departure_minutes":720,
     "departure_label":"12:00",
-    "reachable_count":1530,
-    "reachable_share":0.9200240529
+    "reachable_count":1529,
+    "reachable_share":0.9188701923
   },
   {
     "origin":"Bern",
     "departure_minutes":1080,
     "departure_label":"18:00",
     "reachable_count":1477,
-    "reachable_share":0.8881539387
+    "reachable_share":0.8876201923
   },
   {
     "origin":"Gen\u00e8ve",
     "departure_minutes":360,
     "departure_label":"06:00",
-    "reachable_count":1483,
-    "reachable_share":0.8917618761
+    "reachable_count":1482,
+    "reachable_share":0.890625
   },
   {
     "origin":"Gen\u00e8ve",
     "departure_minutes":480,
     "departure_label":"08:00",
     "reachable_count":1482,
-    "reachable_share":0.8911605532
+    "reachable_share":0.890625
   },
   {
     "origin":"Gen\u00e8ve",
     "departure_minutes":720,
     "departure_label":"12:00",
-    "reachable_count":1495,
-    "reachable_share":0.8989777511
+    "reachable_count":1494,
+    "reachable_share":0.8978365385
   },
   {
     "origin":"Gen\u00e8ve",
     "departure_minutes":1080,
     "departure_label":"18:00",
     "reachable_count":1383,
-    "reachable_share":0.8316295851
+    "reachable_share":0.8311298077
   },
   {
     "origin":"Z\u00fcrich HB",
     "departure_minutes":360,
     "departure_label":"06:00",
-    "reachable_count":1534,
-    "reachable_share":0.9224293446
+    "reachable_count":1533,
+    "reachable_share":0.9212740385
   },
   {
     "origin":"Z\u00fcrich HB",
     "departure_minutes":480,
     "departure_label":"08:00",
     "reachable_count":1527,
-    "reachable_share":0.9182200842
+    "reachable_share":0.9176682692
   },
   {
     "origin":"Z\u00fcrich HB",
     "departure_minutes":720,
     "departure_label":"12:00",
-    "reachable_count":1535,
-    "reachable_share":0.9230306675
+    "reachable_count":1534,
+    "reachable_share":0.921875
   },
   {
     "origin":"Z\u00fcrich HB",
     "departure_minutes":1080,
     "departure_label":"18:00",
     "reachable_count":1484,
-    "reachable_share":0.892363199
+    "reachable_share":0.8918269231
   }
 ]
