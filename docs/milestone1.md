@@ -105,3 +105,34 @@ The current analysis is sufficient for Milestone 1 because it already provides:
 - a visualization question that can scale into the final project
 
 The remaining work for the final report concerns sharper communication of **scope, assumptions, limitations, and originality**, rather than additional engineering complexity.
+
+## Future Work
+
+Three extensions are planned for the final visualization.
+
+### 1. Travel cost as a second dimension
+
+The current model encodes reachability as a single scalar — **travel time**. The planned extension adds **ticket price** as a parallel dimension, turning the problem into a two-vector accessibility question: *where can you reach within T minutes and CHF B?*
+
+Swiss Federal Railways publishes a fare formula based on distance and fare class. This makes it straightforward to attach a cost estimate to every computed itinerary and expose a **budget slider** alongside the existing time window. The visual encoding would shift from a single colour scale to a 2-D mapping, for example using hue for travel time and opacity for affordability, or a bivariate colour scheme.
+
+This extension is meaningful for the audience of commuters and students, for whom cost is often the binding constraint rather than time.
+
+### 2. Full multimodal network (bus, tram, and local services)
+
+The current scope is deliberately rail-only. The full GTFS feed already contains bus, tram, and other local services. Incorporating them requires:
+
+- extending the routing graph to include all public transport modes
+- modelling walking transfers between nearby stops
+- handling the much larger stop count (~75 000 stops vs. ~1 700 stations)
+
+The visual payoff is substantial: rail-only reachability severely underestimates accessibility in rural areas where a train station may be several kilometres from the actual destination. A multimodal map would show a markedly different — and more honest — picture of national accessibility.
+
+### 3. Continuous-time slider and free origin selection
+
+The current interface offers four fixed departure times and four fixed origins. The planned final interface replaces both with continuous controls:
+
+- a **time-of-day slider** that shows how the reachable region expands or contracts as departure time moves through the day
+- a **free origin picker** that lets the user click any point on the map (or type any Swiss address) and immediately recompute reachability from that location
+
+The continuous time slider turns the static map into an animation frame, making the temporal rhythm of the timetable directly visible. Free origin selection makes the tool genuinely useful rather than illustrative, allowing a user to answer the question *"what can I reach from my town at 07:15?"* rather than only from the four pre-selected cities.
