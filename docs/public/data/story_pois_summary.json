@@ -1,0 +1,30 @@
+{
+  "departure_time": "08:00",
+  "station_count": 1938,
+  "poi_counts": {
+    "schools": 6112,
+    "hospitals": 305,
+    "ikea": 21,
+    "supermarkets": 3430
+  },
+  "top_supermarket_station_30min": {
+    "station_key": "Parent8503000",
+    "station_name": "Zürich HB",
+    "value": 442
+  },
+  "top_school_station_30min": {
+    "station_key": "Parent8503000",
+    "station_name": "Zürich HB",
+    "value": 823
+  },
+  "top_hospital_station_30min": {
+    "station_key": "Parent8501008",
+    "station_name": "Genève",
+    "value": 34
+  },
+  "top_ikea_station_60min": {
+    "station_key": "Parent8500218",
+    "station_name": "Olten",
+    "value": 9
+  }
+}

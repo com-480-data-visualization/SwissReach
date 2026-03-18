@@ -25,9 +25,11 @@ The originality of SwissReach lies in the **combination** of design choices:
 - a **nationwide Swiss** perspective rather than a single-city demo
 - a **rail-first** scope that remains narrow enough to stay feasible
 - **station-level deduplication** to bridge raw GTFS data and visualization-friendly interaction
-- a storytelling structure that mixes **network activity**, **single-origin reachability**, and **multi-origin comparison**
+- an analytical structure that mixes **network activity**, **single-origin reachability**, **amenity access**, and **retail comparison**
 
 The resulting contribution lies in transforming a large transit feed into a clear, data-visualization-oriented narrative that remains feasible within the course timeline.
+
+It is also important to note that the topic was chosen and partly explored before the EPFL `COM-490` assignment was released. Once it became clear that the original public-transport accessibility idea overlapped heavily with Assignment 1, the project was intentionally extended with amenity-count and retail-density analyses in order to create clearer analytical separation.
 
 ## Design Inspirations
 

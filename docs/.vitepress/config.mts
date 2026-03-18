@@ -12,6 +12,7 @@ export default defineConfig({
     logo: '/logo/SwissReach_vectorized.png',
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Insights', link: '/insights' },
       { text: 'Milestone 1 Report', link: '/milestone1' },
       { text: 'Methodology', link: '/methodology' },
       { text: 'Related Work', link: '/related-work' },
@@ -22,6 +23,7 @@ export default defineConfig({
         text: 'SwissReach',
         items: [
           { text: 'Project Home', link: '/' },
+          { text: 'Insights', link: '/insights' },
           { text: 'Milestone 1 Report', link: '/milestone1' },
           { text: 'Methodology', link: '/methodology' },
           { text: 'Related Work', link: '/related-work' },
