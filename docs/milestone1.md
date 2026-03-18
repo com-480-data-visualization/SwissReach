@@ -2,12 +2,19 @@
 
 This document presents the current project state according to the four required sections in `README.md`: `Dataset`, `Problematic`, `Exploratory Data Analysis`, and `Related work`.
 
+## Project Note
+
+SwissReach was defined and a substantial share of the exploratory work was completed **before** the EPFL `COM-490` assignment was published. The original intention of the project, a Swiss public-transport accessibility visualization study, unfortunately overlapped almost completely with Assignment 1 of `COM-490 Large-Scale Data Science in the Real World`.
+
+To avoid any suspicion that the two projects were too similar, SwissReach was extended with a more distinctive analytical layer: **infrastructure-count visualization**. The final direction therefore keeps the Swiss rail accessibility backbone, but adds views about supermarkets, schools, hospitals, IKEA access, and retail density.
+
 ## Dataset
 
-SwissReach uses two standard public datasets:
+SwissReach uses three main data families:
 
 - **Swiss GTFS static timetable** from `opentransportdata.swiss`
 - **SwissBoundaries3D** national boundary geometry from `swisstopo`
+- **OpenStreetMap POIs and exported supermarket records** for the infrastructure layers
 
 The project relies on established public data rather than scraping. The main preprocessing burden lies in **scope control**:
 
@@ -21,14 +28,14 @@ Current size after each filtering step:
 | --- | ---: |
 | Raw GTFS stops | 95,415 |
 | Stops inside Switzerland | 75,775 |
-| Rail stop entries | 3,628 |
-| Logical rail stations | 1,663 |
+| Rail stop entries | 4,105 |
+| Logical rail stations | 1,938 |
 
 ## Problematic
 
 The central question of the project is the following:
 
-**How does rail accessibility vary across Switzerland as a function of origin and departure time?**
+**How does rail accessibility vary across Switzerland, and how does that accessibility translate into access to everyday infrastructure and retail choice?**
 
 Milestone 1 adopts a **rail-first** scope rather than a full multimodal routing framework for three reasons:
 
@@ -70,7 +77,7 @@ This view adds a second analytical dimension beyond geography by highlighting ce
 
 ### 4. Reachability from a single origin
 
-From Lausanne at `08:00`, the current rail-only model reaches `1,500` of the `1,663` logical rail stations within a 6-hour window.
+From Lausanne at `08:00`, the current rail-only model reaches `1,663` stations within a 6-hour window.
 
 ![Lausanne reachability at 08:00 within 6 hours](/figures/lausanne_reachability_0800_6h.png)
 
@@ -102,7 +109,7 @@ The current analysis is sufficient for Milestone 1 because it already provides:
 - a credible public dataset choice
 - non-trivial but manageable preprocessing
 - clear exploratory findings
-- a visualization question that can scale into the final project
+- a visualization question that can scale into a broader final analysis project
 
 The remaining work for the final report concerns sharper communication of **scope, assumptions, limitations, and originality**, rather than additional engineering complexity.
 

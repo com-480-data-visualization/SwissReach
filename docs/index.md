@@ -3,42 +3,43 @@ layout: home
 
 hero:
   name: "SwissReach"
-  text: "Nationwide rail accessibility in Switzerland."
+  text: "Swiss public transport accessibility and everyday infrastructure insights."
   actions:
     - theme: brand
-      text: Milestone 1 Report
-      link: /milestone1
+      text: Insights
+      link: /insights
     - theme: alt
       text: Methodology
       link: /methodology
 
 features:
-  - title: Nationwide scope
-    details: The analysis starts from the full Swiss GTFS feed, filters the network to Swiss territory, and preserves a country-scale perspective.
-  - title: Station-level modeling
-    details: Platform-level GTFS stops are collapsed into logical rail stations to support readable maps and efficient rendering.
-  - title: Reachability storytelling
-    details: Station activity, single-origin reachability, and multi-origin comparisons provide the main analytical views.
+  - title: Nationwide rail backbone
+    details: Swiss GTFS is filtered to Swiss rail services and collapsed from raw stops into 1,938 logical rail stations.
+  - title: Accessibility plus amenities
+    details: The project now connects timetable reachability with supermarkets, schools, hospitals, and IKEA access.
+  - title: Retail competition stories
+    details: A dedicated supermarket dataset supports Migros vs Coop density analysis and broader food-retail mapping.
 ---
 
 ## Project Snapshot
 
-SwissReach focuses on **Swiss rail accessibility** rather than full multimodal journey planning. The current documentation presents the dataset, preprocessing pipeline, and timetable-based reachability analysis behind the project.
+SwissReach started as a **Swiss rail accessibility** project and has evolved into a broader analysis of what that accessibility means in practice. The current documentation combines timetable-based reachability, infrastructure-count analysis, and retail density views.
 
-Key numbers from the current exported analysis:
+Current story layers:
 
-- `95,415` raw GTFS stops
-- `75,775` stops inside Switzerland
-- `3,628` rail stop entries
-- `1,663` logical rail stations after deduplication
-- `1,500 / 1,663` stations reachable from Lausanne within 6 hours at `08:00`
+- nationwide rail graph derived from the Swiss GTFS feed
+- `1,938` logical rail stations after deduplication
+- `30`-minute access counts for supermarkets, schools, and hospitals
+- `60`-minute IKEA access coverage
+- Migros vs Coop density comparisons based on the exported supermarket dataset
 
 ## Figure Preview
 
-![Swiss rail reachability from Lausanne](/figures/lausanne_reachability_0800_6h.png)
+![30-minute amenity accessibility in Switzerland](/figures/amenity_access_30min.png)
+
 ## Documentation Structure
 
+- [Insights](/insights): the three main analytical views, exported figures, and project framing note
 - [Milestone 1 Report](/milestone1): dataset choice, project framing, exploratory findings, and scope decisions
-- [Methodology](/methodology): preprocessing pipeline, reachability model, and current limitations
+- [Methodology](/methodology): preprocessing pipeline, reachability model, POI integration, and current limitations
 - [Related Work](/related-work): references, inspirations, and originality of the current approach
-
