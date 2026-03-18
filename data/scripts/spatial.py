@@ -9,7 +9,7 @@ import json
 import geopandas as gpd
 import pandas as pd
 
-from config import SWISS_BOUNDARY_GEOJSON
+from config import SWISS_BOUNDARY_GEOJSON, VAUD_BOUNDARY_GEOJSON
 from data_loader import derive_station_key
 
 
@@ -35,6 +35,25 @@ def load_swiss_boundary() -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame]:
     return boundary_wgs84, boundary_proj
 
 
+def load_vaud_boundary() -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame]:
+    """
+    Load Vaud canton boundary (VD) from a local GeoJSON file.
+
+    Returns
+    -------
+    boundary_wgs84 : GeoDataFrame in EPSG:4326
+    boundary_proj  : GeoDataFrame in EPSG:2056
+    """
+    with open(VAUD_BOUNDARY_GEOJSON, "r") as f:
+        json_data = json.load(f)
+
+    boundary_proj = gpd.GeoDataFrame.from_features(
+        [json_data["feature"]], crs="EPSG:2056"
+    )
+    boundary_wgs84 = boundary_proj.to_crs("EPSG:4326")
+    return boundary_wgs84, boundary_proj
+
+
 # ── Stop filtering ───────────────────────────────────────────────────
 
 def filter_stops_within_switzerland(
@@ -43,6 +62,21 @@ def filter_stops_within_switzerland(
 ) -> gpd.GeoDataFrame:
     """
     Keep only stops whose coordinates fall inside the Swiss national boundary.
+    """
+    gdf = gpd.GeoDataFrame(
+        stops_df,
+        geometry=gpd.points_from_xy(stops_df.stop_lon, stops_df.stop_lat),
+        crs="EPSG:4326",
+    )
+    return gdf[gdf.geometry.within(boundary_wgs84.unary_union)].copy()
+
+
+def filter_stops_within_vaud(
+    stops_df: pd.DataFrame,
+    boundary_wgs84: gpd.GeoDataFrame,
+) -> gpd.GeoDataFrame:
+    """
+    Keep only stops whose coordinates fall inside the Vaud canton boundary.
     """
     gdf = gpd.GeoDataFrame(
         stops_df,
