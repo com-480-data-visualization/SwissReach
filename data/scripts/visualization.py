@@ -189,7 +189,7 @@ def plot_busiest_stops(
     # Color intensity proportional to value (normalised to 0–1)
     vmin, vmax = busiest.values.min(), busiest.values.max()
     normed = (busiest.values - vmin) / max(vmax - vmin, 1)
-    cmap = plt.cm.get_cmap("YlOrRd")
+    cmap = plt.colormaps["YlOrRd"]
     colors = [cmap(0.25 + 0.7 * v) for v in normed]  # avoid near-white
 
     fig, ax = plt.subplots(figsize=(11, 5), facecolor="white")
@@ -309,6 +309,8 @@ def plot_reachability_comparison_heatmap(
     comparison_df: pd.DataFrame,
     *,
     value_col: str = "reachable_share",
+    horizon_minutes: int = 6 * 60,
+    title_prefix: str = "Share of Swiss Rail Stations Reachable",
     output_path: str | None = None,
     show: bool = True,
 ) -> plt.Figure:
@@ -331,14 +333,14 @@ def plot_reachability_comparison_heatmap(
     )
 
     fig, ax = plt.subplots(figsize=(10, 4.8), facecolor="white")
-    im = ax.imshow(pivot.values, cmap="viridis", aspect="auto", vmin=0, vmax=1)
+    im = ax.imshow(pivot.values, cmap="YlOrRd", aspect="auto", vmin=0, vmax=1)
 
     ax.set_xticks(np.arange(len(pivot.columns)), labels=pivot.columns)
     ax.set_yticks(np.arange(len(pivot.index)), labels=pivot.index)
     ax.set_xlabel("Departure time", fontsize=11)
     ax.set_ylabel("Origin station", fontsize=11)
     ax.set_title(
-        "Share of Swiss Rail Stations Reachable Within 6 Hours",
+        f"{title_prefix} Within {_minutes_to_duration(horizon_minutes)}",
         fontsize=13,
         fontweight="bold",
         pad=12,
@@ -348,13 +350,16 @@ def plot_reachability_comparison_heatmap(
         for j in range(pivot.shape[1]):
             share = pivot.iloc[i, j]
             count = int(count_pivot.iloc[i, j])
+            rgba = im.cmap(im.norm(share))
+            luminance = 0.299 * rgba[0] + 0.587 * rgba[1] + 0.114 * rgba[2]
+            text_color = "black" if luminance > 0.6 else "white"
             ax.text(
                 j,
                 i,
                 f"{share:.0%}\n({count})",
                 ha="center",
                 va="center",
-                color="white" if share < 0.65 else "black",
+                color=text_color,
                 fontsize=9,
                 fontweight="bold",
             )

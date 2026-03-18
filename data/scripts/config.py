@@ -33,6 +33,7 @@ START_STATION_NAME = "Lausanne"
 
 # ── Swiss boundary (local file, downloaded by download_sbb_gtfs.py) ──
 SWISS_BOUNDARY_GEOJSON = os.path.join(RAW_DATA_DIR, "swiss_boundary.geojson")
+VAUD_BOUNDARY_GEOJSON = os.path.join(RAW_DATA_DIR, "vaud_boundary.geojson")
 
 # ── Matplotlib defaults ─────────────────────────────────────────────
 MPL_FONT_FAMILIES = ["PingFang SC", "Arial Unicode MS", "DejaVu Sans"]

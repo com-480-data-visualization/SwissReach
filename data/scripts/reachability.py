@@ -31,6 +31,7 @@ from data_loader import (
 # ── Type aliases ─────────────────────────────────────────────────────
 
 TripInstanceId = Tuple[str, int]  # (trip_id, day_offset)
+WalkingNeighbors = Dict[str, List[Tuple[str, float]]]
 
 
 # ── Graph construction ───────────────────────────────────────────────
@@ -184,6 +185,68 @@ def build_trip_graph(active_st: pd.DataFrame):
     return trip_instances, departures_by_station, departure_times_by_station
 
 
+def build_walking_neighbors(
+    station_meta: pd.DataFrame,
+    max_walk_minutes: float = 12.0,
+    walking_speed_kmh: float = 5.0,
+) -> WalkingNeighbors:
+    """
+    Build an undirected walking graph between nearby stations using haversine distance.
+
+    Parameters
+    ----------
+    station_meta:
+        DataFrame with columns: station_key, stop_lat, stop_lon.
+    max_walk_minutes:
+        Maximum walking time allowed between two stations.
+    walking_speed_kmh:
+        Average walking speed (typical adult pace is about 5 km/h).
+    """
+    if max_walk_minutes <= 0:
+        return {}
+    if walking_speed_kmh <= 0:
+        raise ValueError("walking_speed_kmh must be > 0")
+
+    req = {"station_key", "stop_lat", "stop_lon"}
+    if not req.issubset(station_meta.columns):
+        missing = ", ".join(sorted(req - set(station_meta.columns)))
+        raise ValueError(f"station_meta missing required columns: {missing}")
+
+    meta = station_meta[list(req)].dropna().drop_duplicates("station_key").reset_index(drop=True)
+    if meta.empty:
+        return {}
+
+    keys = meta["station_key"].astype(str).to_numpy()
+    lat = np.radians(meta["stop_lat"].astype(float).to_numpy())
+    lon = np.radians(meta["stop_lon"].astype(float).to_numpy())
+
+    n = len(meta)
+    neighbors: WalkingNeighbors = {k: [] for k in keys}
+
+    earth_radius_m = 6_371_000.0
+    meters_per_minute = walking_speed_kmh * 1000.0 / 60.0
+
+    for i in range(n - 1):
+        dlat = lat[i + 1 :] - lat[i]
+        dlon = lon[i + 1 :] - lon[i]
+        a = (
+            np.sin(dlat / 2.0) ** 2
+            + np.cos(lat[i]) * np.cos(lat[i + 1 :]) * np.sin(dlon / 2.0) ** 2
+        )
+        c = 2.0 * np.arcsin(np.minimum(1.0, np.sqrt(a)))
+        dist_m = earth_radius_m * c
+        walk_min = dist_m / meters_per_minute
+
+        valid_idx = np.where((walk_min > 0.0) & (walk_min <= max_walk_minutes))[0]
+        for off in valid_idx:
+            j = i + 1 + int(off)
+            w = float(walk_min[off])
+            neighbors[keys[i]].append((keys[j], w))
+            neighbors[keys[j]].append((keys[i], w))
+
+    return neighbors
+
+
 # ── Dijkstra ─────────────────────────────────────────────────────────
 
 def compute_earliest_arrivals(
@@ -193,6 +256,7 @@ def compute_earliest_arrivals(
     trip_instances: dict,
     departures_by_station: dict,
     departure_times_by_station: dict,
+    walking_neighbors: WalkingNeighbors | None = None,
 ) -> Dict[str, float]:
     """
     Modified Dijkstra on the time-expanded rail graph.
@@ -204,6 +268,8 @@ def compute_earliest_arrivals(
 
     best: Dict[str, float] = {start_station_key: float(dep_min)}
     pq: list = [(float(dep_min), start_station_key)]
+
+    walking_neighbors = walking_neighbors or {}
 
     while pq:
         arr, sk = heapq.heappop(pq)
@@ -227,6 +293,15 @@ def compute_earliest_arrivals(
                     best[dsk] = float(a)
                     heapq.heappush(pq, (float(a), dsk))
 
+        # Walking transitions between nearby stations.
+        for next_sk, walk_minutes in walking_neighbors.get(sk, []):
+            next_arr = arr + walk_minutes
+            if next_arr > limit:
+                continue
+            if next_arr < best.get(next_sk, np.inf):
+                best[next_sk] = float(next_arr)
+                heapq.heappush(pq, (float(next_arr), next_sk))
+
     return best
 
 
@@ -245,12 +320,14 @@ class ReachabilityEngine:
         departures_by_station: dict,
         departure_times_by_station: dict,
         start_station_key: str,
+        walking_neighbors: WalkingNeighbors | None = None,
     ):
         self.swiss_train_meta = swiss_train_meta
         self.trip_instances = trip_instances
         self.departures_by_station = departures_by_station
         self.departure_times_by_station = departure_times_by_station
         self.start_station_key = start_station_key
+        self.walking_neighbors = walking_neighbors or {}
 
     @lru_cache(maxsize=256)
     def build_reachable_frame(
@@ -265,6 +342,7 @@ class ReachabilityEngine:
             self.trip_instances,
             self.departures_by_station,
             self.departure_times_by_station,
+            self.walking_neighbors,
         )
         rf = self.swiss_train_meta.copy()
         rf["arrival_minutes"] = rf["station_key"].map(arrivals)

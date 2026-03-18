@@ -17,6 +17,11 @@ _SWISS_BOUNDARY_API_URL = (
     "ch.swisstopo.swissboundaries3d-land-flaeche.fill/CH"
     "?geometryFormat=geojson&sr=2056"
 )
+_CANTON_BOUNDARY_API_BASE = (
+    "https://api3.geo.admin.ch/rest/services/api/MapServer/"
+    "ch.swisstopo.swissboundaries3d-kanton-flaeche.fill"
+)
+_VAUD_CANTON_ID = 22
 
 
 def download_sbb_gtfs(extract_dir=DEFAULT_EXTRACT_DIR):
@@ -75,6 +80,32 @@ def download_swiss_boundary(extract_dir=DEFAULT_EXTRACT_DIR):
         print(f"An unknown error occurred: {e}")
 
 
+def download_vaud_boundary(extract_dir=DEFAULT_EXTRACT_DIR):
+    """Download Vaud canton boundary (VD, BFS id 22) as local GeoJSON."""
+    dest = os.path.join(extract_dir, "vaud_boundary.geojson")
+    url = (
+        f"{_CANTON_BOUNDARY_API_BASE}/{_VAUD_CANTON_ID}"
+        "?geometryFormat=geojson&sr=2056"
+    )
+    print("Downloading Vaud canton boundary from swisstopo API...")
+
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        json_data = response.json()
+
+        os.makedirs(extract_dir, exist_ok=True)
+        with open(dest, "w") as f:
+            json.dump(json_data, f)
+
+        print(f"Saved to {dest}")
+    except requests.exceptions.RequestException as e:
+        print(f"Network request failed: {e}")
+    except Exception as e:
+        print(f"An unknown error occurred: {e}")
+
+
 if __name__ == "__main__":
     download_sbb_gtfs()
     download_swiss_boundary()
+    download_vaud_boundary()
