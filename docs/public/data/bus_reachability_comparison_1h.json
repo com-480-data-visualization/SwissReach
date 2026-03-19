@@ -1,0 +1,114 @@
+[
+  {
+    "origin":"Lausanne, Bel-Air",
+    "departure_minutes":360,
+    "departure_label":"06:00",
+    "reachable_count":560,
+    "reachable_share":0.2536231884
+  },
+  {
+    "origin":"Lausanne, Bel-Air",
+    "departure_minutes":480,
+    "departure_label":"08:00",
+    "reachable_count":535,
+    "reachable_share":0.2423007246
+  },
+  {
+    "origin":"Lausanne, Bel-Air",
+    "departure_minutes":720,
+    "departure_label":"12:00",
+    "reachable_count":512,
+    "reachable_share":0.231884058
+  },
+  {
+    "origin":"Lausanne, Bel-Air",
+    "departure_minutes":1080,
+    "departure_label":"18:00",
+    "reachable_count":548,
+    "reachable_share":0.2481884058
+  },
+  {
+    "origin":"Renens VD, gare",
+    "departure_minutes":360,
+    "departure_label":"06:00",
+    "reachable_count":527,
+    "reachable_share":0.2386775362
+  },
+  {
+    "origin":"Renens VD, gare",
+    "departure_minutes":480,
+    "departure_label":"08:00",
+    "reachable_count":485,
+    "reachable_share":0.2196557971
+  },
+  {
+    "origin":"Renens VD, gare",
+    "departure_minutes":720,
+    "departure_label":"12:00",
+    "reachable_count":486,
+    "reachable_share":0.2201086957
+  },
+  {
+    "origin":"Renens VD, gare",
+    "departure_minutes":1080,
+    "departure_label":"18:00",
+    "reachable_count":497,
+    "reachable_share":0.2250905797
+  },
+  {
+    "origin":"Yverdon-les-Bains, gare",
+    "departure_minutes":360,
+    "departure_label":"06:00",
+    "reachable_count":304,
+    "reachable_share":0.1376811594
+  },
+  {
+    "origin":"Yverdon-les-Bains, gare",
+    "departure_minutes":480,
+    "departure_label":"08:00",
+    "reachable_count":297,
+    "reachable_share":0.1345108696
+  },
+  {
+    "origin":"Yverdon-les-Bains, gare",
+    "departure_minutes":720,
+    "departure_label":"12:00",
+    "reachable_count":288,
+    "reachable_share":0.1304347826
+  },
+  {
+    "origin":"Yverdon-les-Bains, gare",
+    "departure_minutes":1080,
+    "departure_label":"18:00",
+    "reachable_count":309,
+    "reachable_share":0.1399456522
+  },
+  {
+    "origin":"Vevey, gare",
+    "departure_minutes":360,
+    "departure_label":"06:00",
+    "reachable_count":224,
+    "reachable_share":0.1014492754
+  },
+  {
+    "origin":"Vevey, gare",
+    "departure_minutes":480,
+    "departure_label":"08:00",
+    "reachable_count":224,
+    "reachable_share":0.1014492754
+  },
+  {
+    "origin":"Vevey, gare",
+    "departure_minutes":720,
+    "departure_label":"12:00",
+    "reachable_count":216,
+    "reachable_share":0.097826087
+  },
+  {
+    "origin":"Vevey, gare",
+    "departure_minutes":1080,
+    "departure_label":"18:00",
+    "reachable_count":231,
+    "reachable_share":0.1046195652
+  }
+]

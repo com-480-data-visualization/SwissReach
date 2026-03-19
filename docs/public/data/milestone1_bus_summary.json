@@ -1,0 +1,14 @@
+{
+  "analysis_date":"2026-03-18",
+  "vaud_bus_logical_stations":2208,
+  "walking_speed_kmh":5.0,
+  "max_walk_minutes":12.0,
+  "comparison_horizon_minutes":60,
+  "comparison_best_row":{
+    "origin":"Lausanne, Bel-Air",
+    "departure_minutes":360,
+    "departure_label":"06:00",
+    "reachable_count":560,
+    "reachable_share":0.2536231884
+  }
+}

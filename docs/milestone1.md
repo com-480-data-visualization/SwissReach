@@ -65,6 +65,49 @@ SwissReach also looks at destination retail and brand structure. The current exp
 
 ![Migros and Coop density in Switzerland](/figures/migros_vs_coop_density.png)
 
+### 5. Vaud bus pilot with walking links
+
+To test whether disconnected bus sub-networks can be bridged in a realistic way, we added a **Vaud-only bus pilot** alongside the national rail baseline.
+
+The pilot follows the same pipeline style as the rail analysis:
+
+- spatial filtering to Vaud canton
+- bus route extraction (`route_type` 3 and 700-716)
+- station-level deduplication via `parent_station` fallback
+- timetable-based reachability on a time-expanded graph
+- optional walking links between nearby logical stations
+
+![Vaud public transport stops (bus scope)](/figures/vaud_bus_stops.png)
+
+![Deduplicated Vaud bus stations](/figures/vaud_bus_stations_deduplicated.png)
+
+![Top 10 busiest Vaud bus stations in the morning peak](/figures/busiest_bus_stations_morning_peak.png)
+
+For walking, we use a typical pedestrian speed of **5.0 km/h** and connect station pairs whose inferred walk time is at most **12 minutes**.
+
+At `08:00` with a `1h` horizon from `Lausanne, Bel-Air`, the walking-enabled model reaches more logical bus stations than transit-only routing in the same setup.
+
+![Lausanne, Bel-Air bus reachability at 08:00 within 1 hour (transit only)](/figures/lausanne_belair_bus_reachability_0800_1h_transit_only.png)
+
+![Lausanne, Bel-Air bus reachability at 08:00 within 1 hour (with walking links)](/figures/lausanne_belair_bus_reachability_0800_1h_with_walking.png)
+
+Across four Vaud origins and four departure times (1-hour window, walking enabled), the strongest sampled case is `Lausanne, Bel-Air` at `06:00` with `560` reachable logical stations (`25.4%` of the Vaud bus station set in this pilot export).
+
+![Vaud bus reachability comparison (1 hour, with walking links)](/figures/bus_reachability_comparison_heatmap_1h_walking.png)
+
+The corresponding table exports are available as [CSV](/data/bus_reachability_comparison_1h_walking.csv) and [JSON](/data/bus_reachability_comparison_1h_walking.json).
+
+## Scope
+
+Milestone 1 presents the project primarily as a **nationwide Swiss rail accessibility visualization**, with an additional **Vaud bus pilot** used to validate transfer assumptions (including walking links) in a smaller regional setting.
+
+The following components remain **out of scope** at this stage:
+
+- nationwide multimodal integration (buses, trams, cable cars, boats) as first-class modes
+- end-to-end pedestrian routing beyond short transfer links
+- cross-border continuation outside Swiss territory
+- full path reconstruction for itinerary explanations
+
 ## Related Work
 
 Public-transport isochrones are an established idea, with tools such as [Mapnificent](https://www.mapnificent.net/) and [TravelTime](https://app.traveltime.com/) showing how origin, departure time, and mode choice can be visualized. SwissReach does not try to replace those systems. Its originality lies in combining a **nationwide Swiss rail** perspective with **station-level deduplication** and a second analytical layer based on amenities and retail. In design terms, the project draws from three families of views: isochrone maps, hub rankings, and comparison matrices. That combination fits the course well because it is visually rich, technically feasible, and clearly differentiated from a generic route-planning interface.
