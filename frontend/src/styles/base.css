@@ -20,7 +20,7 @@
   --content-width: min(1440px, calc(100vw - 48px));
   --section-gap: clamp(5rem, 7vw, 8rem);
   --copy-width: 48rem;
-  font-family: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--swissreach-font-sans);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
