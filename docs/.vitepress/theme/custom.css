@@ -1,8 +1,12 @@
+@import url('/fonts/misans/misans.css');
+
 :root {
   --vp-c-brand-1: #c84f56;
   --vp-c-brand-2: #d86269;
   --vp-c-brand-3: #b8444b;
   --vp-c-brand-soft: rgba(200, 79, 86, 0.14);
+  --vp-font-family-base: var(--swissreach-font-sans);
+  --vp-font-family-heading: var(--swissreach-font-sans);
 }
 
 .dark {
@@ -21,4 +25,8 @@
 .VPNavBarTitle .logo {
   height: 28px;
   width: auto;
+}
+
+body {
+  font-family: var(--swissreach-font-sans);
 }

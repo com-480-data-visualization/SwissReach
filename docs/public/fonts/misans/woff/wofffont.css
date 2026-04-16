@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'MiTestThin';    
+    src:  url('MiSansLatin-Thin.woff') format('woff'); /* Modern Browsers */
+    font-style: normal;
+    font-weight: normal;    
+}
+
+@font-face {
+    font-family: 'MiTestExtrlight';    
+    src:  url('MiSansLatin-ExtraLight.woff') format('woff'); /* Modern Browsers */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'MiTestlight';    
+    src:  url('MiSansLatin-Light.woff') format('woff'); /* Modern Browsers */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'MiTestNormal';    
+    src:  url('MiSansLatin-Normal.woff') format('woff'); /* Modern Browsers */
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MiTestRegular';    
+    src:  url('MiSansLatin-Regular.woff') format('woff'); /* Modern Browsers */
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MiTestMedium';    
+    src:  url('MiSansLatin-Medium.woff') format('woff'); 
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MiTestDemibold';
+    src:  url('MiSansLatin-Demibold.woff') format('woff');    
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MiTestSemibold';    
+    src:  url('MiSansLatin-Semibold.woff') format('woff');    
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MiTestbold';
+    src:  url('MiSansLatin-Bold.woff') format('woff');
+    
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MiTestHeavy';        
+    src:  url('MiSansLatin-Heavy.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;    
+}
+
+@font-face {
+    font-family: 'MiTestVF';        
+    src:  url('MiSansLatinVF.woff') format('woff-variations');
+    font-style: normal;    
+    font-weight: 150 700;
+}
+
+p{
+    font-family: 'MiTestVF';
+    font-size: 48px;
+    animation: fontWeightChange 5s infinite alternate linear;
+}
+
+@keyframes fontWeightChange {
+    0% {
+        font-variation-settings: 'wght' 150;
+    }
+    100% {
+        font-variation-settings: "wght" 700;
+    }
+}
+
+bld{
+
+    font-size: 32px;
+    font-weight: bold;
+}

@@ -1,0 +1,1684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="en-us" http-equiv="Content-Language"/>
+<title>MiSans feature test</title>
+<link rel="stylesheet" type="text/css" media="screen" href="wofffont.css" />
+<style type="text/css" media="screen">
+</style>
+</head>
+<body>
+    <div style="width: 80%;  margin-left: auto;  margin-right: auto;line-height: 50px;font-size:40px;">
+        <div style="font-family:MiTestThin;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestExtrlight;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestlight;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestNormal;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestRegular;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestMedium;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestDemibold;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestSemibold;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestbold;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>
+        <br><br>
+
+        <div style="font-family:MiTestHeavy;">
+
+            
+            <bld>calt on 特性生效时，应该所有冒号均上升至和数字/大写字母高度居中，而连词符则应下降至和小写字母aoe等居中。</bld><br>
+            <div style="font-feature-settings: 'calt' 1;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+            <bld>calt off </bld><br>
+            <div style="font-feature-settings: 'calt' 0;">                
+                1:2:3:4:5:6:7:8:9:0<br>
+                A:D:C:B:E:F:G:H:I:J:L:K:M:N:O:P:Q:R:S:T:U:V:W:Y:X:Z<br>    
+                1:A:2:D:3:C:4:B:5:E:6:F:7:G:8:H:9:I:0:J:1:L:2:K:3:M:4:N:5:O:6:P:7:Q:8:R:9:S:0:T:1:U:2:V:3:W:4:Y:5:X:6:Z:7<br>    
+                a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z<br>
+            </div>
+
+            <bld>sinf on 特性生效时，所有数字应该变成下标且低于基线。</bld><br>
+            <div style="font-feature-settings: 'sinf' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>sinf off </bld><br>
+            <div style="font-feature-settings: 'sinf' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>subs on 特性生效时，所有数字应该变成下标且齐平于基线。</bld><br>
+            <div style="font-feature-settings: 'subs' 1;">                 
+                H1234567890<br>
+            </div>
+            <bld>subs off </bld><br>
+            <div style="font-feature-settings: 'subs' 0;">                
+                H1234567890<br>
+            </div>
+
+            <bld>sups on 特性生效时，H后面的所有字符都应该转化为上标。</bld><br>
+            <div style="font-feature-settings: 'sups' 1;">            
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>sups off </bld><br>
+            <div style="font-feature-settings: 'sups' 0;">                
+                H1-2+3−4567890abcdefghijklmnopqrstuvwxyz<br>
+            </div>
+
+            <bld>frac on 特性生效时，应变成分子在左上，分母在右下的形式。。</bld><br>
+            <div style="font-feature-settings: 'frac' 1;">                
+                879213040/158983169<br>
+            </div>
+            <bld>frac off </bld><br>
+            <div style="font-feature-settings: 'frac' 0;">                
+                879213040/158983169<br>
+            </div>
+
+            <bld>tnum on 特性生效时，以上四列数字应该可以上下一一对齐。</bld><br>
+            <div style="font-feature-settings: 'tnum' 1;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>tnum off </bld><br>
+            <div style="font-feature-settings: 'tnum' 0;">                
+                278159656<br>
+                833276532<br>
+                512924680<br>
+                164150118<br>
+            </div>
+
+            <bld>case on 特性生效时，括号类标点和正反问号/感叹号都应该和大写字母高度相仿。</bld><br>
+            <div style="font-feature-settings: 'case' 1;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>            
+            </div>
+
+            <bld>case off </bld><br>
+            <div style="font-feature-settings: 'case' 0;">                
+                (ÓRALE), [¿QUÉ PASA?], {¡AMIGO!}<br>             
+            </div>
+
+            <bld>ss01 on 特性生效时，以上文字串的所有方点应转换为圆点，而方头蝌蚪引号应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss01' 1;">                
+                3,694.8÷15:270<br>            
+            </div>
+
+            <bld>ss01 off</bld><br>
+            <div style="font-feature-settings: 'ss01' 0;">                
+                3,694.8÷15:270<br>             
+            </div>
+
+            <bld>ss02 on 特性生效时，以上所有字符均应转换为上标形式。*本特性独立于上标sups特性。</bld><br>
+            <div style="font-feature-settings: 'ss02' 1;">
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss02 off</bld><br>
+            <div style="font-feature-settings: 'ss02' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss03 on 特性生效时，以上所有字符均应转换为下标形式。</bld><br>
+            <div style="font-feature-settings: 'ss03' 1;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>            
+            </div>
+            <bld>ss03 off</bld><br>
+            <div style="font-feature-settings: 'ss03' 0;">                
+                MB GB B % ℃ ℉ ¥ ￥<br>             
+            </div>
+
+            <bld>ss04 on 特性生效时，所有数字会变大一点，大小和位置均和汉字更为接近。</bld><br>
+            <div style="font-feature-settings: 'ss04' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss04 off</bld><br>
+            <div style="font-feature-settings: 'ss04' 0;">                
+                国1234567890国<br>             
+            </div>
+
+            <bld>ss05 on 特性生效时，大写M字母应转换为小米的logo。</bld><br>
+            <div style="font-feature-settings: 'ss05' 1;">                
+                M<br>            
+            </div>
+            <bld>ss05 off</bld><br>
+            <div style="font-feature-settings: 'ss05' 0;">                
+                M<br>             
+            </div>
+
+            <bld>ss06 on 特性生效时，大写M字母应转换为MIUI的logo。</bld><br>
+            <div style="font-feature-settings: 'ss06' 1;">                
+                M<br>            
+            </div>
+            <bld>ss06 off</bld><br>
+            <div style="font-feature-settings: 'ss06' 0;">
+                M<br>             
+            </div>
+
+
+            <bld>ss07 on 特性生效时，以上所有方头蝌蚪状符号都应转换为撇号形状。</bld><br>
+            <div style="font-feature-settings: 'ss07' 1;">
+                H,H;H‚H„H“H”H‘H’<br>            
+            </div>
+
+            <bld>ss07 off</bld><br>
+            <div style="font-feature-settings: 'ss07' 0;">                
+                H,H;H‚H„H“H”H‘H’<br>             
+            </div>
+
+            <bld>ss08 on 特性生效时，星号*会略微变大，井号#会略微变小，并和数字居中对齐，类似于拨号键盘上的大小。</bld><br>
+            <div style="font-feature-settings: 'ss08' 1;">                
+                1*1#0<br>            
+            </div>
+            <bld>ss08 off</bld><br>
+            <div style="font-feature-settings: 'ss08' 0;">                
+                1*1#0<br>             
+            </div>
+
+            <bld>ss09 on 特性生效时，所有数字会变小一点。</bld><br>
+            <div style="font-feature-settings: 'ss09' 1;">                
+                国1234567890国<br>            
+            </div>
+            <bld>ss09 off</bld><br>
+            <div style="font-feature-settings: 'ss09' 0;">                
+                国1234567890国<br>             
+            </div>
+        </div>         
+
+    </div>
+</body>
+</html>

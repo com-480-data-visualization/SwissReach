@@ -7,8 +7,8 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import type { Plugin } from 'vite'
 
-// Serve ../docs/public/data and ../docs/public/figures at /data and /figures
-// during development so the frontend can read Python-generated assets.
+// Serve selected docs public assets during development so the frontend can
+// read shared static assets from one place.
 function serveDocsPublic(): Plugin {
   const docsPublic = path.resolve(fileURLToPath(new URL('../docs/public', import.meta.url)))
   return {
@@ -16,7 +16,7 @@ function serveDocsPublic(): Plugin {
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         const url = req.url ?? ''
-        if (url.startsWith('/data/') || url.startsWith('/figures/')) {
+        if (url.startsWith('/data/') || url.startsWith('/figures/') || url.startsWith('/fonts/')) {
           const filePath = path.join(docsPublic, url.split('?')[0])
           if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
             const ext = path.extname(filePath)
@@ -24,6 +24,12 @@ function serveDocsPublic(): Plugin {
               ext === '.json' ? 'application/json' :
               ext === '.csv'  ? 'text/csv' :
               ext === '.png'  ? 'image/png' :
+              ext === '.css'  ? 'text/css' :
+              ext === '.woff' ? 'font/woff' :
+              ext === '.woff2' ? 'font/woff2' :
+              ext === '.ttf'  ? 'font/ttf' :
+              ext === '.otf'  ? 'font/otf' :
+              ext === '.zip'  ? 'application/zip' :
               'application/octet-stream'
             res.setHeader('Content-Type', mime)
             res.end(fs.readFileSync(filePath))
@@ -36,12 +42,27 @@ function serveDocsPublic(): Plugin {
   }
 }
 
+function copyDocsFonts(): Plugin {
+  const docsFonts = path.resolve(fileURLToPath(new URL('../docs/public/fonts', import.meta.url)))
+  return {
+    name: 'copy-docs-fonts',
+    closeBundle() {
+      const distDir = path.resolve(fileURLToPath(new URL('./dist', import.meta.url)))
+      const fontsOutDir = path.join(distDir, 'fonts')
+      fs.mkdirSync(distDir, { recursive: true })
+      fs.rmSync(fontsOutDir, { recursive: true, force: true })
+      fs.cpSync(docsFonts, fontsOutDir, { recursive: true })
+    },
+  }
+}
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
     serveDocsPublic(),
+    copyDocsFonts(),
   ],
   resolve: {
     alias: {

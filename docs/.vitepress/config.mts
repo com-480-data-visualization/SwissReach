@@ -35,6 +35,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/com-480-data-visualization/SwissReach' }
-    ]
+    ],
+    footer: {
+      message: 'Typography uses MiSans by Xiaomi.',
+      copyright: 'SwissReach · EPFL COM-480',
+    },
   }
 })
