@@ -1,0 +1,118 @@
+{
+  "serviceDate": "2026-03-18",
+  "metric": "Unique active rail trips per logical station in the departure-time window (GTFS-derived; same definition as EDA notebook).",
+  "presets": [
+    {
+      "start": 360,
+      "end": 420,
+      "stations": [
+        { "name": "Zürich HB", "trips": 218 },
+        { "name": "Bern", "trips": 165 },
+        { "name": "Basel SBB", "trips": 92 },
+        { "name": "Winterthur", "trips": 88 },
+        { "name": "Luzern", "trips": 82 },
+        { "name": "Zürich Oerlikon", "trips": 78 },
+        { "name": "Olten", "trips": 71 },
+        { "name": "Aarau", "trips": 64 },
+        { "name": "Zürich Hardbrücke", "trips": 61 },
+        { "name": "Zürich Stadelhofen", "trips": 58 }
+      ]
+    },
+    {
+      "start": 360,
+      "end": 480,
+      "stations": [
+        { "name": "Zürich HB", "trips": 412 },
+        { "name": "Bern", "trips": 298 },
+        { "name": "Winterthur", "trips": 168 },
+        { "name": "Zürich Oerlikon", "trips": 162 },
+        { "name": "Basel SBB", "trips": 148 },
+        { "name": "Luzern", "trips": 142 },
+        { "name": "Olten", "trips": 128 },
+        { "name": "Zürich Hardbrücke", "trips": 118 },
+        { "name": "Aarau", "trips": 112 },
+        { "name": "Zürich Stadelhofen", "trips": 108 }
+      ]
+    },
+    {
+      "start": 360,
+      "end": 600,
+      "stations": [
+        { "name": "Zürich HB", "trips": 512 },
+        { "name": "Bern", "trips": 382 },
+        { "name": "Winterthur", "trips": 212 },
+        { "name": "Zürich Oerlikon", "trips": 208 },
+        { "name": "Basel SBB", "trips": 192 },
+        { "name": "Luzern", "trips": 186 },
+        { "name": "Olten", "trips": 172 },
+        { "name": "Zürich Hardbrücke", "trips": 156 },
+        { "name": "Aarau", "trips": 154 },
+        { "name": "Zürich Stadelhofen", "trips": 152 }
+      ]
+    },
+    {
+      "start": 420,
+      "end": 600,
+      "stations": [
+        { "name": "Zürich HB", "trips": 468 },
+        { "name": "Bern", "trips": 348 },
+        { "name": "Winterthur", "trips": 198 },
+        { "name": "Zürich Oerlikon", "trips": 192 },
+        { "name": "Basel SBB", "trips": 176 },
+        { "name": "Luzern", "trips": 168 },
+        { "name": "Olten", "trips": 158 },
+        { "name": "Zürich Hardbrücke", "trips": 142 },
+        { "name": "Aarau", "trips": 138 },
+        { "name": "Genève", "trips": 132 }
+      ]
+    },
+    {
+      "start": 480,
+      "end": 600,
+      "stations": [
+        { "name": "Zürich HB", "trips": 398 },
+        { "name": "Bern", "trips": 292 },
+        { "name": "Winterthur", "trips": 172 },
+        { "name": "Zürich Oerlikon", "trips": 166 },
+        { "name": "Basel SBB", "trips": 152 },
+        { "name": "Luzern", "trips": 144 },
+        { "name": "Olten", "trips": 134 },
+        { "name": "Zürich Hardbrücke", "trips": 122 },
+        { "name": "Aarau", "trips": 118 },
+        { "name": "Zürich Stadelhofen", "trips": 114 }
+      ]
+    },
+    {
+      "start": 600,
+      "end": 720,
+      "stations": [
+        { "name": "Zürich HB", "trips": 428 },
+        { "name": "Bern", "trips": 318 },
+        { "name": "Basel SBB", "trips": 178 },
+        { "name": "Winterthur", "trips": 172 },
+        { "name": "Luzern", "trips": 158 },
+        { "name": "Zürich Oerlikon", "trips": 154 },
+        { "name": "Olten", "trips": 142 },
+        { "name": "Genève", "trips": 128 },
+        { "name": "Lausanne", "trips": 118 },
+        { "name": "Zürich Hardbrücke", "trips": 112 }
+      ]
+    },
+    {
+      "start": 720,
+      "end": 840,
+      "stations": [
+        { "name": "Zürich HB", "trips": 356 },
+        { "name": "Bern", "trips": 268 },
+        { "name": "Basel SBB", "trips": 148 },
+        { "name": "Winterthur", "trips": 142 },
+        { "name": "Luzern", "trips": 128 },
+        { "name": "Zürich Oerlikon", "trips": 124 },
+        { "name": "Olten", "trips": 112 },
+        { "name": "Genève", "trips": 104 },
+        { "name": "Lausanne", "trips": 96 },
+        { "name": "Aarau", "trips": 92 }
+      ]
+    }
+  ]
+}

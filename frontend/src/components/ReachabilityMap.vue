@@ -38,9 +38,9 @@ const svgRef = ref<SVGSVGElement | null>(null)
 let currentTransform = d3.zoomIdentity
 let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null
 
-// Fixed SVG coordinate space
-const VB_W = 900
-const VB_H = 500
+// Fixed SVG coordinate space (taller canvas ≈ “zoomed in” map on the page)
+const VB_W = 1000
+const VB_H = 560
 
 function stationColor(t: number | null): string {
   if (t === null) return '#ccc8c8'
@@ -94,7 +94,7 @@ function draw() {
   let projection: d3.GeoProjection
   if (boundary.value) {
     projection = d3.geoMercator().fitExtent(
-      [[20, 20], [VB_W - 20, VB_H - 20]],
+      [[48, 42], [VB_W - 48, VB_H - 42]],
       boundary.value as any,
     )
   } else {
@@ -230,8 +230,8 @@ watch([origin, departure], async () => {
     <!-- Map -->
     <div class="map-container">
       <div v-if="error" class="map-empty">
-        <p>Data files not found.</p>
-        <p>Run <code>python3 data/scripts/export_frontend_data.py</code> to generate them.</p>
+        <p>The map data isn’t here yet.</p>
+        <p>Try refreshing — if it keeps happening, the site may still be updating.</p>
       </div>
       <svg
         v-else
@@ -289,8 +289,8 @@ watch([origin, departure], async () => {
 .map-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 20px 24px 20px;
+  gap: 16px;
+  padding: 22px clamp(18px, 2.5vw, 28px) 24px;
 }
 
 /* ── Controls ── */
