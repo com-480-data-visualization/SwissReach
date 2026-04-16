@@ -297,10 +297,10 @@ function onEndInput(e: Event) {
 
 .chart-title {
   margin: 6px 0 0;
-  font-family: Georgia, 'Times New Roman', ui-serif, serif;
+  font-family: var(--swissreach-font-sans);
   font-size: 1.35rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   color: #1f1819;
 }
 

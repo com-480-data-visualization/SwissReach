@@ -151,7 +151,7 @@ const heroPreviewUrl = asset('preview/lausanne_reachability_0800_6h.png')
 
       <footer class="site-footer">
         <p class="footer-line">
-          SwissReach · EPFL COM-480 · public transport timetables, turned into colour and distance
+          SwissReach · EPFL COM-480 · public transport timetables, turned into colour and distance · Typography uses MiSans by Xiaomi
         </p>
         <p class="footer-links">
           <a :href="githubUrl" target="_blank" rel="noreferrer">GitHub</a>
@@ -160,6 +160,10 @@ const heroPreviewUrl = asset('preview/lausanne_reachability_0800_6h.png')
     </main>
   </div>
 </template>
+
+<style>
+@import '../../docs/public/fonts/misans/misans.css';
+</style>
 
 <style scoped>
 :global(html) {
@@ -175,8 +179,7 @@ const heroPreviewUrl = asset('preview/lausanne_reachability_0800_6h.png')
 
 :global(body) {
   margin: 0;
-  font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--swissreach-font-sans);
   background:
     radial-gradient(ellipse 120% 80% at 12% -10%, rgba(200, 79, 86, 0.11), transparent 42%),
     linear-gradient(180deg, #fff8f6 0%, #fffefc 38%, #fff 100%);
@@ -391,7 +394,7 @@ const heroPreviewUrl = asset('preview/lausanne_reachability_0800_6h.png')
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  font-family: Georgia, 'Times New Roman', ui-serif, serif;
+  font-family: var(--swissreach-font-sans);
   font-size: 1.45rem;
   font-weight: 600;
   color: #8a353a;
@@ -411,10 +414,10 @@ const heroPreviewUrl = asset('preview/lausanne_reachability_0800_6h.png')
 
 .chapter-title {
   margin: 6px 0 0;
-  font-family: Georgia, 'Times New Roman', ui-serif, serif;
+  font-family: var(--swissreach-font-sans);
   font-size: clamp(1.55rem, 2.2vw, 2rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   color: #1a1415;
   line-height: 1.15;
 }
@@ -487,7 +490,7 @@ const heroPreviewUrl = asset('preview/lausanne_reachability_0800_6h.png')
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  font-family: Georgia, ui-serif, serif;
+  font-family: var(--swissreach-font-sans);
   font-size: 1.1rem;
   font-weight: 600;
   color: #a8444b;
@@ -497,9 +500,9 @@ const heroPreviewUrl = asset('preview/lausanne_reachability_0800_6h.png')
 
 .folio-title {
   margin: 0;
-  font-family: Georgia, ui-serif, serif;
+  font-family: var(--swissreach-font-sans);
   font-size: 1.18rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #241c1e;
 }
 

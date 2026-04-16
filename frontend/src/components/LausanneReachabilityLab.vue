@@ -408,9 +408,9 @@ watch([windowMinutes, stations, boundary], async () => {
 
 .lab-title {
   margin: 6px 0 0;
-  font-family: Georgia, ui-serif, serif;
+  font-family: var(--swissreach-font-sans);
   font-size: 1.22rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1a1415;
 }
 
