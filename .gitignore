@@ -47,5 +47,8 @@ coverage/
 # Data
 data/raw_data/
 
+# VitePress pre-bundle cache (never commit)
+docs/.vitepress/cache/
+
 # Python cache
 __pycache__
