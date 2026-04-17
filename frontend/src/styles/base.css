@@ -17,7 +17,10 @@
   --radius-shell: 32px;
   --radius-card: 24px;
   --radius-pill: 999px;
-  --content-width: min(1440px, calc(100vw - 48px));
+  --page-max-width: 1360px;
+  --content-max-width: 1320px;
+  --page-inline-padding: clamp(12px, 1.8vw, 22px);
+  --content-width: min(var(--content-max-width), calc(100vw - (var(--page-inline-padding) * 2)));
   --section-gap: clamp(5rem, 7vw, 8rem);
   --copy-width: 48rem;
   font-family: var(--swissreach-font-sans);
@@ -238,7 +241,7 @@ button {
 
 @media (max-width: 720px) {
   :root {
-    --content-width: min(100vw - 24px, 1180px);
+    --page-inline-padding: 10px;
     --radius-shell: 24px;
     --radius-card: 20px;
   }

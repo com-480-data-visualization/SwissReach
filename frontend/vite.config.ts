@@ -2,7 +2,7 @@ import { fileURLToPath, URL } from 'node:url'
 import path from 'node:path'
 import fs from 'node:fs'
 
-import { defineConfig } from 'vite'
+import { defineConfig, searchForWorkspaceRoot } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import type { Plugin } from 'vite'
@@ -24,6 +24,7 @@ function serveDocsPublic(): Plugin {
               ext === '.json' ? 'application/json' :
               ext === '.csv'  ? 'text/csv' :
               ext === '.png'  ? 'image/png' :
+              ext === '.svg'  ? 'image/svg+xml' :
               ext === '.css'  ? 'text/css' :
               ext === '.woff' ? 'font/woff' :
               ext === '.woff2' ? 'font/woff2' :
@@ -56,6 +57,8 @@ function copyDocsFonts(): Plugin {
   }
 }
 
+const docsPublicDir = path.resolve(fileURLToPath(new URL('../docs/public', import.meta.url)))
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -64,6 +67,11 @@ export default defineConfig({
     serveDocsPublic(),
     copyDocsFonts(),
   ],
+  server: {
+    fs: {
+      allow: [searchForWorkspaceRoot(process.cwd()), docsPublicDir],
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

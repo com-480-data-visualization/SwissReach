@@ -61,8 +61,15 @@ function draw() {
 
   const rows = [...activePreset.value.stations].reverse()
   const w = container.clientWidth || 640
-  const h = 360
-  const margin = { top: 8, right: 28, bottom: 36, left: 132 }
+  const availableHeight = container.clientHeight || 360
+  const h = Math.max(Math.min(availableHeight, 360), 240)
+  const compact = h < 320 || w < 640
+  const margin = {
+    top: 8,
+    right: compact ? 20 : 28,
+    bottom: compact ? 32 : 36,
+    left: compact ? 112 : 132,
+  }
 
   const innerW = w - margin.left - margin.right
   const innerH = h - margin.top - margin.bottom
@@ -107,7 +114,7 @@ function draw() {
     .call(d3.axisBottom(x).ticks(5).tickSizeOuter(0))
     .selectAll('text')
     .attr('fill', '#7a6568')
-    .attr('font-size', '11px')
+    .attr('font-size', compact ? '10px' : '11px')
 
   g.selectAll('.x-axis path, .x-axis line')
     .transition(t as any)
@@ -115,10 +122,10 @@ function draw() {
 
   g.select('.x-axis-label')
     .attr('x', innerW)
-    .attr('y', innerH + 30)
+    .attr('y', innerH + (compact ? 26 : 30))
     .attr('text-anchor', 'end')
     .attr('fill', '#8a7070')
-    .attr('font-size', '11px')
+    .attr('font-size', compact ? '10px' : '11px')
     .text('Unique rail trips')
 
   g.selectAll('rect.bar')
@@ -155,7 +162,7 @@ function draw() {
         .attr('dy', '0.35em')
         .attr('text-anchor', 'end')
         .attr('fill', '#3d3335')
-        .attr('font-size', '11px')
+        .attr('font-size', compact ? '10px' : '11px')
         .attr('font-weight', '600')
         .text((d: any) => d.name)
         .attr('opacity', 0)
@@ -163,35 +170,38 @@ function draw() {
       update => update
         .call(u => u.transition(t as any)
           .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+          .attr('font-size', compact ? '10px' : '11px')
           .attr('opacity', 1)
         ),
       exit => exit.call(ex => ex.transition(t as any).attr('opacity', 0).remove())
     )
 
-  g.selectAll('text.val')
-    .data(rows, (d: any) => d.name)
+  g.selectAll<SVGTextElement, Row>('text.val')
+    .data(rows, (d: Row) => d.name)
     .join(
       enter => enter.append('text')
         .attr('class', 'val')
-        .attr('x', (d: any) => x(d.trips) + 6)
-        .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+        .attr('x', (d: Row) => x(d.trips) + 6)
+        .attr('y', (d: Row) => (y(d.name) || 0) + y.bandwidth() / 2)
         .attr('dy', '0.35em')
         .attr('fill', '#5b4b4d')
-        .attr('font-size', '10px')
+        .attr('font-size', compact ? '9px' : '10px')
         .attr('opacity', 0)
-        .text((d: any) => d.trips)
+        .text((d: Row) => d.trips)
         .call(e => e.transition(t as any).attr('opacity', 1)),
       update => update
         .call(u => u.transition(t as any)
-          .attr('x', (d: any) => x(d.trips) + 6)
-          .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+          .attr('x', (d: Row) => x(d.trips) + 6)
+          .attr('y', (d: Row) => (y(d.name) || 0) + y.bandwidth() / 2)
+          .attr('font-size', compact ? '9px' : '10px')
           .attr('opacity', 1)
-          .tween('text', function(this: SVGTextElement, d: any) {
-            const startStr = this.textContent || '0'
+          .tween('text', function(d: Row) {
+            const node = this as SVGTextElement
+            const startStr = node.textContent || '0'
             const startVal = parseInt(startStr.replace(/,/g, ''), 10) || 0
             const iter = d3.interpolateRound(startVal, d.trips)
             return function(tParam: number) {
-              this.textContent = iter(tParam).toString()
+              node.textContent = iter(tParam).toString()
             }
           })
         ),
@@ -250,11 +260,6 @@ function onEndInput(e: Event) {
     <div class="chart-heading">
       <span class="chart-kicker">Load</span>
       <h3 class="chart-title">Where the morning concentrates</h3>
-      <p class="chart-lead">
-        Drag the morning open or shut. Each bar is a doorway: how many <em>different</em> trains touch that platform
-        while your window is running. The reds are the crowd favourites; the pale yellows are still busy, just not
-        centre stage.
-      </p>
     </div>
 
     <div v-if="loadError" class="chart-fallback">
@@ -336,17 +341,17 @@ function onEndInput(e: Event) {
   color: #1f1819;
 }
 
-.chart-lead {
-  margin: 10px 0 0;
-  font-size: 0.88rem;
-  line-height: 1.55;
-  color: #6b5c5e;
-}
-
 .chart-fallback {
   font-size: 0.86rem;
   color: #7a4b4f;
   line-height: 1.55;
+}
+
+.chart-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .chart-fallback code {
@@ -427,13 +432,64 @@ function onEndInput(e: Event) {
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-height: 0;
+  min-height: 240px;
 }
 
 .chart-svg {
   display: block;
   width: 100%;
+  height: 100%;
   flex: 1;
-  min-height: 0;
+  min-height: 240px;
+}
+
+@media (max-height: 860px) {
+  .chart-shell {
+    gap: 14px;
+    padding: 18px 20px 22px;
+  }
+
+  .chart-title {
+    font-size: 1.2rem;
+  }
+
+  .sliders {
+    gap: 14px 20px;
+  }
+
+  .slider-block {
+    min-width: 170px;
+  }
+}
+
+@media (max-height: 760px) {
+  .chart-shell {
+    gap: 12px;
+    padding: 16px 18px 18px;
+  }
+
+  .chart-kicker,
+  .slider-label {
+    font-size: 0.64rem;
+  }
+
+  .chart-title {
+    font-size: 1.08rem;
+  }
+
+  .slider-value,
+  .window-pill,
+  .window-approx {
+    font-size: 0.74rem;
+  }
+
+  .window-line {
+    gap: 8px 10px;
+  }
+
+  .chart-wrap,
+  .chart-svg {
+    min-height: 220px;
+  }
 }
 </style>

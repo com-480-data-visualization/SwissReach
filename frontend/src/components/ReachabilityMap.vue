@@ -27,12 +27,14 @@ const DEPARTURES = [
 const origin    = ref('lausanne')
 const departure = ref('0800')
 const loading   = ref(false)
+const mapReady  = ref(false)
 const error     = ref(false)
 const stations  = ref<Station[]>([])
 const boundary  = ref<object | null>(null)
 const tooltip   = ref({ visible: false, x: 0, y: 0, name: '', minutes: null as number | null })
 
 const svgRef = ref<SVGSVGElement | null>(null)
+const skeletonUrl = `${import.meta.env.BASE_URL}data/swiss_boundary_skeleton.svg`.replace(/\/{2,}/g, '/')
 
 // Persist zoom across origin/departure switches
 let currentTransform = d3.zoomIdentity
@@ -42,6 +44,12 @@ let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null
 const vbWidth = ref(1000)
 const vbHeight = ref(560)
 let resizeObserver: ResizeObserver | null = null
+
+function waitForPaint(): Promise<void> {
+  return new Promise(resolve => {
+    requestAnimationFrame(() => resolve())
+  })
+}
 
 function stationColor(t: number | null): string {
   if (t === null) return '#ccc8c8'
@@ -63,6 +71,7 @@ function hoverR(d: Station) { return d.travel_minutes === 0 ? 8 : 5 }
 
 async function loadStations() {
   loading.value = true
+  mapReady.value = false
   error.value   = false
   try {
     const res = await fetch(`/data/reachability_${origin.value}_${departure.value}.json`)
@@ -78,9 +87,11 @@ async function loadStations() {
 
 async function loadBoundary() {
   try {
-    const res = await fetch('/data/swiss_boundary_wgs84.geojson')
+    const res = await fetch(`${import.meta.env.BASE_URL}data/swiss_boundary_wgs84.geojson`.replace(/\/{2,}/g, '/'))
     if (res.ok) boundary.value = await res.json()
-  } catch { /* boundary is optional */ }
+  } catch {
+    boundary.value = null
+  }
 }
 
 function draw() {
@@ -187,6 +198,16 @@ function resetZoom() {
     .call(zoomBehavior.transform, d3.zoomIdentity)
 }
 
+async function revealMap() {
+  if (error.value || stations.value.length === 0) {
+    mapReady.value = false
+    return
+  }
+  draw()
+  await waitForPaint()
+  mapReady.value = true
+}
+
 onMounted(async () => {
   await Promise.all([loadStations(), loadBoundary()])
   await nextTick()
@@ -197,13 +218,14 @@ onMounted(async () => {
       if (entry) {
         vbWidth.value = Math.round(entry.contentRect.width) || 1000
         vbHeight.value = Math.round(entry.contentRect.height) || 560
-        draw()
+        if (stations.value.length > 0 && !error.value) {
+          draw()
+        }
       }
     })
     resizeObserver.observe(svgRef.value.parentElement)
-  } else {
-    draw()
   }
+  await revealMap()
 })
 
 onUnmounted(() => {
@@ -215,7 +237,7 @@ onUnmounted(() => {
 watch([origin, departure], async () => {
   await loadStations()
   await nextTick()
-  draw()
+  await revealMap()
 })
 </script>
 
@@ -248,6 +270,9 @@ watch([origin, departure], async () => {
 
     <!-- Map -->
     <div class="map-container">
+      <div v-if="!error && (!mapReady || loading)" class="map-skeleton" aria-hidden="true">
+        <img :src="skeletonUrl" alt="" class="map-skeleton__outline" />
+      </div>
       <div v-if="error" class="map-empty">
         <p>The map data isn’t here yet.</p>
         <p>Try refreshing — if it keeps happening, the site may still be updating.</p>
@@ -256,6 +281,7 @@ watch([origin, departure], async () => {
         v-else
         ref="svgRef"
         class="map-svg"
+        :class="{ 'is-ready': mapReady && !loading }"
         :viewBox="`0 0 ${vbWidth} ${vbHeight}`"
         overflow="hidden"
       />
@@ -401,6 +427,33 @@ watch([origin, departure], async () => {
   width: 100%;
   flex: 1;
   min-height: 0;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.map-svg.is-ready {
+  opacity: 1;
+}
+
+.map-skeleton {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: #d8dfe8;
+  z-index: 1;
+}
+
+.map-skeleton__outline {
+  width: 100%;
+  height: 100%;
+}
+
+.map-skeleton__land {
+  fill: rgba(255, 255, 255, 0.52);
+  stroke: rgba(125, 138, 122, 0.7);
+  stroke-width: 1.25;
 }
 
 .map-empty {

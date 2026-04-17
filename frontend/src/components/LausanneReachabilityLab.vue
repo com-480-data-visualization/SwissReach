@@ -19,18 +19,26 @@ const depMinutes = computed(() => DEPARTURES_MIN[depIndex.value]!)
 const windowMinutes = ref(360)
 
 const loading = ref(false)
+const mapReady = ref(false)
 const error = ref(false)
 const stations = ref<Station[]>([])
 const boundary = ref<object | null>(null)
 const tooltip = ref({ visible: false, x: 0, y: 0, name: '', raw: null as number | null, inWindow: true })
 
 const svgRef = ref<SVGSVGElement | null>(null)
+const skeletonUrl = `${import.meta.env.BASE_URL}data/swiss_boundary_skeleton.svg`.replace(/\/{2,}/g, '/')
 let currentTransform = d3.zoomIdentity
 let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null
 
 const vbWidth = ref(1000)
 const vbHeight = ref(560)
 let resizeObserver: ResizeObserver | null = null
+
+function waitForPaint(): Promise<void> {
+  return new Promise(resolve => {
+    requestAnimationFrame(() => resolve())
+  })
+}
 
 const dataBase = `${import.meta.env.BASE_URL}data/`.replace(/\/{2,}/g, '/')
 
@@ -110,6 +118,7 @@ const reachableStats = computed(() => {
 
 async function loadStations() {
   loading.value = true
+  mapReady.value = false
   error.value = false
   try {
     const tag = depFileTag(depMinutes.value)
@@ -130,7 +139,7 @@ async function loadBoundary() {
     const res = await fetch(`${dataBase}swiss_boundary_wgs84.geojson`)
     if (res.ok) boundary.value = await res.json()
   } catch {
-    /* optional */
+    boundary.value = null
   }
 }
 
@@ -240,6 +249,16 @@ function resetZoom() {
   d3.select(svgRef.value).transition().duration(350).call(zoomBehavior.transform, d3.zoomIdentity)
 }
 
+async function revealMap() {
+  if (error.value || stations.value.length === 0) {
+    mapReady.value = false
+    return
+  }
+  draw()
+  await waitForPaint()
+  mapReady.value = true
+}
+
 onMounted(async () => {
   await Promise.all([loadStations(), loadBoundary()])
   await nextTick()
@@ -250,13 +269,14 @@ onMounted(async () => {
       if (entry) {
         vbWidth.value = Math.round(entry.contentRect.width) || 1000
         vbHeight.value = Math.round(entry.contentRect.height) || 560
-        draw()
+        if (stations.value.length > 0 && !error.value) {
+          draw()
+        }
       }
     })
     resizeObserver.observe(svgRef.value.parentElement)
-  } else {
-    draw()
   }
+  await revealMap()
 })
 
 onUnmounted(() => {
@@ -268,10 +288,11 @@ onUnmounted(() => {
 watch(depIndex, async () => {
   await loadStations()
   await nextTick()
-  draw()
+  await revealMap()
 })
 
 watch([windowMinutes, stations, boundary], async () => {
+  if (!mapReady.value || loading.value || error.value || stations.value.length === 0) return
   await nextTick()
   draw()
 })
@@ -300,6 +321,9 @@ watch([windowMinutes, stations, boundary], async () => {
     </div>
 
     <div class="lab-map-container">
+      <div v-if="!error && (!mapReady || loading)" class="lab-skeleton" aria-hidden="true">
+        <img :src="skeletonUrl" alt="" class="lab-skeleton__outline" />
+      </div>
       <div v-if="error" class="lab-empty">
         <p>This Lausanne map couldn’t load. Check your connection and try a refresh.</p>
       </div>
@@ -307,6 +331,7 @@ watch([windowMinutes, stations, boundary], async () => {
         v-else
         ref="svgRef"
         class="lab-svg"
+        :class="{ 'is-ready': mapReady && !loading }"
         :viewBox="`0 0 ${vbWidth} ${vbHeight}`"
         overflow="hidden"
       />
@@ -458,6 +483,33 @@ watch([windowMinutes, stations, boundary], async () => {
   width: 100%;
   flex: 1;
   min-height: 0;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.lab-svg.is-ready {
+  opacity: 1;
+}
+
+.lab-skeleton {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: #d8dfe8;
+  z-index: 1;
+}
+
+.lab-skeleton__outline {
+  width: 100%;
+  height: 100%;
+}
+
+.lab-skeleton__land {
+  fill: rgba(255, 255, 255, 0.52);
+  stroke: rgba(125, 138, 122, 0.7);
+  stroke-width: 1.25;
 }
 
 .lab-empty {
