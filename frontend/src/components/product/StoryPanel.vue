@@ -37,25 +37,22 @@ defineProps<{
 
 <style scoped>
 .story-panel {
-  width: 100%;
   height: 100svh;
   display: flex;
   align-items: center;
   padding:
     clamp(6.5rem, 10vw, 7.75rem)
-    clamp(2rem, 5vw, 4.5rem)
+    0
     clamp(4.5rem, 8vw, 6rem);
 }
 
 .story-panel__inner {
   width: 100%;
   height: 100%;
-  max-width: 1440px;
   max-height: calc(100svh - 8rem);
   display: flex;
   flex-direction: column;
   gap: clamp(1.2rem, 2.5vw, 2.2rem);
-  margin: 0 auto;
   padding: clamp(0.6rem, 1.4vw, 1rem);
 }
 
@@ -160,7 +157,7 @@ defineProps<{
 @media (max-width: 720px) {
   .story-panel {
     height: 100dvh;
-    padding: 5.7rem 0.75rem 4.5rem;
+    padding: 5.7rem 0 4.5rem;
   }
 
   .story-panel__description {
