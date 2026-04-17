@@ -91,7 +91,7 @@ export const storyPanels: StoryPanelContent[] = [
     navLabel: 'Busiest Rail',
     eyebrow: 'Network Density',
     title: 'Swiss Rail Backbone',
-    description: 'Visualizing the busiest arteries and transfer hubs in the network based on daily train traffic.',
+    description: 'Visualizing the busiest arteries and transfer hubs in the network based on daily train traffic. Drag the morning window open or shut to see how many different trains touch each platform, and where the crowd favourites start to dominate.',
     highlights: [
       'Flows scaled to actual train volumes.',
       'Highlighting the core network structure.',
