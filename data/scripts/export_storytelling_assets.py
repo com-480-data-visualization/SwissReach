@@ -53,7 +53,7 @@ from reachability import (
     compute_active_services,
     load_active_stop_times,
 )
-from spatial import load_swiss_boundary
+from spatial import filter_stops_within_switzerland, load_swiss_boundary
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw_data"
@@ -166,11 +166,8 @@ def build_reachability_context():
     rail_trips = filter_rail_trips(trips_df, rail_routes)
     rail_stop_ids = filter_rail_stop_ids(stop_times_raw, rail_trips)
 
-    train_stops = stops_df[
-        stops_df["stop_id"].astype(str).isin([str(s) for s in rail_stop_ids])
-        & stops_df["stop_lat"].between(45.80, 47.85)
-        & stops_df["stop_lon"].between(5.90, 10.55)
-    ].copy()
+    rail_stops_df = stops_df[stops_df["stop_id"].astype(str).isin([str(s) for s in rail_stop_ids])].copy()
+    train_stops = filter_stops_within_switzerland(rail_stops_df, boundary_wgs84)
     swiss_train_meta = build_station_meta(train_stops)
 
     active_services = compute_active_services(

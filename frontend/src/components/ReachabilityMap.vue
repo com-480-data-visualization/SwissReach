@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, watch, nextTick } from 'vue'
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import * as d3 from 'd3'
 
 interface Station {
@@ -38,9 +38,10 @@ const svgRef = ref<SVGSVGElement | null>(null)
 let currentTransform = d3.zoomIdentity
 let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null
 
-// Fixed SVG coordinate space (taller canvas ≈ “zoomed in” map on the page)
-const VB_W = 1000
-const VB_H = 560
+// Dynamic SVG coordinate space
+const vbWidth = ref(1000)
+const vbHeight = ref(560)
+let resizeObserver: ResizeObserver | null = null
 
 function stationColor(t: number | null): string {
   if (t === null) return '#ccc8c8'
@@ -94,14 +95,14 @@ function draw() {
   let projection: d3.GeoProjection
   if (boundary.value) {
     projection = d3.geoMercator().fitExtent(
-      [[48, 42], [VB_W - 48, VB_H - 42]],
+      [[24, 24], [vbWidth.value - 24, vbHeight.value - 24]],
       boundary.value as any,
     )
   } else {
     projection = d3.geoMercator()
       .scale(9000)
       .center([8.23, 46.825])
-      .translate([VB_W / 2, VB_H / 2])
+      .translate([vbWidth.value / 2, vbHeight.value / 2])
   }
 
   const k = currentTransform.k
@@ -162,7 +163,6 @@ function draw() {
   // ── Zoom behavior ────────────────────────────────────────────────────
   zoomBehavior = d3.zoom<SVGSVGElement, unknown>()
     .scaleExtent([1, 20])
-    .translateExtent([[0, 0], [VB_W, VB_H]])
     .on('zoom', (event: d3.D3ZoomEvent<SVGSVGElement, unknown>) => {
       currentTransform = event.transform
       const zg = d3.select(svgRef.value!).select<SVGGElement>('g.zoom-layer')
@@ -190,7 +190,26 @@ function resetZoom() {
 onMounted(async () => {
   await Promise.all([loadStations(), loadBoundary()])
   await nextTick()
-  draw()
+  
+  if (svgRef.value && svgRef.value.parentElement) {
+    resizeObserver = new ResizeObserver((entries) => {
+      const entry = entries[0]
+      if (entry) {
+        vbWidth.value = Math.round(entry.contentRect.width) || 1000
+        vbHeight.value = Math.round(entry.contentRect.height) || 560
+        draw()
+      }
+    })
+    resizeObserver.observe(svgRef.value.parentElement)
+  } else {
+    draw()
+  }
+})
+
+onUnmounted(() => {
+  if (resizeObserver) {
+    resizeObserver.disconnect()
+  }
 })
 
 watch([origin, departure], async () => {
@@ -237,7 +256,7 @@ watch([origin, departure], async () => {
         v-else
         ref="svgRef"
         class="map-svg"
-        :viewBox="`0 0 ${VB_W} ${VB_H}`"
+        :viewBox="`0 0 ${vbWidth} ${vbHeight}`"
         overflow="hidden"
       />
     </div>
@@ -257,32 +276,31 @@ watch([origin, departure], async () => {
       </div>
     </div>
 
+    <!-- Tooltip -->
+    <Teleport to="body">
+      <div
+        v-if="tooltip.visible"
+        :style="{
+          position: 'fixed',
+          left: tooltip.x + 'px',
+          top:  tooltip.y + 'px',
+          background: 'white',
+          border: '1px solid rgba(184,68,75,0.18)',
+          borderRadius: '10px',
+          padding: '8px 13px',
+          pointerEvents: 'none',
+          boxShadow: '0 4px 18px rgba(64,24,26,0.13)',
+          zIndex: 9999,
+          fontSize: '0.84rem',
+          color: '#271f20',
+          minWidth: '130px',
+        }"
+      >
+        <div style="font-weight: 700; margin-bottom: 2px">{{ tooltip.name }}</div>
+        <div style="color: #7a4b4f">{{ formatTime(tooltip.minutes) }}</div>
+      </div>
+    </Teleport>
   </div>
-
-  <!-- Tooltip -->
-  <Teleport to="body">
-    <div
-      v-if="tooltip.visible"
-      :style="{
-        position: 'fixed',
-        left: tooltip.x + 'px',
-        top:  tooltip.y + 'px',
-        background: 'white',
-        border: '1px solid rgba(184,68,75,0.18)',
-        borderRadius: '10px',
-        padding: '8px 13px',
-        pointerEvents: 'none',
-        boxShadow: '0 4px 18px rgba(64,24,26,0.13)',
-        zIndex: 9999,
-        fontSize: '0.84rem',
-        color: '#271f20',
-        minWidth: '130px',
-      }"
-    >
-      <div style="font-weight: 700; margin-bottom: 2px">{{ tooltip.name }}</div>
-      <div style="color: #7a4b4f">{{ formatTime(tooltip.minutes) }}</div>
-    </div>
-  </Teleport>
 </template>
 
 <style scoped>
@@ -369,16 +387,20 @@ watch([origin, departure], async () => {
 .map-container {
   position: relative;
   width: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
   border-radius: 14px;
   overflow: hidden;
-  border: 1px solid rgba(184, 68, 75, 0.1);
   background: #d8dfe8;   /* ocean/background color outside Switzerland */
 }
 
 .map-svg {
   display: block;
   width: 100%;
-  height: auto;
+  flex: 1;
+  min-height: 0;
 }
 
 .map-empty {
