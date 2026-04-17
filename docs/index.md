@@ -13,6 +13,9 @@ hero:
       text: Final web plan
       link: /final-web-plan
     - theme: alt
+      text: Milestone 2
+      link: /milestone2
+    - theme: alt
       text: Methodology
       link: /methodology
 
@@ -45,6 +48,7 @@ Current story layers:
 
 - [Insights](/insights): the three main analytical views, exported figures, and project framing note
 - [Milestone 1 Report](/milestone1): dataset choice, project framing, exploratory findings, and scope decisions
+- [Milestone 2 Report](/milestone2): final-product goal, visualization sketches, tools, implementation plan, and prototype review
 - [Final web plan](/final-web-plan): planned narrative structure for the final website (transport + supermarkets)
 - [Methodology](/methodology): preprocessing pipeline, reachability model, POI integration, and current limitations
 - [Related Work](/related-work): references, inspirations, and originality of the current approach

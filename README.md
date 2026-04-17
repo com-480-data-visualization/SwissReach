@@ -12,6 +12,8 @@ Our documentation website is available at [swissreach.online/docs](https://swiss
 
 Our Milestone 1 report is available at [swissreach.online/docs/milestone1](https://swissreach.online/docs/milestone1).
 
+Our Milestone 2 report is available at [swissreach.online/docs/milestone2](https://swissreach.online/docs/milestone2).
+
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1 (20th March, 5pm)
@@ -51,6 +53,8 @@ Please, fill the following sections about your project.
 ## Milestone 2 (17th April, 5pm)
 
 **10% of the final grade**
+
+Our Milestone 2 report is available at [swissreach.online/docs/milestone2](https://swissreach.online/docs/milestone2).
 
 
 ## Milestone 3 (29th May, 5pm)
