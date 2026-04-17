@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Thin.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Thin.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-ExtraLight.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-ExtraLight.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Light.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Regular.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Medium.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Demibold.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Demibold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Semibold.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Semibold.woff2') format('woff2');
   font-weight: 650;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Bold.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/fonts/misans/woff2/MiSansLatin-Heavy.woff2') format('woff2');
+  src: url('./woff2/MiSansLatin-Heavy.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
