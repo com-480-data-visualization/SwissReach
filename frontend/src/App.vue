@@ -129,7 +129,7 @@ const jumpToAnchor = (index: number) => {
   unlockTimer = window.setTimeout(() => {
     scrollLock = false
     unlockTimer = null
-  }, 420)
+  }, 600)
 }
 
 const stepAnchor = (direction: 1 | -1) => {
@@ -216,7 +216,7 @@ const handleBacktopClick = () => {
 onMounted(() => {
   observer = Observer.create({
     target: window,
-    type: 'wheel,touch,pointer',
+    type: 'wheel,touch',
     tolerance: 18,
     preventDefault: true,
     onDown: () => stepAnchor(1),

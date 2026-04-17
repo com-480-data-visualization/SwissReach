@@ -23,7 +23,8 @@ defineProps<{
   position: relative;
   margin: 0;
   width: 100%;
-  height: min(48rem, 80svh); 
+  height: 100%; 
+  min-height: 0;
   border-radius: var(--radius-shell);
   overflow: hidden;
   padding: 0;
@@ -46,9 +47,5 @@ defineProps<{
   box-sizing: border-box;
 }
 
-@media (max-width: 1024px) {
-  .media-shell {
-    height: 50vh;
-  }
-}
+
 </style>

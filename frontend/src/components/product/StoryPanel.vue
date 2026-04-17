@@ -18,28 +18,12 @@ defineProps<{
   >
     <div class="story-panel__inner">
       <div class="story-panel__copy">
-        <div class="story-panel__count">
-          <span>{{ String(panelIndex + 1).padStart(2, '0') }}</span>
-          <span>{{ String(panelCount).padStart(2, '0') }}</span>
+        <div class="story-panel__copy-main">
+          <p class="story-panel__eyebrow">{{ panel.eyebrow }}</p>
+          <h3 class="story-panel__title">{{ panel.title }}</h3>
         </div>
-
-        <p class="story-panel__eyebrow">{{ panel.eyebrow }}</p>
-        <h3 class="story-panel__title">{{ panel.title }}</h3>
-        <p class="story-panel__description">{{ panel.description }}</p>
-
-        <ul class="story-panel__highlights">
-          <li v-for="highlight in panel.highlights" :key="highlight">
-            {{ highlight }}
-          </li>
-        </ul>
-
-        <div class="story-panel__metrics">
-          <article v-for="metric in panel.metrics" :key="metric.value" class="metric-chip">
-            <span class="metric-chip__value" :data-tone="metric.tone ?? 'neutral'">
-              {{ metric.value }}
-            </span>
-            <span class="metric-chip__label">{{ metric.label }}</span>
-          </article>
+        <div class="story-panel__copy-side">
+          <p class="story-panel__description">{{ panel.description }}</p>
         </div>
       </div>
 
@@ -65,20 +49,34 @@ defineProps<{
 
 .story-panel__inner {
   width: 100%;
+  height: 100%;
   max-width: 1440px;
-  max-height: calc(100svh - 12rem);
-  display: grid;
-  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.04fr);
-  gap: clamp(1.5rem, 3vw, 3.2rem);
-  align-items: center;
+  max-height: calc(100svh - 8rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.2rem, 2.5vw, 2.2rem);
   margin: 0 auto;
   padding: clamp(0.6rem, 1.4vw, 1rem);
 }
 
 .story-panel__copy {
   display: grid;
-  gap: 0.8rem;
-  align-content: center;
+  grid-template-columns: 1fr 1.5fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  width: 100%;
+}
+
+.story-panel__copy-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.story-panel__copy-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .story-panel__count {
@@ -107,56 +105,28 @@ defineProps<{
 
 .story-panel__title {
   margin: 0;
-  max-width: 14ch;
+  max-width: 25ch;
   color: var(--ink-strong);
-  font-size: clamp(1.85rem, 2.6vw, 2.8rem);
-  line-height: 1.05;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  line-height: 1.02;
   letter-spacing: -0.045em;
   font-weight: 700;
 }
 
 .story-panel__description {
   margin: 0;
-  max-width: 38rem;
+  max-width: 55rem;
   color: var(--ink-soft);
-  font-size: 0.96rem;
-  line-height: 1.65;
-}
-
-.story-panel__highlights {
-  display: grid;
-  gap: 0.55rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.story-panel__highlights li {
-  position: relative;
-  padding-left: 1rem;
-  color: var(--ink);
-  line-height: 1.55;
-}
-
-.story-panel__highlights li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.7rem;
-  width: 0.42rem;
-  height: 0.42rem;
-  border-radius: 999px;
-  background: rgba(189, 45, 45, 0.55);
-}
-
-.story-panel__metrics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.85rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding-bottom: 0;
 }
 
 .story-panel__media-wrap {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
   gap: 0.8rem;
   align-self: stretch;
 }
@@ -177,12 +147,10 @@ defineProps<{
 
 @media (max-width: 1024px) {
   .story-panel__inner {
-    grid-template-columns: 1fr;
     max-height: calc(100svh - 11rem);
-    gap: 1rem;
-    overflow-y: auto;
     padding-right: 0.25rem;
   }
+
 
   .story-panel__title {
     max-width: none;
