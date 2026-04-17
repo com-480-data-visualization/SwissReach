@@ -264,17 +264,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014471",
-    "station_name":"Albbruck",
-    "stop_lat":47.59223262,
-    "stop_lon":8.13177453,
-    "supermarkets_30min":2,
-    "schools_30min":7,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504072",
     "station_name":"Albeuve",
     "stop_lat":46.51777598,
@@ -304,17 +293,6 @@
     "supermarkets_30min":8,
     "schools_30min":8,
     "hospitals_30min":2,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014581",
-    "station_name":"Allensbach",
-    "stop_lat":47.71446642,
-    "stop_lon":9.06885212,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -385,32 +363,10 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8101238",
-    "station_name":"Altenstadt (Feldkirch)",
-    "stop_lat":47.25609539,
-    "stop_lon":9.6155668,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506389",
     "station_name":"Alter Zoll",
     "stop_lat":47.36858244,
     "stop_lon":9.5220432,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718223",
-    "station_name":"Altkirch",
-    "stop_lat":47.6270197,
-    "stop_lon":7.23904677,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -500,21 +456,10 @@
     "stop_lat":47.59367447,
     "stop_lon":8.67671953,
     "supermarkets_30min":33,
-    "schools_30min":70,
-    "hospitals_30min":2,
+    "schools_30min":72,
+    "hospitals_30min":3,
     "ikea_60min":3,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8771510",
-    "station_name":"Andelot",
-    "stop_lat":46.85949402,
-    "stop_lon":5.9235359,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8505165",
@@ -526,28 +471,6 @@
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774600",
-    "station_name":"Annecy",
-    "stop_lat":45.90212168,
-    "stop_lon":6.12163239,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774549",
-    "station_name":"Annemasse",
-    "stop_lat":46.19934409,
-    "stop_lon":6.23640115,
-    "supermarkets_30min":81,
-    "schools_30min":189,
-    "hospitals_30min":24,
-    "ikea_60min":2,
-    "has_ikea_60min":true
   },
   {
     "station_key":"Parent8506286",
@@ -594,17 +517,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8301203",
-    "station_name":"Arcisate",
-    "stop_lat":45.85810168,
-    "stop_lon":8.86259893,
-    "supermarkets_30min":7,
-    "schools_30min":8,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509266",
     "station_name":"Ardez",
     "stop_lat":46.77355811,
@@ -644,17 +556,6 @@
     "stop_lon":6.85305866,
     "supermarkets_30min":8,
     "schools_30min":17,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774685",
-    "station_name":"Argenti\u00e8re (Haute-Savoie)",
-    "stop_lat":45.98217992,
-    "stop_lon":6.9278434,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -770,17 +671,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014416",
-    "station_name":"Auggen",
-    "stop_lat":47.78995079,
-    "stop_lon":7.58678461,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8507472",
     "station_name":"Ausserberg",
     "stop_lat":46.31208571,
@@ -821,17 +711,6 @@
     "supermarkets_30min":16,
     "schools_30min":14,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771855",
-    "station_name":"Avoudrey",
-    "stop_lat":47.12974175,
-    "stop_lon":6.43455153,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -880,17 +759,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014418",
-    "station_name":"Bad Bellingen",
-    "stop_lat":47.73080105,
-    "stop_lon":7.55759835,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509004",
     "station_name":"Bad Ragaz",
     "stop_lat":47.01030945,
@@ -902,23 +770,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014466",
-    "station_name":"Bad S\u00e4ckingen",
-    "stop_lat":47.55585831,
-    "stop_lon":7.94862601,
-    "supermarkets_30min":2,
-    "schools_30min":4,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503409",
     "station_name":"Bad Zurzach",
     "stop_lat":47.58807043,
     "stop_lon":8.29600453,
-    "supermarkets_30min":20,
-    "schools_30min":37,
+    "supermarkets_30min":21,
+    "schools_30min":38,
     "hospitals_30min":2,
     "ikea_60min":5,
     "has_ikea_60min":true
@@ -1034,34 +891,12 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718211",
-    "station_name":"Bartenheim",
-    "stop_lat":47.63510753,
-    "stop_lon":7.48725128,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718420",
-    "station_name":"Bas \u00c9vette",
-    "stop_lat":47.68096532,
-    "stop_lon":6.80681339,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500090",
     "station_name":"Basel Bad Bf",
     "stop_lat":47.56730906,
     "stop_lon":7.60691586,
     "supermarkets_30min":59,
-    "schools_30min":63,
+    "schools_30min":64,
     "hospitals_30min":4,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -1083,8 +918,8 @@
     "stop_lat":47.54741261,
     "stop_lon":7.58956041,
     "supermarkets_30min":184,
-    "schools_30min":255,
-    "hospitals_30min":18,
+    "schools_30min":256,
+    "hospitals_30min":19,
     "ikea_60min":1,
     "has_ikea_60min":true
   },
@@ -1116,7 +951,7 @@
     "stop_lat":47.57595154,
     "stop_lon":7.57295056,
     "supermarkets_30min":3,
-    "schools_30min":2,
+    "schools_30min":3,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -1175,17 +1010,6 @@
     "hospitals_30min":0,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8771846",
-    "station_name":"Baume-les-Dames",
-    "stop_lat":47.35402725,
-    "stop_lon":6.35944339,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501113",
@@ -1261,28 +1085,6 @@
     "supermarkets_30min":33,
     "schools_30min":38,
     "hospitals_30min":4,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718400",
-    "station_name":"Belfort",
-    "stop_lat":47.63336415,
-    "stop_lon":6.85362459,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8730082",
-    "station_name":"Belfort-Montb\u00e9liard TGV",
-    "stop_lat":47.58593771,
-    "stop_lon":6.89763306,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -1435,8 +1237,8 @@
     "stop_lat":47.6949887,
     "stop_lon":8.57444634,
     "supermarkets_30min":30,
-    "schools_30min":62,
-    "hospitals_30min":4,
+    "schools_30min":66,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -1446,8 +1248,8 @@
     "stop_lat":47.69536962,
     "stop_lon":8.59217908,
     "supermarkets_30min":30,
-    "schools_30min":62,
-    "hospitals_30min":4,
+    "schools_30min":66,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -1458,17 +1260,6 @@
     "stop_lon":9.02202294,
     "supermarkets_30min":0,
     "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014624",
-    "station_name":"Bermatingen-Ahausen",
-    "stop_lat":47.73048686,
-    "stop_lon":9.34515593,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -1617,50 +1408,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8730086",
-    "station_name":"Besan\u00e7on Franche-Comt\u00e9 TGV",
-    "stop_lat":47.30756011,
-    "stop_lon":5.95267725,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771801",
-    "station_name":"Besan\u00e7on Mouill\u00e8re",
-    "stop_lat":47.24049069,
-    "stop_lon":6.03403766,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771800",
-    "station_name":"Besan\u00e7on Viotte",
-    "stop_lat":47.24732708,
-    "stop_lon":6.02200024,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8301141",
-    "station_name":"Besozzo",
-    "stop_lat":45.84256535,
-    "stop_lon":8.66326277,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500203",
     "station_name":"Bettlach",
     "stop_lat":47.19491868,
@@ -1692,17 +1439,6 @@
     "hospitals_30min":2,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014463",
-    "station_name":"Beuggen",
-    "stop_lat":47.58190833,
-    "stop_lon":7.81091428,
-    "supermarkets_30min":2,
-    "schools_30min":3,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8504206",
@@ -1870,17 +1606,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014491",
-    "station_name":"Bietingen",
-    "stop_lat":47.74401971,
-    "stop_lon":8.73891888,
-    "supermarkets_30min":12,
-    "schools_30min":27,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508263",
     "station_name":"Bigenthal",
     "stop_lat":46.96539817,
@@ -2013,17 +1738,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718257",
-    "station_name":"Bitschwiller-l\u00e8s-Thann",
-    "stop_lat":47.82772429,
-    "stop_lon":7.0783202,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501096",
     "station_name":"Bi\u00e8re",
     "stop_lat":46.53744218,
@@ -2075,17 +1789,6 @@
     "supermarkets_30min":13,
     "schools_30min":25,
     "hospitals_30min":4,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8101230",
-    "station_name":"Bludenz",
-    "stop_lat":47.15472622,
-    "stop_lon":9.8145616,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -2222,28 +1925,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8774633",
-    "station_name":"Bonneville",
-    "stop_lat":46.07774079,
-    "stop_lon":6.41648641,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774559",
-    "station_name":"Bons-en-Chablais",
-    "stop_lat":46.27039131,
-    "stop_lon":6.36548007,
-    "supermarkets_30min":0,
-    "schools_30min":6,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502222",
     "station_name":"Bonstetten-Wettswil",
     "stop_lat":47.32595215,
@@ -2372,39 +2053,6 @@
     "supermarkets_30min":8,
     "schools_30min":29,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8102336",
-    "station_name":"Bregenz",
-    "stop_lat":47.50300331,
-    "stop_lon":9.73962414,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8102338",
-    "station_name":"Bregenz Hafen",
-    "stop_lat":47.5061164,
-    "stop_lon":9.74829288,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8102335",
-    "station_name":"Bregenz Riedenburg",
-    "stop_lat":47.49291029,
-    "stop_lon":9.72131648,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -2589,7 +2237,7 @@
     "station_name":"Brugg AG",
     "stop_lat":47.48086045,
     "stop_lon":8.208841,
-    "supermarkets_30min":150,
+    "supermarkets_30min":151,
     "schools_30min":270,
     "hospitals_30min":9,
     "ikea_60min":7,
@@ -2959,17 +2607,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014570",
-    "station_name":"B\u00f6hringen-Rickelshausen",
-    "stop_lat":47.74894866,
-    "stop_lon":8.92576846,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506377",
     "station_name":"B\u00fchler",
     "stop_lat":47.37297498,
@@ -2986,8 +2623,8 @@
     "stop_lat":47.52399641,
     "stop_lon":8.53577386,
     "supermarkets_30min":110,
-    "schools_30min":233,
-    "hospitals_30min":5,
+    "schools_30min":231,
+    "hospitals_30min":4,
     "ikea_60min":3,
     "has_ikea_60min":true
   },
@@ -3058,17 +2695,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8301117",
-    "station_name":"Calde",
-    "stop_lat":45.94568205,
-    "stop_lon":8.66346938,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8505499",
     "station_name":"Camedo",
     "stop_lat":46.1547513,
@@ -3098,17 +2724,6 @@
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8301206",
-    "station_name":"Cantello Gaggiolo",
-    "stop_lat":45.83782787,
-    "stop_lon":8.90741588,
-    "supermarkets_30min":7,
-    "schools_30min":8,
-    "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -3245,17 +2860,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718241",
-    "station_name":"Cernay",
-    "stop_lat":47.80179077,
-    "stop_lon":7.17369433,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501164",
     "station_name":"Cery-Fleur-de-Lys",
     "stop_lat":46.54452324,
@@ -3326,33 +2930,11 @@
     "station_name":"Chamb\u00e9sy",
     "stop_lat":46.24094341,
     "stop_lon":6.14730624,
-    "supermarkets_30min":93,
-    "schools_30min":213,
+    "supermarkets_30min":94,
+    "schools_30min":216,
     "hospitals_30min":19,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8746208",
-    "station_name":"Chamonix-Aiguille du Midi",
-    "stop_lat":45.91995364,
-    "stop_lon":6.86672203,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774678",
-    "station_name":"Chamonix-Mont-Blanc",
-    "stop_lat":45.922622,
-    "stop_lon":6.87383669,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501504",
@@ -3370,39 +2952,6 @@
     "station_name":"Champ-du-Moulin",
     "stop_lat":46.95991112,
     "stop_lon":6.77498607,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718534",
-    "station_name":"Champagney",
-    "stop_lat":47.7032655,
-    "stop_lon":6.70131524,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771532",
-    "station_name":"Champagnole",
-    "stop_lat":46.7494291,
-    "stop_lon":5.91011507,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8735204",
-    "station_name":"Champagnole Paul-\u00c9mile Victor",
-    "stop_lat":46.74249793,
-    "stop_lon":5.91987077,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -3461,17 +3010,6 @@
     "supermarkets_30min":17,
     "schools_30min":33,
     "hospitals_30min":2,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774670",
-    "station_name":"Chedde",
-    "stop_lat":45.92627751,
-    "stop_lon":6.72006308,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -3711,8 +3249,8 @@
     "station_name":"Ch\u00eane-Bourg",
     "stop_lat":46.19660202,
     "stop_lon":6.19733341,
-    "supermarkets_30min":80,
-    "schools_30min":184,
+    "supermarkets_30min":81,
+    "schools_30min":185,
     "hospitals_30min":24,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -3738,28 +3276,6 @@
     "hospitals_30min":10,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718462",
-    "station_name":"Clerval",
-    "stop_lat":47.39665311,
-    "stop_lon":6.49205269,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774637",
-    "station_name":"Cluses (Haute-Savoie)",
-    "stop_lat":46.06129978,
-    "stop_lon":6.58298915,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501499",
@@ -3802,17 +3318,6 @@
     "supermarkets_30min":9,
     "schools_30min":13,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8505874",
-    "station_name":"Colmegna",
-    "stop_lat":46.02476053,
-    "stop_lon":8.75188157,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -3861,17 +3366,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718455",
-    "station_name":"Colombier-Fontaine",
-    "stop_lat":47.45548302,
-    "stop_lon":6.68899934,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500199",
     "station_name":"Combe-Tabeillon",
     "stop_lat":47.31351081,
@@ -3879,17 +3373,6 @@
     "supermarkets_30min":1,
     "schools_30min":3,
     "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8301307",
-    "station_name":"Como S. Giovanni",
-    "stop_lat":45.80896877,
-    "stop_lon":9.07271488,
-    "supermarkets_30min":15,
-    "schools_30min":24,
-    "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -3909,8 +3392,8 @@
     "station_name":"Coppet",
     "stop_lat":46.31739687,
     "stop_lon":6.18782924,
-    "supermarkets_30min":69,
-    "schools_30min":152,
+    "supermarkets_30min":70,
+    "schools_30min":154,
     "hospitals_30min":13,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -4169,17 +3652,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8505588",
-    "station_name":"Creggio",
-    "stop_lat":46.12466233,
-    "stop_lon":8.32455299,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504185",
     "station_name":"Cressier FR",
     "stop_lat":46.90068883,
@@ -4206,8 +3678,8 @@
     "station_name":"Creux-de-Genthod",
     "stop_lat":46.2637652,
     "stop_lon":6.16131097,
-    "supermarkets_30min":93,
-    "schools_30min":213,
+    "supermarkets_30min":94,
+    "schools_30min":216,
     "hospitals_30min":19,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -4295,8 +3767,8 @@
     "stop_lat":47.66707126,
     "stop_lon":8.61372966,
     "supermarkets_30min":30,
-    "schools_30min":62,
-    "hospitals_30min":4,
+    "schools_30min":66,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -4321,28 +3793,6 @@
     "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8770014",
-    "station_name":"Danjoutin",
-    "stop_lat":47.62055338,
-    "stop_lon":6.86611118,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718225",
-    "station_name":"Dannemarie",
-    "stop_lat":47.62780069,
-    "stop_lon":7.1246014,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8509072",
@@ -4466,28 +3916,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718444",
-    "station_name":"Delle",
-    "stop_lat":47.50579478,
-    "stop_lon":7.010174,
-    "supermarkets_30min":1,
-    "schools_30min":3,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771842",
-    "station_name":"Deluz",
-    "stop_lat":47.29308557,
-    "stop_lon":6.2004326,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500109",
     "station_name":"Del\u00e9mont",
     "stop_lat":47.36182256,
@@ -4558,8 +3986,8 @@
     "station_name":"Diessenhofen",
     "stop_lat":47.68547087,
     "stop_lon":8.7522948,
-    "supermarkets_30min":10,
-    "schools_30min":28,
+    "supermarkets_30min":11,
+    "schools_30min":31,
     "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -4653,17 +4081,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014181",
-    "station_name":"Dogern",
-    "stop_lat":47.60888413,
-    "stop_lon":8.1673568,
-    "supermarkets_30min":2,
-    "schools_30min":7,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509181",
     "station_name":"Domat\/Ems",
     "stop_lat":46.83309897,
@@ -4697,17 +4114,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8301003",
-    "station_name":"Domodossola (I)",
-    "stop_lat":46.11529118,
-    "stop_lon":8.29623809,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504124",
     "station_name":"Dompierre FR",
     "stop_lat":46.85452443,
@@ -4730,17 +4136,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8102329",
-    "station_name":"Dornbirn",
-    "stop_lat":47.41768871,
-    "stop_lon":9.73880668,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502212",
     "station_name":"Dottikon-Dintikon",
     "stop_lat":47.37364417,
@@ -4758,17 +4153,6 @@
     "stop_lon":7.3384184,
     "supermarkets_30min":17,
     "schools_30min":20,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8505585",
-    "station_name":"Druogno",
-    "stop_lat":46.13309811,
-    "stop_lon":8.43365338,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -4822,8 +4206,8 @@
     "station_name":"D\u00f6ttingen",
     "stop_lat":47.57501827,
     "stop_lon":8.25657747,
-    "supermarkets_30min":36,
-    "schools_30min":84,
+    "supermarkets_30min":37,
+    "schools_30min":85,
     "hospitals_30min":4,
     "ikea_60min":5,
     "has_ikea_60min":true
@@ -4857,17 +4241,6 @@
     "stop_lon":7.79201372,
     "supermarkets_30min":0,
     "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014547",
-    "station_name":"Eberfingen",
-    "stop_lat":47.72059477,
-    "stop_lon":8.42988944,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -4928,17 +4301,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8771073",
-    "station_name":"Ecole-Valentin",
-    "stop_lat":47.2745541,
-    "stop_lon":5.99430518,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504018",
     "station_name":"Ecublens-Rue",
     "stop_lat":46.6104328,
@@ -4959,17 +4321,6 @@
     "hospitals_30min":5,
     "ikea_60min":7,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014422",
-    "station_name":"Efringen-Kirchen",
-    "stop_lat":47.65561812,
-    "stop_lon":7.56392249,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8500214",
@@ -4994,24 +4345,13 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8088575",
-    "station_name":"Eggingen",
-    "stop_lat":47.69373104,
-    "stop_lon":8.39665178,
-    "supermarkets_30min":0,
-    "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503402",
     "station_name":"Eglisau",
     "stop_lat":47.57275775,
     "stop_lon":8.51482515,
     "supermarkets_30min":25,
-    "schools_30min":62,
-    "hospitals_30min":2,
+    "schools_30min":60,
+    "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -5053,22 +4393,11 @@
     "station_name":"Eiken",
     "stop_lat":47.53294929,
     "stop_lon":7.99011919,
-    "supermarkets_30min":21,
-    "schools_30min":36,
+    "supermarkets_30min":24,
+    "schools_30min":44,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014423",
-    "station_name":"Eimeldingen",
-    "stop_lat":47.62794599,
-    "stop_lon":7.59559709,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8503283",
@@ -5214,17 +4543,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8002373",
-    "station_name":"Enzisweiler",
-    "stop_lat":47.56413899,
-    "stop_lon":9.66543228,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501110",
     "station_name":"Ependes VD",
     "stop_lat":46.74641298,
@@ -5256,17 +4574,6 @@
     "hospitals_30min":1,
     "ikea_60min":5,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8029167",
-    "station_name":"Eriskirch",
-    "stop_lat":47.62840005,
-    "stop_lon":9.52666952,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8506107",
@@ -5335,17 +4642,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014481",
-    "station_name":"Erzingen (Baden)",
-    "stop_lat":47.65953897,
-    "stop_lon":8.430123,
-    "supermarkets_30min":7,
-    "schools_30min":18,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502022",
     "station_name":"Eschenbach LU",
     "stop_lat":47.13239412,
@@ -5361,8 +4657,8 @@
     "station_name":"Eschenz",
     "stop_lat":47.64540922,
     "stop_lon":8.87655875,
-    "supermarkets_30min":10,
-    "schools_30min":28,
+    "supermarkets_30min":11,
+    "schools_30min":31,
     "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -5460,20 +4756,9 @@
     "station_name":"Etzwilen",
     "stop_lat":47.66114232,
     "stop_lon":8.81861741,
-    "supermarkets_30min":10,
-    "schools_30min":28,
+    "supermarkets_30min":11,
+    "schools_30min":31,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774567",
-    "station_name":"Evian-les-Bains",
-    "stop_lat":46.39777069,
-    "stop_lon":6.57776095,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -5518,17 +4803,6 @@
     "supermarkets_30min":9,
     "schools_30min":5,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014448",
-    "station_name":"Fahrnau",
-    "stop_lat":47.66155979,
-    "stop_lon":7.8394268,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -5621,17 +4895,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8101236",
-    "station_name":"Feldkirch",
-    "stop_lat":47.2409786,
-    "stop_lon":9.6041043,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509180",
     "station_name":"Felsberg",
     "stop_lat":46.84301707,
@@ -5648,8 +4911,8 @@
     "stop_lat":47.69217102,
     "stop_lon":8.6459702,
     "supermarkets_30min":22,
-    "schools_30min":48,
-    "hospitals_30min":4,
+    "schools_30min":52,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -5764,17 +5027,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718104",
-    "station_name":"Flaxlanden",
-    "stop_lat":47.698828,
-    "stop_lon":7.30463277,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501396",
     "station_name":"Flendruz",
     "stop_lat":46.48209041,
@@ -5830,17 +5082,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8505589",
-    "station_name":"Folsogno-Dissimo",
-    "stop_lat":46.13437426,
-    "stop_lon":8.55810598,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501374",
     "station_name":"Fontanivent",
     "stop_lat":46.45273168,
@@ -5874,54 +5115,10 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8101237",
-    "station_name":"Forst (FL) Hilti",
-    "stop_lat":47.1809079,
-    "stop_lon":9.52070471,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8530246",
     "station_name":"Foyer Dents-du-Midi",
     "stop_lat":46.25651096,
     "stop_lon":7.03008965,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771830",
-    "station_name":"Franois",
-    "stop_lat":47.22740701,
-    "stop_lon":5.93738792,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771513",
-    "station_name":"Frasne",
-    "stop_lat":46.85774949,
-    "stop_lon":6.15788839,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8101235",
-    "station_name":"Frastanz",
-    "stop_lat":47.22006775,
-    "stop_lon":9.63918351,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -6021,88 +5218,11 @@
     "station_name":"Frick",
     "stop_lat":47.50701449,
     "stop_lon":8.01274776,
-    "supermarkets_30min":47,
-    "schools_30min":85,
+    "supermarkets_30min":50,
+    "schools_30min":93,
     "hospitals_30min":5,
     "ikea_60min":6,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8064618",
-    "station_name":"Friedrichshafen Landratsamt",
-    "stop_lat":47.65714898,
-    "stop_lon":9.45198359,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8029169",
-    "station_name":"Friedrichshafen Ost",
-    "stop_lat":47.65170303,
-    "stop_lon":9.50201975,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8029162",
-    "station_name":"Friedrichshafen Stadt",
-    "stop_lat":47.6532219,
-    "stop_lon":9.47390248,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8029166",
-    "station_name":"Friedrichshafen-Fischbach",
-    "stop_lat":47.67247931,
-    "stop_lon":9.41738048,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8029163",
-    "station_name":"Friedrichshafen-Hafen",
-    "stop_lat":47.65120682,
-    "stop_lon":9.48282275,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8084736",
-    "station_name":"Friedrichshafen-Kluftern",
-    "stop_lat":47.68814983,
-    "stop_lon":9.40951124,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8029165",
-    "station_name":"Friedrichshafen-Manzell",
-    "stop_lat":47.66431862,
-    "stop_lon":9.4291574,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8504301",
@@ -6166,17 +5286,6 @@
     "stop_lon":8.152319,
     "supermarkets_30min":3,
     "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8505590",
-    "station_name":"Gagnone-Orcesco",
-    "stop_lat":46.12860956,
-    "stop_lon":8.41961271,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -6307,8 +5416,8 @@
     "station_name":"Genthod-Bellevue",
     "stop_lat":46.25674078,
     "stop_lon":6.15396275,
-    "supermarkets_30min":93,
-    "schools_30min":213,
+    "supermarkets_30min":94,
+    "schools_30min":216,
     "hospitals_30min":19,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -6318,8 +5427,8 @@
     "station_name":"Gen\u00e8ve",
     "stop_lat":46.21021156,
     "stop_lon":6.14245533,
-    "supermarkets_30min":125,
-    "schools_30min":298,
+    "supermarkets_30min":126,
+    "schools_30min":300,
     "hospitals_30min":34,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -6340,8 +5449,8 @@
     "station_name":"Gen\u00e8ve-Champel",
     "stop_lat":46.19219327,
     "stop_lon":6.15349563,
-    "supermarkets_30min":102,
-    "schools_30min":246,
+    "supermarkets_30min":103,
+    "schools_30min":248,
     "hospitals_30min":28,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -6351,8 +5460,8 @@
     "station_name":"Gen\u00e8ve-Eaux-Vives",
     "stop_lat":46.20144563,
     "stop_lon":6.16656612,
-    "supermarkets_30min":80,
-    "schools_30min":184,
+    "supermarkets_30min":81,
+    "schools_30min":185,
     "hospitals_30min":24,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -6362,8 +5471,8 @@
     "station_name":"Gen\u00e8ve-S\u00e9cheron",
     "stop_lat":46.222438,
     "stop_lon":6.14455739,
-    "supermarkets_30min":93,
-    "schools_30min":213,
+    "supermarkets_30min":94,
+    "schools_30min":216,
     "hospitals_30min":19,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -6446,17 +5555,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8771857",
-    "station_name":"Gilley",
-    "stop_lat":47.05006018,
-    "stop_lon":6.49256473,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502201",
     "station_name":"Gisikon-Root",
     "stop_lat":47.12132541,
@@ -6466,17 +5564,6 @@
     "hospitals_30min":6,
     "ikea_60min":3,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8101239",
-    "station_name":"Gisingen (Feldkirch)",
-    "stop_lat":47.25569298,
-    "stop_lon":9.59786101,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8508312",
@@ -6527,8 +5614,8 @@
     "station_name":"Gland",
     "stop_lat":46.41998839,
     "stop_lon":6.26913576,
-    "supermarkets_30min":76,
-    "schools_30min":175,
+    "supermarkets_30min":77,
+    "schools_30min":177,
     "hospitals_30min":17,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -6572,8 +5659,8 @@
     "stop_lat":47.54889813,
     "stop_lon":8.52389814,
     "supermarkets_30min":25,
-    "schools_30min":62,
-    "hospitals_30min":2,
+    "schools_30min":60,
+    "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -6721,17 +5808,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014492",
-    "station_name":"Gottmadingen",
-    "stop_lat":47.73739872,
-    "stop_lon":8.77542641,
-    "supermarkets_30min":12,
-    "schools_30min":27,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508396",
     "station_name":"Grafenort",
     "stop_lat":46.87080747,
@@ -6750,17 +5826,6 @@
     "supermarkets_30min":10,
     "schools_30min":26,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718113",
-    "station_name":"Graffenwald",
-    "stop_lat":47.78084267,
-    "stop_lon":7.22477254,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -6807,17 +5872,6 @@
     "hospitals_30min":9,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718443",
-    "station_name":"Grandvillars",
-    "stop_lat":47.53910503,
-    "stop_lon":6.97356765,
-    "supermarkets_30min":1,
-    "schools_30min":3,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8504122",
@@ -6875,32 +5929,10 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014458",
-    "station_name":"Grenzach",
-    "stop_lat":47.55089897,
-    "stop_lon":7.65950324,
-    "supermarkets_30min":59,
-    "schools_30min":63,
-    "hospitals_30min":4,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
     "station_key":"Parent8508286",
     "station_name":"Griesbach",
     "stop_lat":47.04432473,
     "stop_lon":7.74208536,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014480",
-    "station_name":"Griessen (Baden)",
-    "stop_lat":47.62843032,
-    "stop_lon":8.39600499,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -6925,17 +5957,6 @@
     "stop_lon":8.01671831,
     "supermarkets_30min":2,
     "schools_30min":4,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774624",
-    "station_name":"Groisy-Thorens-la-Caille",
-    "stop_lat":46.01110511,
-    "stop_lon":6.17550435,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -7227,17 +6248,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718208",
-    "station_name":"Habsheim",
-    "stop_lat":47.7381116,
-    "stop_lon":7.41800914,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504464",
     "station_name":"Hagneck",
     "stop_lat":47.05827972,
@@ -7269,28 +6279,6 @@
     "hospitals_30min":0,
     "ikea_60min":5,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014424",
-    "station_name":"Haltingen",
-    "stop_lat":47.61082818,
-    "stop_lon":7.61365322,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8102351",
-    "station_name":"Hard-Fussach",
-    "stop_lat":47.4798587,
-    "stop_lon":9.68813271,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8508152",
@@ -7335,17 +6323,6 @@
     "hospitals_30min":4,
     "ikea_60min":3,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014449",
-    "station_name":"Hausen-Raitbach",
-    "stop_lat":47.67930814,
-    "stop_lon":7.84603841,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501357",
@@ -7403,17 +6380,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014582",
-    "station_name":"Hegne",
-    "stop_lat":47.70603422,
-    "stop_lon":9.0995745,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506355",
     "station_name":"Heiden",
     "stop_lat":47.44600054,
@@ -7452,8 +6418,8 @@
     "stop_lat":47.56535128,
     "stop_lon":8.68460674,
     "supermarkets_30min":33,
-    "schools_30min":70,
-    "hospitals_30min":2,
+    "schools_30min":72,
+    "hospitals_30min":3,
     "ikea_60min":3,
     "has_ikea_60min":true
   },
@@ -7473,9 +6439,9 @@
     "station_name":"Herblingen",
     "stop_lat":47.71721037,
     "stop_lon":8.66428685,
-    "supermarkets_30min":42,
-    "schools_30min":89,
-    "hospitals_30min":4,
+    "supermarkets_30min":41,
+    "schools_30min":90,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -7546,17 +6512,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014460",
-    "station_name":"Herten (Baden)",
-    "stop_lat":47.54950445,
-    "stop_lon":7.73965991,
-    "supermarkets_30min":2,
-    "schools_30min":3,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508008",
     "station_name":"Herzogenbuchsee",
     "stop_lat":47.18808774,
@@ -7573,8 +6528,8 @@
     "stop_lat":47.54469611,
     "stop_lon":8.69509906,
     "supermarkets_30min":33,
-    "schools_30min":70,
-    "hospitals_30min":2,
+    "schools_30min":72,
+    "hospitals_30min":3,
     "ikea_60min":3,
     "has_ikea_60min":true
   },
@@ -7821,17 +6776,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718450",
-    "station_name":"H\u00e9ricourt",
-    "stop_lat":47.5729335,
-    "stop_lon":6.7695872,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502306",
     "station_name":"H\u00fcnenberg Ch\u00e4mleten",
     "stop_lat":47.16915919,
@@ -7859,8 +6803,8 @@
     "stop_lat":47.58262334,
     "stop_lon":8.51407057,
     "supermarkets_30min":23,
-    "schools_30min":49,
-    "hospitals_30min":2,
+    "schools_30min":47,
+    "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -7909,17 +6853,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718220",
-    "station_name":"Illfurth",
-    "stop_lat":47.67642309,
-    "stop_lon":7.26832286,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503303",
     "station_name":"Illnau",
     "stop_lat":47.40883168,
@@ -7949,17 +6882,6 @@
     "supermarkets_30min":3,
     "schools_30min":3,
     "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8301204",
-    "station_name":"Induno Olona",
-    "stop_lat":45.84671421,
-    "stop_lon":8.83784136,
-    "supermarkets_30min":7,
-    "schools_30min":8,
-    "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -8074,17 +6996,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8501952",
-    "station_name":"Iselle di Trasquera",
-    "stop_lat":46.20700998,
-    "stop_lon":8.20701742,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506019",
     "station_name":"Islikon",
     "stop_lat":47.54786736,
@@ -8094,17 +7005,6 @@
     "hospitals_30min":3,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014421",
-    "station_name":"Istein",
-    "stop_lat":47.66088821,
-    "stop_lon":7.54294683,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8500025",
@@ -8184,17 +7084,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8503421",
-    "station_name":"Jestetten",
-    "stop_lat":47.65488596,
-    "stop_lon":8.5753716,
-    "supermarkets_30min":23,
-    "schools_30min":49,
-    "hospitals_30min":2,
-    "ikea_60min":2,
-    "has_ikea_60min":true
-  },
-  {
     "station_key":"Parent8503120",
     "station_name":"Jona",
     "stop_lat":47.23091461,
@@ -8204,17 +7093,6 @@
     "hospitals_30min":3,
     "ikea_60min":3,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8770015",
-    "station_name":"Joncherey",
-    "stop_lat":47.5256949,
-    "stop_lon":7.00108305,
-    "supermarkets_30min":1,
-    "schools_30min":3,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501386",
@@ -8243,8 +7121,8 @@
     "station_name":"Kaiseraugst",
     "stop_lat":47.53867445,
     "stop_lon":7.72401126,
-    "supermarkets_30min":19,
-    "schools_30min":35,
+    "supermarkets_30min":22,
+    "schools_30min":41,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -8492,23 +7370,12 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014420",
-    "station_name":"Kleinkems",
-    "stop_lat":47.68613004,
-    "stop_lon":7.52466611,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8516176",
     "station_name":"Klingnau",
     "stop_lat":47.58201134,
     "stop_lon":8.24908552,
-    "supermarkets_30min":36,
-    "schools_30min":84,
+    "supermarkets_30min":37,
+    "schools_30min":85,
     "hospitals_30min":4,
     "ikea_60min":5,
     "has_ikea_60min":true
@@ -8584,8 +7451,8 @@
     "station_name":"Koblenz",
     "stop_lat":47.60078619,
     "stop_lon":8.22732833,
-    "supermarkets_30min":36,
-    "schools_30min":84,
+    "supermarkets_30min":37,
+    "schools_30min":85,
     "hospitals_30min":4,
     "ikea_60min":5,
     "has_ikea_60min":true
@@ -8595,8 +7462,8 @@
     "station_name":"Koblenz Dorf",
     "stop_lat":47.60935652,
     "stop_lon":8.24004847,
-    "supermarkets_30min":20,
-    "schools_30min":37,
+    "supermarkets_30min":21,
+    "schools_30min":38,
     "hospitals_30min":2,
     "ikea_60min":5,
     "has_ikea_60min":true
@@ -8624,50 +7491,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014586",
-    "station_name":"Konstanz",
-    "stop_lat":47.6587524,
-    "stop_lon":9.17731471,
-    "supermarkets_30min":23,
-    "schools_30min":48,
-    "hospitals_30min":3,
-    "ikea_60min":3,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8080251",
-    "station_name":"Konstanz-F\u00fcrstenberg",
-    "stop_lat":47.67748156,
-    "stop_lon":9.16284285,
-    "supermarkets_30min":23,
-    "schools_30min":48,
-    "hospitals_30min":3,
-    "ikea_60min":3,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014584",
-    "station_name":"Konstanz-Petershausen",
-    "stop_lat":47.67395524,
-    "stop_lon":9.17388314,
-    "supermarkets_30min":23,
-    "schools_30min":48,
-    "hospitals_30min":3,
-    "ikea_60min":3,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8099982",
-    "station_name":"Konstanz-Wollmatingen",
-    "stop_lat":47.6824531,
-    "stop_lon":9.14732894,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506216",
     "station_name":"Kradolf",
     "stop_lat":47.52472434,
@@ -8679,25 +7502,14 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8029170",
-    "station_name":"Kressbronn",
-    "stop_lat":47.59423787,
-    "stop_lon":9.59885814,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506131",
     "station_name":"Kreuzlingen",
     "stop_lat":47.65255022,
     "stop_lon":9.16907716,
-    "supermarkets_30min":23,
-    "schools_30min":48,
+    "supermarkets_30min":17,
+    "schools_30min":29,
     "hospitals_30min":3,
-    "ikea_60min":3,
+    "ikea_60min":1,
     "has_ikea_60min":true
   },
   {
@@ -8866,34 +7678,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8771852",
-    "station_name":"L'H\u00f4pital-du-Grosbois",
-    "stop_lat":47.16910423,
-    "stop_lon":6.21308088,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501099",
     "station_name":"L'Isle",
     "stop_lat":46.61726986,
     "stop_lon":6.41117737,
     "supermarkets_30min":0,
     "schools_30min":4,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718457",
-    "station_name":"L'Isle-sur-le-Doubs",
-    "stop_lat":47.44728238,
-    "stop_lon":6.58140811,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -8916,17 +7706,6 @@
     "stop_lon":7.09673566,
     "supermarkets_30min":0,
     "schools_30min":3,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771539",
-    "station_name":"La Chaumusse - Fort-du-Plasne",
-    "stop_lat":46.60498968,
-    "stop_lon":5.96148972,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -8994,17 +7773,6 @@
     "supermarkets_30min":2,
     "schools_30min":4,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771538",
-    "station_name":"La Chaux-des-Crotenay",
-    "stop_lat":46.65451915,
-    "stop_lon":5.94378393,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -9174,17 +7942,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774684",
-    "station_name":"La Joux (F)",
-    "stop_lat":45.96571671,
-    "stop_lon":6.91014659,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500180",
     "station_name":"La Large-Journ\u00e9e",
     "stop_lat":47.16131103,
@@ -9233,8 +7990,8 @@
     "station_name":"La Plaine",
     "stop_lat":46.17869122,
     "stop_lon":6.0000544,
-    "supermarkets_30min":63,
-    "schools_30min":120,
+    "supermarkets_30min":64,
+    "schools_30min":125,
     "hospitals_30min":11,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -9258,28 +8015,6 @@
     "supermarkets_30min":18,
     "schools_30min":14,
     "hospitals_30min":3,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771514",
-    "station_name":"La Rivi\u00e8re",
-    "stop_lat":46.87015035,
-    "stop_lon":6.21333241,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774630",
-    "station_name":"La Roche-sur-Foron",
-    "stop_lat":46.06736445,
-    "stop_lon":6.30375683,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -9405,17 +8140,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8771521",
-    "station_name":"Labergement-Sainte-Marie",
-    "stop_lat":46.77638815,
-    "stop_lon":6.28040063,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503220",
     "station_name":"Lachen SZ",
     "stop_lat":47.18990087,
@@ -9425,17 +8149,6 @@
     "hospitals_30min":1,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8771843",
-    "station_name":"Laissey",
-    "stop_lat":47.29886124,
-    "stop_lon":6.23326603,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8507470",
@@ -9475,8 +8188,8 @@
     "station_name":"Lancy-Bachet",
     "stop_lat":46.1743308,
     "stop_lon":6.1293579,
-    "supermarkets_30min":102,
-    "schools_30min":246,
+    "supermarkets_30min":103,
+    "schools_30min":248,
     "hospitals_30min":28,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -9486,8 +8199,8 @@
     "station_name":"Lancy-Pont-Rouge",
     "stop_lat":46.18594331,
     "stop_lon":6.12494717,
-    "supermarkets_30min":121,
-    "schools_30min":287,
+    "supermarkets_30min":122,
+    "schools_30min":289,
     "hospitals_30min":33,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -9522,17 +8235,6 @@
     "supermarkets_30min":17,
     "schools_30min":29,
     "hospitals_30min":3,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8029168",
-    "station_name":"Langenargen",
-    "stop_lat":47.59948991,
-    "stop_lon":9.54483346,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -9630,8 +8332,8 @@
     "stop_lat":47.68345098,
     "stop_lon":8.66231954,
     "supermarkets_30min":22,
-    "schools_30min":48,
-    "hospitals_30min":4,
+    "schools_30min":52,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -9669,28 +8371,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014479",
-    "station_name":"Lauchringen",
-    "stop_lat":47.62909021,
-    "stop_lon":8.32219042,
-    "supermarkets_30min":2,
-    "schools_30min":7,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8085022",
-    "station_name":"Lauchringen West",
-    "stop_lat":47.63277696,
-    "stop_lon":8.30810484,
-    "supermarkets_30min":2,
-    "schools_30min":7,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500113",
     "station_name":"Laufen",
     "stop_lat":47.41976141,
@@ -9706,31 +8386,9 @@
     "station_name":"Laufenburg",
     "stop_lat":47.55981695,
     "stop_lon":8.06150831,
-    "supermarkets_30min":2,
-    "schools_30min":4,
+    "supermarkets_30min":4,
+    "schools_30min":10,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014468",
-    "station_name":"Laufenburg (Baden)",
-    "stop_lat":47.56340554,
-    "stop_lon":8.05831031,
-    "supermarkets_30min":2,
-    "schools_30min":3,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014469",
-    "station_name":"Laufenburg (Baden) Ost",
-    "stop_lat":47.56616349,
-    "stop_lon":8.07368946,
-    "supermarkets_30min":1,
-    "schools_30min":2,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -9790,34 +8448,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8105481",
-    "station_name":"Lauterach Unterfeld",
-    "stop_lat":47.48077546,
-    "stop_lon":9.71474979,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8507384",
     "station_name":"Lauterbrunnen",
     "stop_lat":46.59810169,
     "stop_lon":7.90804911,
     "supermarkets_30min":10,
     "schools_30min":8,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8301118",
-    "station_name":"Laveno-Mombello",
-    "stop_lat":45.90314062,
-    "stop_lon":8.62452741,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -9874,17 +8510,6 @@
     "supermarkets_30min":4,
     "schools_30min":4,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774688",
-    "station_name":"Le Buet",
-    "stop_lat":46.01832312,
-    "stop_lon":6.92080061,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -10208,28 +8833,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8771854",
-    "station_name":"Le Valdahon",
-    "stop_lat":47.14988178,
-    "stop_lon":6.34231252,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771860",
-    "station_name":"Le Valdahon Camp Militaire",
-    "stop_lat":47.15104253,
-    "stop_lon":6.31486,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502166",
     "station_name":"Leimbach AG",
     "stop_lat":47.27290844,
@@ -10325,17 +8928,6 @@
     "supermarkets_30min":2,
     "schools_30min":3,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774676",
-    "station_name":"Les Bossons",
-    "stop_lat":45.90699744,
-    "stop_lon":6.83937731,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -10582,17 +9174,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774674",
-    "station_name":"Les Houches",
-    "stop_lat":45.89393193,
-    "stop_lon":6.79758769,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501563",
     "station_name":"Les Mar\u00e9cottes",
     "stop_lat":46.11231449,
@@ -10608,17 +9189,6 @@
     "station_name":"Les Montuires",
     "stop_lat":46.06694063,
     "stop_lon":6.94633073,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774681",
-    "station_name":"Les Moussoux",
-    "stop_lat":45.91658519,
-    "stop_lon":6.85886177,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -10714,28 +9284,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774682",
-    "station_name":"Les Praz-de-Chamonix",
-    "stop_lat":45.93970398,
-    "stop_lon":6.88864991,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774677",
-    "station_name":"Les P\u00e9lerins",
-    "stop_lat":45.91259154,
-    "stop_lon":6.84740825,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500171",
     "station_name":"Les Reussilles",
     "stop_lat":47.22432013,
@@ -10780,23 +9328,12 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774683",
-    "station_name":"Les Tines",
-    "stop_lat":45.95095997,
-    "stop_lon":6.89914223,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501011",
     "station_name":"Les Tuileries",
     "stop_lat":46.2499453,
     "stop_lon":6.14733319,
-    "supermarkets_30min":93,
-    "schools_30min":213,
+    "supermarkets_30min":94,
+    "schools_30min":216,
     "hospitals_30min":19,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -10912,39 +9449,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8002370",
-    "station_name":"Lindau-Aeschach",
-    "stop_lat":47.55962297,
-    "stop_lon":9.68465623,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8002371",
-    "station_name":"Lindau-Insel",
-    "stop_lat":47.54433835,
-    "stop_lon":9.68047008,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8002301",
-    "station_name":"Lindau-Reutin",
-    "stop_lat":47.5523844,
-    "stop_lon":9.70329627,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508184",
     "station_name":"Lindenholz",
     "stop_lat":47.15456129,
@@ -11055,17 +9559,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8503420",
-    "station_name":"Lottstetten",
-    "stop_lat":47.62552428,
-    "stop_lon":8.56619082,
-    "supermarkets_30min":23,
-    "schools_30min":49,
-    "hospitals_30min":2,
-    "ikea_60min":2,
-    "has_ikea_60min":true
-  },
-  {
     "station_key":"Parent8508182",
     "station_name":"Lotzwil",
     "stop_lat":47.18949185,
@@ -11099,28 +9592,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8101232",
-    "station_name":"Ludesch",
-    "stop_lat":47.18030343,
-    "stop_lon":9.77125382,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014597",
-    "station_name":"Ludwigshafen (Bodensee)",
-    "stop_lat":47.81561273,
-    "stop_lon":9.05305075,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8505300",
     "station_name":"Lugano",
     "stop_lat":46.00550223,
@@ -11143,17 +9614,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8301113",
-    "station_name":"Luino (I)",
-    "stop_lat":45.99670369,
-    "stop_lon":8.73740073,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508310",
     "station_name":"Lungern",
     "stop_lat":46.78659965,
@@ -11173,28 +9633,6 @@
     "schools_30min":45,
     "hospitals_30min":1,
     "ikea_60min":5,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718524",
-    "station_name":"Lure",
-    "stop_lat":47.68314255,
-    "stop_lon":6.4924749,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8102352",
-    "station_name":"Lustenau",
-    "stop_lat":47.4503441,
-    "stop_lon":9.66711213,
-    "supermarkets_30min":34,
-    "schools_30min":75,
-    "hospitals_30min":1,
-    "ikea_60min":2,
     "has_ikea_60min":true
   },
   {
@@ -11229,28 +9667,6 @@
     "hospitals_30min":11,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718266",
-    "station_name":"Lutterbach",
-    "stop_lat":47.75810464,
-    "stop_lon":7.27686584,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718559",
-    "station_name":"Luxeuil-les-Bains",
-    "stop_lat":47.81485265,
-    "stop_lon":6.37258574,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8505000",
@@ -11363,94 +9779,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014444",
-    "station_name":"L\u00f6rrach Brombach\/Hauingen",
-    "stop_lat":47.63761353,
-    "stop_lon":7.69521127,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8069220",
-    "station_name":"L\u00f6rrach Dammstrasse",
-    "stop_lat":47.59771506,
-    "stop_lon":7.65522726,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014443",
-    "station_name":"L\u00f6rrach Haagen\/Messe",
-    "stop_lat":47.63323097,
-    "stop_lon":7.68089212,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014441",
-    "station_name":"L\u00f6rrach Hbf",
-    "stop_lat":47.61405598,
-    "stop_lon":7.66542313,
-    "supermarkets_30min":59,
-    "schools_30min":65,
-    "hospitals_30min":3,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8069221",
-    "station_name":"L\u00f6rrach Museum\/Burghof",
-    "stop_lat":47.60774553,
-    "stop_lon":7.6611741,
-    "supermarkets_30min":59,
-    "schools_30min":65,
-    "hospitals_30min":3,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8083846",
-    "station_name":"L\u00f6rrach Schwarzwaldstrasse",
-    "stop_lat":47.62442237,
-    "stop_lon":7.67248389,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014440",
-    "station_name":"L\u00f6rrach-Stetten",
-    "stop_lat":47.60141614,
-    "stop_lon":7.65903611,
-    "supermarkets_30min":59,
-    "schools_30min":65,
-    "hospitals_30min":3,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8029159",
-    "station_name":"L\u00f6wental",
-    "stop_lat":47.66143273,
-    "stop_lon":9.49938769,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506179",
     "station_name":"L\u00fcdem",
     "stop_lat":47.54188245,
@@ -11517,28 +9845,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8505861",
-    "station_name":"Maccagno",
-    "stop_lat":46.0454088,
-    "stop_lon":8.73558613,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774558",
-    "station_name":"Machilly",
-    "stop_lat":46.25142373,
-    "stop_lon":6.32806524,
-    "supermarkets_30min":0,
-    "schools_30min":6,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508183",
     "station_name":"Madiswil",
     "stop_lat":47.1670461,
@@ -11567,17 +9873,6 @@
     "stop_lon":8.85022015,
     "supermarkets_30min":0,
     "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774641",
-    "station_name":"Magland",
-    "stop_lat":46.01691328,
-    "stop_lon":6.62153586,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -11627,17 +9922,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8505584",
-    "station_name":"Malesco",
-    "stop_lat":46.12918855,
-    "stop_lon":8.49889802,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500102",
     "station_name":"Malleray-B\u00e9vilard",
     "stop_lat":47.23871589,
@@ -11660,23 +9944,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8771851",
-    "station_name":"Mamirolle",
-    "stop_lat":47.20008251,
-    "stop_lon":6.16195776,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506137",
     "station_name":"Mammern",
     "stop_lat":47.64416248,
     "stop_lon":8.91400053,
-    "supermarkets_30min":10,
-    "schools_30min":28,
+    "supermarkets_30min":11,
+    "schools_30min":31,
     "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -11693,17 +9966,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8774634",
-    "station_name":"Marignier",
-    "stop_lat":46.08872574,
-    "stop_lon":6.50778219,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504481",
     "station_name":"Marin-Epagnier",
     "stop_lat":47.00929264,
@@ -11711,28 +9973,6 @@
     "supermarkets_30min":21,
     "schools_30min":29,
     "hospitals_30min":4,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014625",
-    "station_name":"Markdorf (Baden)",
-    "stop_lat":47.71665434,
-    "stop_lon":9.38876914,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014580",
-    "station_name":"Markelfingen",
-    "stop_lat":47.7390178,
-    "stop_lon":9.00340985,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -11753,8 +9993,8 @@
     "stop_lat":47.63093059,
     "stop_lon":8.65617506,
     "supermarkets_30min":34,
-    "schools_30min":68,
-    "hospitals_30min":4,
+    "schools_30min":72,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -11790,17 +10030,6 @@
     "hospitals_30min":2,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8505593",
-    "station_name":"Masera",
-    "stop_lat":46.13190286,
-    "stop_lon":8.32379841,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501420",
@@ -11847,34 +10076,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014446",
-    "station_name":"Maulburg",
-    "stop_lat":47.6443743,
-    "stop_lon":7.78065902,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501087",
     "station_name":"Mauraz",
     "stop_lat":46.58492195,
     "stop_lon":6.4297186,
     "supermarkets_30min":0,
     "schools_30min":4,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8029156",
-    "station_name":"Meckenbeuren",
-    "stop_lat":47.69975906,
-    "stop_lon":9.55838903,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -12034,17 +10241,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718440",
-    "station_name":"Meroux",
-    "stop_lat":47.58600436,
-    "stop_lon":6.89802832,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502225",
     "station_name":"Mettmenstetten",
     "stop_lat":47.24427185,
@@ -12060,8 +10256,8 @@
     "station_name":"Meyrin",
     "stop_lat":46.2223137,
     "stop_lon":6.07645611,
-    "supermarkets_30min":63,
-    "schools_30min":112,
+    "supermarkets_30min":64,
+    "schools_30min":113,
     "hospitals_30min":10,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -12083,7 +10279,7 @@
     "stop_lat":46.29848901,
     "stop_lon":6.16765308,
     "supermarkets_30min":53,
-    "schools_30min":113,
+    "schools_30min":114,
     "hospitals_30min":9,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -12166,28 +10362,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718452",
-    "station_name":"Montb\u00e9liard",
-    "stop_lat":47.51059456,
-    "stop_lon":6.80159417,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771810",
-    "station_name":"Montferrand - Thoraise",
-    "stop_lat":47.18469331,
-    "stop_lon":5.90743809,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501421",
     "station_name":"Monthey",
     "stop_lat":46.25565381,
@@ -12265,34 +10439,12 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718427",
-    "station_name":"Montreux-Vieux",
-    "stop_lat":47.61757425,
-    "stop_lon":7.02481654,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501098",
     "station_name":"Montricher",
     "stop_lat":46.59633017,
     "stop_lon":6.39304937,
     "supermarkets_30min":0,
     "schools_30min":4,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774686",
-    "station_name":"Montroc-le-Planet",
-    "stop_lat":45.99666625,
-    "stop_lon":6.93423043,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -12320,17 +10472,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8771543",
-    "station_name":"Morbier",
-    "stop_lat":46.53926506,
-    "stop_lon":6.01784104,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504007",
     "station_name":"Moreillon",
     "stop_lat":46.50822461,
@@ -12338,17 +10479,6 @@
     "supermarkets_30min":22,
     "schools_30min":46,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771544",
-    "station_name":"Morez",
-    "stop_lat":46.52604011,
-    "stop_lon":6.02343754,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -12375,45 +10505,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8739130",
-    "station_name":"Morre",
-    "stop_lat":47.22588189,
-    "stop_lon":6.06733821,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771861",
-    "station_name":"Morteau",
-    "stop_lat":47.05373251,
-    "stop_lon":6.60487211,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509353",
     "station_name":"Morteratsch",
     "stop_lat":46.45069547,
     "stop_lon":9.94032574,
     "supermarkets_30min":0,
     "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718442",
-    "station_name":"Morvillars",
-    "stop_lat":47.54961965,
-    "stop_lon":6.9353623,
-    "supermarkets_30min":1,
-    "schools_30min":3,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -12474,34 +10571,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718206",
-    "station_name":"Mulhouse",
-    "stop_lat":47.74195376,
-    "stop_lon":7.34304473,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718205",
-    "station_name":"Mulhouse Dornach",
-    "stop_lat":47.7468225,
-    "stop_lon":7.30821704,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500303",
     "station_name":"Mumpf",
     "stop_lat":47.54744899,
     "stop_lon":7.90988167,
-    "supermarkets_30min":19,
-    "schools_30min":35,
+    "supermarkets_30min":22,
+    "schools_30min":41,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -12547,17 +10622,6 @@
     "supermarkets_30min":2,
     "schools_30min":2,
     "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014467",
-    "station_name":"Murg (Baden)",
-    "stop_lat":47.55345145,
-    "stop_lon":8.01872155,
-    "supermarkets_30min":2,
-    "schools_30min":3,
-    "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -12622,7 +10686,7 @@
     "stop_lat":47.53395609,
     "stop_lon":7.64708852,
     "supermarkets_30min":93,
-    "schools_30min":114,
+    "schools_30min":115,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -12687,8 +10751,8 @@
     "station_name":"M\u00f6hlin",
     "stop_lat":47.56178101,
     "stop_lon":7.83312961,
-    "supermarkets_30min":50,
-    "schools_30min":72,
+    "supermarkets_30min":53,
+    "schools_30min":78,
     "hospitals_30min":4,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -12749,17 +10813,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014556",
-    "station_name":"M\u00fchlhausen (b Engen)",
-    "stop_lat":47.81362805,
-    "stop_lon":8.80425335,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8507481",
     "station_name":"M\u00fclenen",
     "stop_lat":46.63850368,
@@ -12767,17 +10820,6 @@
     "supermarkets_30min":7,
     "schools_30min":23,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014413",
-    "station_name":"M\u00fcllheim im Markgr\u00e4flerland",
-    "stop_lat":47.80974292,
-    "stop_lon":7.59933408,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -12936,28 +10978,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8101242",
-    "station_name":"Nendeln",
-    "stop_lat":47.20020458,
-    "stop_lon":9.54162647,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8101233",
-    "station_name":"Nenzing",
-    "stop_lat":47.19156131,
-    "stop_lon":9.70825497,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506299",
     "station_name":"Nesslau-Neu St. Johann",
     "stop_lat":47.22663226,
@@ -13057,17 +11077,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8030446",
-    "station_name":"Neuenburg(Baden)",
-    "stop_lat":47.81148041,
-    "stop_lon":7.56275468,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504192",
     "station_name":"Neuenegg",
     "stop_lat":46.89413932,
@@ -13095,7 +11104,7 @@
     "stop_lat":47.68382593,
     "stop_lon":8.62484182,
     "supermarkets_30min":59,
-    "schools_30min":113,
+    "schools_30min":115,
     "hospitals_30min":6,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -13106,8 +11115,8 @@
     "stop_lat":47.68212652,
     "stop_lon":8.61287626,
     "supermarkets_30min":30,
-    "schools_30min":62,
-    "hospitals_30min":4,
+    "schools_30min":66,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -13117,8 +11126,8 @@
     "stop_lat":47.68022746,
     "stop_lon":8.6159485,
     "supermarkets_30min":23,
-    "schools_30min":49,
-    "hospitals_30min":2,
+    "schools_30min":47,
+    "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -13149,8 +11158,8 @@
     "station_name":"Neunkirch",
     "stop_lat":47.68915969,
     "stop_lon":8.49481069,
-    "supermarkets_30min":7,
-    "schools_30min":18,
+    "supermarkets_30min":8,
+    "schools_30min":23,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -13365,17 +11374,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8002375",
-    "station_name":"Nonnenhorn",
-    "stop_lat":47.57511524,
-    "stop_lon":9.61267423,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502008",
     "station_name":"Nottwil",
     "stop_lat":47.13881059,
@@ -13387,23 +11385,12 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8771841",
-    "station_name":"Novillars",
-    "stop_lat":47.28395776,
-    "stop_lon":6.13270861,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501030",
     "station_name":"Nyon",
     "stop_lat":46.38441838,
     "stop_lon":6.23596996,
-    "supermarkets_30min":68,
-    "schools_30min":159,
+    "supermarkets_30min":69,
+    "schools_30min":161,
     "hospitals_30min":13,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -13437,17 +11424,6 @@
     "stop_lon":8.60910334,
     "supermarkets_30min":1,
     "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8101231",
-    "station_name":"N\u00fcziders",
-    "stop_lat":47.17075312,
-    "stop_lon":9.79440341,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -14036,28 +12012,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774562",
-    "station_name":"Perrignier",
-    "stop_lat":46.30345396,
-    "stop_lon":6.42497549,
-    "supermarkets_30min":0,
-    "schools_30min":6,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718426",
-    "station_name":"Petit-Croix",
-    "stop_lat":47.61024679,
-    "stop_lon":6.99483976,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8504387",
     "station_name":"Petit-Martel",
     "stop_lat":47.01009507,
@@ -14135,17 +12089,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8505862",
-    "station_name":"Pino-Tronzano",
-    "stop_lat":46.09892988,
-    "stop_lon":8.73695157,
-    "supermarkets_30min":0,
-    "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501471",
     "station_name":"Plambuit",
     "stop_lat":46.32706857,
@@ -14206,7 +12149,7 @@
     "stop_lat":46.2868196,
     "stop_lon":6.16277523,
     "supermarkets_30min":53,
-    "schools_30min":113,
+    "schools_30min":114,
     "hospitals_30min":9,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -14216,17 +12159,6 @@
     "station_name":"Pont-de-Drapel",
     "stop_lat":46.3199592,
     "stop_lon":6.98674594,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771500",
-    "station_name":"Pontarlier",
-    "stop_lat":46.90059676,
-    "stop_lon":6.35331688,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -14278,17 +12210,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8301116",
-    "station_name":"Porto Valtravaglia",
-    "stop_lat":45.95814211,
-    "stop_lon":8.67372814,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509361",
     "station_name":"Poschiavo",
     "stop_lat":46.32457481,
@@ -14300,23 +12221,12 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774538",
-    "station_name":"Pougny-Chancy",
-    "stop_lat":46.14473799,
-    "stop_lon":5.96118429,
-    "supermarkets_30min":0,
-    "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8500021",
     "station_name":"Pratteln",
     "stop_lat":47.5226861,
     "stop_lon":7.6912497,
     "supermarkets_30min":93,
-    "schools_30min":114,
+    "schools_30min":115,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -14326,8 +12236,8 @@
     "station_name":"Pratteln Salina Raurica",
     "stop_lat":47.53028663,
     "stop_lon":7.7096472,
-    "supermarkets_30min":19,
-    "schools_30min":35,
+    "supermarkets_30min":22,
+    "schools_30min":41,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -14337,28 +12247,6 @@
     "station_name":"Preda",
     "stop_lat":46.58843481,
     "stop_lon":9.77682338,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8501950",
-    "station_name":"Preglia",
-    "stop_lat":46.14542884,
-    "stop_lon":8.29304907,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8505594",
-    "station_name":"Prestinone",
-    "stop_lat":46.13304208,
-    "stop_lon":8.47951238,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -14386,17 +12274,6 @@
     "hospitals_30min":16,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8774620",
-    "station_name":"Pringy (Haute-Savoie)",
-    "stop_lat":45.93958529,
-    "stop_lon":6.12336613,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8500194",
@@ -14509,24 +12386,13 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014571",
-    "station_name":"Radolfzell",
-    "stop_lat":47.73587021,
-    "stop_lon":8.96898641,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503404",
     "station_name":"Rafz",
     "stop_lat":47.60319087,
     "stop_lon":8.54273581,
     "supermarkets_30min":23,
-    "schools_30min":49,
-    "hospitals_30min":2,
+    "schools_30min":47,
+    "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -14586,28 +12452,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8029153",
-    "station_name":"Ravensburg",
-    "stop_lat":47.78448249,
-    "stop_lon":9.60609856,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8505580",
-    "station_name":"Re",
-    "stop_lat":46.1272897,
-    "stop_lon":8.53888203,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8505163",
     "station_name":"Realp",
     "stop_lat":46.59844735,
@@ -14663,17 +12507,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014583",
-    "station_name":"Reichenau (Baden)",
-    "stop_lat":47.68934715,
-    "stop_lon":9.12595802,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509183",
     "station_name":"Reichenau-Tamins",
     "stop_lat":46.82395968,
@@ -14716,17 +12549,6 @@
     "hospitals_30min":2,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8774651",
-    "station_name":"Reignier",
-    "stop_lat":46.12543436,
-    "stop_lon":6.26758167,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8502168",
@@ -14876,19 +12698,8 @@
     "station_name":"Rheinfelden",
     "stop_lat":47.5509111,
     "stop_lon":7.79169033,
-    "supermarkets_30min":50,
-    "schools_30min":72,
-    "hospitals_30min":4,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014462",
-    "station_name":"Rheinfelden (Baden)",
-    "stop_lat":47.55692529,
-    "stop_lon":7.78420736,
-    "supermarkets_30min":61,
-    "schools_30min":66,
+    "supermarkets_30min":53,
+    "schools_30min":78,
     "hospitals_30min":4,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -14898,22 +12709,11 @@
     "station_name":"Rheinfelden Augarten",
     "stop_lat":47.54570269,
     "stop_lon":7.7676065,
-    "supermarkets_30min":19,
-    "schools_30min":35,
+    "supermarkets_30min":22,
+    "schools_30min":41,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014419",
-    "station_name":"Rheinweiler",
-    "stop_lat":47.7095342,
-    "stop_lon":7.53164602,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8509185",
@@ -14998,8 +12798,8 @@
     "stop_lat":47.583508,
     "stop_lon":7.65220892,
     "supermarkets_30min":59,
-    "schools_30min":63,
-    "hospitals_30min":3,
+    "schools_30min":64,
+    "hospitals_30min":4,
     "ikea_60min":1,
     "has_ikea_60min":true
   },
@@ -15009,8 +12809,8 @@
     "stop_lat":47.56947285,
     "stop_lon":7.63344311,
     "supermarkets_30min":59,
-    "schools_30min":63,
-    "hospitals_30min":3,
+    "schools_30min":64,
+    "hospitals_30min":4,
     "ikea_60min":1,
     "has_ikea_60min":true
   },
@@ -15019,8 +12819,8 @@
     "station_name":"Rietheim",
     "stop_lat":47.60070138,
     "stop_lon":8.27745432,
-    "supermarkets_30min":20,
-    "schools_30min":37,
+    "supermarkets_30min":21,
+    "schools_30min":38,
     "hospitals_30min":2,
     "ikea_60min":5,
     "has_ikea_60min":true
@@ -15103,17 +12903,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718207",
-    "station_name":"Rixheim",
-    "stop_lat":47.74873726,
-    "stop_lon":7.40615138,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501304",
     "station_name":"Roche VD",
     "stop_lat":46.35869591,
@@ -15121,17 +12910,6 @@
     "supermarkets_30min":17,
     "schools_30min":7,
     "hospitals_30min":3,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771840",
-    "station_name":"Roche-lez-Beaupr\u00e9",
-    "stop_lat":47.27628503,
-    "stop_lon":6.1109604,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -15275,17 +13053,6 @@
     "supermarkets_30min":33,
     "schools_30min":35,
     "hospitals_30min":5,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718531",
-    "station_name":"Ronchamp",
-    "stop_lat":47.69911215,
-    "stop_lon":6.62331452,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -15521,17 +13288,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774614",
-    "station_name":"Rumilly",
-    "stop_lat":45.86298756,
-    "stop_lon":5.94817669,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502114",
     "station_name":"Rupperswil",
     "stop_lat":47.403293,
@@ -15547,8 +13303,8 @@
     "station_name":"Russin",
     "stop_lat":46.18839984,
     "stop_lon":6.01798477,
-    "supermarkets_30min":63,
-    "schools_30min":120,
+    "supermarkets_30min":64,
+    "schools_30min":125,
     "hospitals_30min":11,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -15686,17 +13442,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8505581",
-    "station_name":"S. Maria Maggiore",
-    "stop_lat":46.13644716,
-    "stop_lon":8.46059386,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8505407",
     "station_name":"S. Nazzaro",
     "stop_lat":46.13501544,
@@ -15785,72 +13530,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774407",
-    "station_name":"Saint-Gervais-les-Bains",
-    "stop_lat":45.90641612,
-    "stop_lon":6.70055167,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774543",
-    "station_name":"Saint-Julien-en-Genevois",
-    "stop_lat":46.14193095,
-    "stop_lon":6.08559198,
-    "supermarkets_30min":1,
-    "schools_30min":5,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8771541",
-    "station_name":"Saint-Laurent-en-Grandvaux",
-    "stop_lat":46.57478959,
-    "stop_lon":5.95119503,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718213",
-    "station_name":"Saint-Louis (Haut-Rhin)",
-    "stop_lat":47.59031212,
-    "stop_lon":7.55537951,
-    "supermarkets_30min":99,
-    "schools_30min":116,
-    "hospitals_30min":11,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718101",
-    "station_name":"Saint-Louis la Chauss\u00e9e",
-    "stop_lat":47.60944131,
-    "stop_lon":7.53125076,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8771515",
-    "station_name":"Sainte-Colombe",
-    "stop_lat":46.87920811,
-    "stop_lon":6.26597369,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506009",
     "station_name":"Saland",
     "stop_lat":47.39474976,
@@ -15860,17 +13539,6 @@
     "hospitals_30min":0,
     "ikea_60min":1,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014616",
-    "station_name":"Salem",
-    "stop_lat":47.75779665,
-    "stop_lon":9.29726675,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8509402",
@@ -15893,17 +13561,6 @@
     "hospitals_30min":6,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8774643",
-    "station_name":"Sallanches-Combloux-Meg\u00e8ve",
-    "stop_lat":45.93564327,
-    "stop_lon":6.63648382,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501562",
@@ -15961,17 +13618,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8301140",
-    "station_name":"Sangiano",
-    "stop_lat":45.87436543,
-    "stop_lon":8.63081562,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8509411",
     "station_name":"Sargans",
     "stop_lat":47.04482668,
@@ -16009,8 +13655,8 @@
     "station_name":"Satigny",
     "stop_lat":46.21425212,
     "stop_lon":6.03763092,
-    "supermarkets_30min":63,
-    "schools_30min":120,
+    "supermarkets_30min":64,
+    "schools_30min":125,
     "hospitals_30min":11,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -16033,28 +13679,6 @@
     "stop_lon":7.17375721,
     "supermarkets_30min":25,
     "schools_30min":21,
-    "hospitals_30min":1,
-    "ikea_60min":2,
-    "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8771850",
-    "station_name":"Sa\u00f4ne",
-    "stop_lat":47.2097679,
-    "stop_lon":6.10131249,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8101243",
-    "station_name":"Schaan-Vaduz",
-    "stop_lat":47.16829198,
-    "stop_lon":9.50779592,
-    "supermarkets_30min":26,
-    "schools_30min":49,
     "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -16097,9 +13721,9 @@
     "station_name":"Schaffhausen",
     "stop_lat":47.69828386,
     "stop_lon":8.63275598,
-    "supermarkets_30min":42,
-    "schools_30min":84,
-    "hospitals_30min":4,
+    "supermarkets_30min":38,
+    "schools_30min":75,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -16175,8 +13799,8 @@
     "stop_lat":47.67950169,
     "stop_lon":8.6875083,
     "supermarkets_30min":22,
-    "schools_30min":48,
-    "hospitals_30min":4,
+    "schools_30min":52,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -16185,20 +13809,9 @@
     "station_name":"Schlattingen",
     "stop_lat":47.66662358,
     "stop_lon":8.77043178,
-    "supermarkets_30min":10,
-    "schools_30min":28,
+    "supermarkets_30min":11,
+    "schools_30min":31,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014417",
-    "station_name":"Schliengen",
-    "stop_lat":47.76159509,
-    "stop_lon":7.56893509,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -16214,24 +13827,13 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8101234",
-    "station_name":"Schlins-Beschling",
-    "stop_lat":47.19489426,
-    "stop_lon":9.69052223,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506039",
     "station_name":"Schloss Laufen am Rheinfall",
     "stop_lat":47.67608437,
     "stop_lon":8.61310983,
     "supermarkets_30min":30,
-    "schools_30min":62,
-    "hospitals_30min":4,
+    "schools_30min":66,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
   },
@@ -16262,39 +13864,6 @@
     "station_name":"Schmitten GR Landwasserviadukt",
     "stop_lat":46.68028688,
     "stop_lon":9.67223253,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014447",
-    "station_name":"Schopfheim",
-    "stop_lat":47.6479692,
-    "stop_lon":7.82267322,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8083840",
-    "station_name":"Schopfheim West",
-    "stop_lat":47.64554237,
-    "stop_lon":7.80171553,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8021703",
-    "station_name":"Schopfheim-Schlattholz",
-    "stop_lat":47.65380281,
-    "stop_lon":7.83379437,
     "supermarkets_30min":0,
     "schools_30min":0,
     "hospitals_30min":0,
@@ -16419,17 +13988,6 @@
     "supermarkets_30min":43,
     "schools_30min":55,
     "hospitals_30min":4,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014464",
-    "station_name":"Schw\u00f6rstadt",
-    "stop_lat":47.59102096,
-    "stop_lon":7.87032885,
-    "supermarkets_30min":2,
-    "schools_30min":3,
-    "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -16742,17 +14300,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8774671",
-    "station_name":"Servoz",
-    "stop_lat":45.92430294,
-    "stop_lon":6.76382002,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506020",
     "station_name":"Seuzach",
     "stop_lat":47.53576949,
@@ -16797,17 +14344,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718210",
-    "station_name":"Sierentz",
-    "stop_lat":47.65610219,
-    "stop_lon":7.45933164,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":1,
-    "has_ikea_60min":true
-  },
-  {
     "station_key":"Parent8501509",
     "station_name":"Sierre\/Siders",
     "stop_lat":46.2921208,
@@ -16823,8 +14359,8 @@
     "station_name":"Siggenthal-W\u00fcrenlingen",
     "stop_lat":47.52066598,
     "stop_lon":8.24069526,
-    "supermarkets_30min":36,
-    "schools_30min":84,
+    "supermarkets_30min":37,
+    "schools_30min":85,
     "hospitals_30min":4,
     "ikea_60min":5,
     "has_ikea_60min":true
@@ -16863,39 +14399,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014558",
-    "station_name":"Singen (Hohentwiel)",
-    "stop_lat":47.75887763,
-    "stop_lon":8.84127293,
-    "supermarkets_30min":12,
-    "schools_30min":27,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8099985",
-    "station_name":"Singen (Htw) Industriegebiet",
-    "stop_lat":47.75945133,
-    "stop_lon":8.87213006,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8063365",
-    "station_name":"Singen (Htw)-Landesgartenschau",
-    "stop_lat":47.76094291,
-    "stop_lon":8.82711548,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8502218",
     "station_name":"Sins",
     "stop_lat":47.18831362,
@@ -16916,17 +14419,6 @@
     "hospitals_30min":7,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014599",
-    "station_name":"Sipplingen",
-    "stop_lat":47.79558749,
-    "stop_lon":9.0955231,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8506010",
@@ -17237,17 +14729,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774647",
-    "station_name":"St-Gervais-les-Bains-Le Fayet",
-    "stop_lat":45.90642237,
-    "stop_lon":6.70107269,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501428",
     "station_name":"St-Gingolph (Suisse)",
     "stop_lat":46.39239298,
@@ -17312,17 +14793,6 @@
     "hospitals_30min":1,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8774631",
-    "station_name":"St-Pierre-en-Faucigny",
-    "stop_lat":46.05931132,
-    "stop_lon":6.37571188,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501036",
@@ -17633,17 +15103,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718269",
-    "station_name":"Staffelfelden",
-    "stop_lat":47.82797759,
-    "stop_lon":7.26509791,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508256",
     "station_name":"Stalden i.E.",
     "stop_lat":46.87089345,
@@ -17714,8 +15173,8 @@
     "station_name":"Steckborn",
     "stop_lat":47.66450617,
     "stop_lon":8.98103282,
-    "supermarkets_30min":10,
-    "schools_30min":28,
+    "supermarkets_30min":11,
+    "schools_30min":31,
     "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -17758,8 +15217,8 @@
     "station_name":"Stein am Rhein",
     "stop_lat":47.65610824,
     "stop_lon":8.85501715,
-    "supermarkets_30min":10,
-    "schools_30min":28,
+    "supermarkets_30min":11,
+    "schools_30min":31,
     "hospitals_30min":1,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -17769,8 +15228,8 @@
     "station_name":"Stein-S\u00e4ckingen",
     "stop_lat":47.54162169,
     "stop_lon":7.94849126,
-    "supermarkets_30min":19,
-    "schools_30min":35,
+    "supermarkets_30min":22,
+    "schools_30min":41,
     "hospitals_30min":3,
     "ikea_60min":1,
     "has_ikea_60min":true
@@ -17815,17 +15274,6 @@
     "stop_lon":8.60745044,
     "supermarkets_30min":9,
     "schools_30min":15,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014445",
-    "station_name":"Steinen (D)",
-    "stop_lat":47.64160231,
-    "stop_lon":7.74156434,
-    "supermarkets_30min":0,
-    "schools_30min":2,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -17969,17 +15417,6 @@
     "stop_lon":7.38840067,
     "supermarkets_30min":1,
     "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014546",
-    "station_name":"St\u00fchlingen",
-    "stop_lat":47.74312568,
-    "stop_lon":8.44613098,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -18139,17 +15576,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774675",
-    "station_name":"Taconnaz",
-    "stop_lat":45.89920852,
-    "stop_lon":6.8258936,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503139",
     "station_name":"Tann-D\u00fcrnten",
     "stop_lat":47.26824545,
@@ -18166,7 +15592,7 @@
     "stop_lat":46.30764279,
     "stop_lon":6.18111882,
     "supermarkets_30min":53,
-    "schools_30min":113,
+    "schools_30min":114,
     "hospitals_30min":9,
     "ikea_60min":3,
     "has_ikea_60min":true
@@ -18315,59 +15741,15 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718256",
-    "station_name":"Thann",
-    "stop_lat":47.80912151,
-    "stop_lon":7.10704832,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8747260",
-    "station_name":"Thann Centre",
-    "stop_lat":47.81006267,
-    "stop_lon":7.10096673,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718288",
-    "station_name":"Thann Saint-Jacques",
-    "stop_lat":47.81327816,
-    "stop_lon":7.09355562,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503461",
     "station_name":"Thayngen",
     "stop_lat":47.74552381,
     "stop_lon":8.70322882,
-    "supermarkets_30min":42,
-    "schools_30min":89,
-    "hospitals_30min":4,
+    "supermarkets_30min":41,
+    "schools_30min":90,
+    "hospitals_30min":5,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8774564",
-    "station_name":"Thonon-les-Bains",
-    "stop_lat":46.36895536,
-    "stop_lon":6.4819736,
-    "supermarkets_30min":0,
-    "schools_30min":6,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8507100",
@@ -18432,39 +15814,6 @@
     "supermarkets_30min":10,
     "schools_30min":11,
     "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014478",
-    "station_name":"Tiengen (Hochrhein)",
-    "stop_lat":47.63547073,
-    "stop_lon":8.27200155,
-    "supermarkets_30min":2,
-    "schools_30min":7,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8509369",
-    "station_name":"Tirano",
-    "stop_lat":46.21581853,
-    "stop_lon":10.16567711,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8101240",
-    "station_name":"Tisis (Feldkirch)",
-    "stop_lat":47.22801094,
-    "stop_lon":9.57506177,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -18539,8 +15888,8 @@
     "station_name":"Trasadingen",
     "stop_lat":47.66560118,
     "stop_lon":8.43739936,
-    "supermarkets_30min":7,
-    "schools_30min":18,
+    "supermarkets_30min":8,
+    "schools_30min":23,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -18601,17 +15950,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718424",
-    "station_name":"Trois Ch\u00eanes",
-    "stop_lat":47.64808418,
-    "stop_lon":6.84627638,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501464",
     "station_name":"Troistorrents",
     "stop_lat":46.22811208,
@@ -18619,17 +15957,6 @@
     "supermarkets_30min":5,
     "schools_30min":8,
     "hospitals_30min":2,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8505597",
-    "station_name":"Trontano",
-    "stop_lat":46.12260766,
-    "stop_lon":8.33399428,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -18898,17 +16225,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014607",
-    "station_name":"Uhldingen-M\u00fchlhofen",
-    "stop_lat":47.73699998,
-    "stop_lon":9.24841636,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8503055",
     "station_name":"Uitikon Waldegg",
     "stop_lat":47.36592362,
@@ -19162,17 +16478,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774541",
-    "station_name":"Valleiry",
-    "stop_lat":46.10932519,
-    "stop_lon":5.96722097,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501103",
     "station_name":"Vallorbe",
     "stop_lat":46.71240536,
@@ -19184,56 +16489,12 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8774687",
-    "station_name":"Vallorcine (F)",
-    "stop_lat":46.03340493,
-    "stop_lon":6.93398788,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501362",
     "station_name":"Valmont",
     "stop_lat":46.4285522,
     "stop_lon":6.92929867,
     "supermarkets_30min":3,
     "schools_30min":3,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8301205",
-    "station_name":"Varese",
-    "stop_lat":45.81621312,
-    "stop_lon":8.8332869,
-    "supermarkets_30min":7,
-    "schools_30min":8,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8501951",
-    "station_name":"Varzo",
-    "stop_lat":46.20630748,
-    "stop_lon":8.24514192,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774672",
-    "station_name":"Vaudagne",
-    "stop_lat":45.90879761,
-    "stop_lon":6.77270435,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -19294,17 +16555,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8505599",
-    "station_name":"Verigo",
-    "stop_lat":46.12174218,
-    "stop_lon":8.35152042,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501168",
     "station_name":"Vernand-Camar\u00e8s",
     "stop_lat":46.57023836,
@@ -19342,8 +16592,8 @@
     "station_name":"Vernier",
     "stop_lat":46.22065424,
     "stop_lon":6.09403614,
-    "supermarkets_30min":63,
-    "schools_30min":112,
+    "supermarkets_30min":64,
+    "schools_30min":113,
     "hospitals_30min":10,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -19409,21 +16659,10 @@
     "stop_lat":46.27972983,
     "stop_lon":6.16573967,
     "supermarkets_30min":53,
-    "schools_30min":113,
+    "schools_30min":114,
     "hospitals_30min":9,
     "ikea_60min":3,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718500",
-    "station_name":"Vesoul",
-    "stop_lat":47.61754397,
-    "stop_lon":6.15204036,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8501200",
@@ -19455,39 +16694,6 @@
     "supermarkets_30min":17,
     "schools_30min":8,
     "hospitals_30min":3,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8774673",
-    "station_name":"Viaduc-Ste-Marie",
-    "stop_lat":45.8971017,
-    "stop_lon":6.78507416,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718255",
-    "station_name":"Vieux-Thann",
-    "stop_lat":47.8058032,
-    "stop_lon":7.11956185,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8718128",
-    "station_name":"Vieux-Thann Zone Industrielle",
-    "stop_lat":47.80210453,
-    "stop_lon":7.13259641,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
   },
@@ -19624,17 +16830,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718453",
-    "station_name":"Voujeaucourt",
-    "stop_lat":47.47897229,
-    "stop_lon":6.76997348,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501424",
     "station_name":"Vouvry",
     "stop_lat":46.33649667,
@@ -19767,17 +16962,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8014474",
-    "station_name":"Waldshut",
-    "stop_lat":47.6213708,
-    "stop_lon":8.21952197,
-    "supermarkets_30min":22,
-    "schools_30min":43,
-    "hospitals_30min":2,
-    "ikea_60min":5,
-    "has_ikea_60min":true
-  },
-  {
     "station_key":"Parent8506281",
     "station_name":"Waldstatt",
     "stop_lat":47.3575934,
@@ -19798,17 +16982,6 @@
     "hospitals_30min":2,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8718106",
-    "station_name":"Walheim",
-    "stop_lat":47.64169915,
-    "stop_lon":7.26339111,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8508262",
@@ -19932,17 +17105,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8002374",
-    "station_name":"Wasserburg (Bodensee)",
-    "stop_lat":47.57190321,
-    "stop_lon":9.63906673,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8506200",
     "station_name":"Wattwil",
     "stop_lat":47.29937907,
@@ -19974,61 +17136,6 @@
     "hospitals_30min":3,
     "ikea_60min":2,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8014465",
-    "station_name":"Wehr-Brennet",
-    "stop_lat":47.58092063,
-    "stop_lon":7.91052846,
-    "supermarkets_30min":2,
-    "schools_30min":3,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014428",
-    "station_name":"Weil am Rhein",
-    "stop_lat":47.59396526,
-    "stop_lon":7.60841605,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8060978",
-    "station_name":"Weil am Rhein Gartenstadt",
-    "stop_lat":47.5887066,
-    "stop_lon":7.61628529,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8060979",
-    "station_name":"Weil am Rhein Pf\u00e4dlistrasse",
-    "stop_lat":47.58901559,
-    "stop_lon":7.62649015,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014429",
-    "station_name":"Weil am Rhein-Ost",
-    "stop_lat":47.59062716,
-    "stop_lon":7.6347816,
-    "supermarkets_30min":0,
-    "schools_30min":2,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8506105",
@@ -20070,28 +17177,6 @@
     "stop_lon":7.47592352,
     "supermarkets_30min":1,
     "schools_30min":4,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014545",
-    "station_name":"Weizen",
-    "stop_lat":47.7688349,
-    "stop_lon":8.476512,
-    "supermarkets_30min":1,
-    "schools_30min":6,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014555",
-    "station_name":"Welschingen-Neuhausen",
-    "stop_lat":47.83403228,
-    "stop_lon":8.76921906,
-    "supermarkets_30min":0,
-    "schools_30min":0,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -20222,8 +17307,8 @@
     "station_name":"Wilchingen-Hallau",
     "stop_lat":47.67948959,
     "stop_lon":8.46400746,
-    "supermarkets_30min":7,
-    "schools_30min":18,
+    "supermarkets_30min":8,
+    "schools_30min":23,
     "hospitals_30min":0,
     "ikea_60min":0,
     "has_ikea_60min":false
@@ -20284,17 +17369,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8718258",
-    "station_name":"Willer-sur-Thur",
-    "stop_lat":47.84223875,
-    "stop_lon":7.06975925,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508295",
     "station_name":"Willisau",
     "stop_lat":47.12271905,
@@ -20344,8 +17418,8 @@
     "stop_lat":47.50033307,
     "stop_lon":8.7238182,
     "supermarkets_30min":259,
-    "schools_30min":524,
-    "hospitals_30min":11,
+    "schools_30min":526,
+    "hospitals_30min":12,
     "ikea_60min":7,
     "has_ikea_60min":true
   },
@@ -20537,28 +17611,6 @@
     "has_ikea_60min":true
   },
   {
-    "station_key":"Parent8080100",
-    "station_name":"Wut\u00f6schingen",
-    "stop_lat":47.66208615,
-    "stop_lon":8.36365665,
-    "supermarkets_30min":0,
-    "schools_30min":1,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014459",
-    "station_name":"Wyhlen",
-    "stop_lat":47.54632724,
-    "stop_lon":7.69091732,
-    "supermarkets_30min":2,
-    "schools_30min":3,
-    "hospitals_30min":1,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508006",
     "station_name":"Wynigen",
     "stop_lat":47.10517354,
@@ -20658,17 +17710,6 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8014450",
-    "station_name":"Zell (Wiesental)",
-    "stop_lat":47.70562316,
-    "stop_lon":7.84914658,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8508293",
     "station_name":"Zell LU",
     "stop_lat":47.13675129,
@@ -20735,23 +17776,12 @@
     "has_ikea_60min":false
   },
   {
-    "station_key":"Parent8718219",
-    "station_name":"Zillisheim",
-    "stop_lat":47.69450499,
-    "stop_lon":7.29447282,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
     "station_key":"Parent8501000",
     "station_name":"Zimeysa",
     "stop_lat":46.22126955,
     "stop_lon":6.06597277,
-    "supermarkets_30min":63,
-    "schools_30min":112,
+    "supermarkets_30min":64,
+    "schools_30min":113,
     "hospitals_30min":10,
     "ikea_60min":2,
     "has_ikea_60min":true
@@ -20810,17 +17840,6 @@
     "hospitals_30min":10,
     "ikea_60min":7,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8505578",
-    "station_name":"Zornasco",
-    "stop_lat":46.12970527,
-    "stop_lon":8.4908042,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   },
   {
     "station_key":"Parent8502274",
@@ -21272,49 +18291,5 @@
     "hospitals_30min":3,
     "ikea_60min":7,
     "has_ikea_60min":true
-  },
-  {
-    "station_key":"Parent8771853",
-    "station_name":"\u00c9talans",
-    "stop_lat":47.15575859,
-    "stop_lon":6.27049221,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8038379",
-    "station_name":"\u00dcberlingen",
-    "stop_lat":47.76910056,
-    "stop_lon":9.16285183,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8014601",
-    "station_name":"\u00dcberlingen Therme",
-    "stop_lat":47.76926962,
-    "stop_lon":9.14564011,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
-  },
-  {
-    "station_key":"Parent8064617",
-    "station_name":"\u00dcberlingen-Nussdorf",
-    "stop_lat":47.75486158,
-    "stop_lon":9.18814839,
-    "supermarkets_30min":0,
-    "schools_30min":0,
-    "hospitals_30min":0,
-    "ikea_60min":0,
-    "has_ikea_60min":false
   }
 ]

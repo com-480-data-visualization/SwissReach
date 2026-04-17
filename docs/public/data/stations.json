@@ -144,12 +144,6 @@
     "lon":8.60861825
   },
   {
-    "station_key":"Parent8014471",
-    "station_name":"Albbruck",
-    "lat":47.59223262,
-    "lon":8.13177453
-  },
-  {
     "station_key":"Parent8504072",
     "station_name":"Albeuve",
     "lat":46.51777598,
@@ -166,12 +160,6 @@
     "station_name":"Alle",
     "lat":47.42388227,
     "lon":7.12735923
-  },
-  {
-    "station_key":"Parent8014581",
-    "station_name":"Allensbach",
-    "lat":47.71446642,
-    "lon":9.06885212
   },
   {
     "station_key":"Parent8501378",
@@ -210,22 +198,10 @@
     "lon":8.82295628
   },
   {
-    "station_key":"Parent8101238",
-    "station_name":"Altenstadt (Feldkirch)",
-    "lat":47.25609539,
-    "lon":9.6155668
-  },
-  {
     "station_key":"Parent8506389",
     "station_name":"Alter Zoll",
     "lat":47.36858244,
     "lon":9.5220432
-  },
-  {
-    "station_key":"Parent8718223",
-    "station_name":"Altkirch",
-    "lat":47.6270197,
-    "lon":7.23904677
   },
   {
     "station_key":"Parent8503292",
@@ -276,28 +252,10 @@
     "lon":8.67671953
   },
   {
-    "station_key":"Parent8771510",
-    "station_name":"Andelot",
-    "lat":46.85949402,
-    "lon":5.9235359
-  },
-  {
     "station_key":"Parent8505165",
     "station_name":"Andermatt",
     "lat":46.63699871,
     "lon":8.59293366
-  },
-  {
-    "station_key":"Parent8774600",
-    "station_name":"Annecy",
-    "lat":45.90212168,
-    "lon":6.12163239
-  },
-  {
-    "station_key":"Parent8774549",
-    "station_name":"Annemasse",
-    "lat":46.19934409,
-    "lon":6.23640115
   },
   {
     "station_key":"Parent8506286",
@@ -324,12 +282,6 @@
     "lon":9.42502515
   },
   {
-    "station_key":"Parent8301203",
-    "station_name":"Arcisate",
-    "lat":45.85810168,
-    "lon":8.86259893
-  },
-  {
     "station_key":"Parent8509266",
     "station_name":"Ardez",
     "lat":46.77355811,
@@ -352,12 +304,6 @@
     "station_name":"Areuse Littorail",
     "lat":46.95449709,
     "lon":6.85305866
-  },
-  {
-    "station_key":"Parent8774685",
-    "station_name":"Argenti\u00e8re (Haute-Savoie)",
-    "lat":45.98217992,
-    "lon":6.9278434
   },
   {
     "station_key":"Parent8506211",
@@ -420,12 +366,6 @@
     "lon":8.64312254
   },
   {
-    "station_key":"Parent8014416",
-    "station_name":"Auggen",
-    "lat":47.78995079,
-    "lon":7.58678461
-  },
-  {
     "station_key":"Parent8507472",
     "station_name":"Ausserberg",
     "lat":46.31208571,
@@ -448,12 +388,6 @@
     "station_name":"Avenches",
     "lat":46.88459905,
     "lon":7.04092333
-  },
-  {
-    "station_key":"Parent8771855",
-    "station_name":"Avoudrey",
-    "lat":47.12974175,
-    "lon":6.43455153
   },
   {
     "station_key":"Parent8501632",
@@ -480,22 +414,10 @@
     "lon":8.51778061
   },
   {
-    "station_key":"Parent8014418",
-    "station_name":"Bad Bellingen",
-    "lat":47.73080105,
-    "lon":7.55759835
-  },
-  {
     "station_key":"Parent8509004",
     "station_name":"Bad Ragaz",
     "lat":47.01030945,
     "lon":9.50522673
-  },
-  {
-    "station_key":"Parent8014466",
-    "station_name":"Bad S\u00e4ckingen",
-    "lat":47.55585831,
-    "lon":7.94862601
   },
   {
     "station_key":"Parent8503409",
@@ -564,18 +486,6 @@
     "lon":7.26192686
   },
   {
-    "station_key":"Parent8718211",
-    "station_name":"Bartenheim",
-    "lat":47.63510753,
-    "lon":7.48725128
-  },
-  {
-    "station_key":"Parent8718420",
-    "station_name":"Bas \u00c9vette",
-    "lat":47.68096532,
-    "lon":6.80681339
-  },
-  {
     "station_key":"Parent8500090",
     "station_name":"Basel Bad Bf",
     "lat":47.56730906,
@@ -642,12 +552,6 @@
     "lon":8.87874166
   },
   {
-    "station_key":"Parent8771846",
-    "station_name":"Baume-les-Dames",
-    "lat":47.35402725,
-    "lon":6.35944339
-  },
-  {
     "station_key":"Parent8501113",
     "station_name":"Bavois",
     "lat":46.68768205,
@@ -688,18 +592,6 @@
     "station_name":"Belfaux-Village",
     "lat":46.82325281,
     "lon":7.11100989
-  },
-  {
-    "station_key":"Parent8718400",
-    "station_name":"Belfort",
-    "lat":47.63336415,
-    "lon":6.85362459
-  },
-  {
-    "station_key":"Parent8730082",
-    "station_name":"Belfort-Montb\u00e9liard TGV",
-    "lat":47.58593771,
-    "lon":6.89763306
   },
   {
     "station_key":"Parent8500205",
@@ -746,8 +638,8 @@
   {
     "station_key":"Parent8502216",
     "station_name":"Benzenschwil",
-    "lat":47.24682094,
-    "lon":8.3655521
+    "lat":47.24685143,
+    "lon":8.36561498
   },
   {
     "station_key":"Parent8501177",
@@ -794,14 +686,8 @@
   {
     "station_key":"Parent8506135",
     "station_name":"Berlingen",
-    "lat":47.6731205,
-    "lon":9.02209481
-  },
-  {
-    "station_key":"Parent8014624",
-    "station_name":"Bermatingen-Ahausen",
-    "lat":47.73048686,
-    "lon":9.34515593
+    "lat":47.67321123,
+    "lon":9.02202294
   },
   {
     "station_key":"Parent8507000",
@@ -882,30 +768,6 @@
     "lon":9.96969167
   },
   {
-    "station_key":"Parent8730086",
-    "station_name":"Besan\u00e7on Franche-Comt\u00e9 TGV",
-    "lat":47.30756011,
-    "lon":5.95267725
-  },
-  {
-    "station_key":"Parent8771801",
-    "station_name":"Besan\u00e7on Mouill\u00e8re",
-    "lat":47.24049069,
-    "lon":6.03403766
-  },
-  {
-    "station_key":"Parent8771800",
-    "station_name":"Besan\u00e7on Viotte",
-    "lat":47.24732708,
-    "lon":6.02200024
-  },
-  {
-    "station_key":"Parent8301141",
-    "station_name":"Besozzo",
-    "lat":45.84256535,
-    "lon":8.66326277
-  },
-  {
     "station_key":"Parent8500203",
     "station_name":"Bettlach",
     "lat":47.19491868,
@@ -922,12 +784,6 @@
     "station_name":"Bettwiesen",
     "lat":47.49810574,
     "lon":9.02080123
-  },
-  {
-    "station_key":"Parent8014463",
-    "station_name":"Beuggen",
-    "lat":47.58190833,
-    "lon":7.81091428
   },
   {
     "station_key":"Parent8504206",
@@ -1010,20 +866,14 @@
   {
     "station_key":"Parent8504300",
     "station_name":"Biel\/Bienne",
-    "lat":47.13289524,
-    "lon":7.24290952
+    "lat":47.13271802,
+    "lon":7.24314309
   },
   {
     "station_key":"Parent8518771",
     "station_name":"Biel\/Bienne B\u00f6zingenfeld\/Champ",
     "lat":47.15840966,
     "lon":7.29461655
-  },
-  {
-    "station_key":"Parent8014491",
-    "station_name":"Bietingen",
-    "lat":47.74401971,
-    "lon":8.73891888
   },
   {
     "station_key":"Parent8508263",
@@ -1098,12 +948,6 @@
     "lon":8.01706865
   },
   {
-    "station_key":"Parent8718257",
-    "station_name":"Bitschwiller-l\u00e8s-Thann",
-    "lat":47.82772429,
-    "lon":7.0783202
-  },
-  {
     "station_key":"Parent8501096",
     "station_name":"Bi\u00e8re",
     "lat":46.53744218,
@@ -1132,12 +976,6 @@
     "station_name":"Blonay",
     "lat":46.46568983,
     "lon":6.89594423
-  },
-  {
-    "station_key":"Parent8101230",
-    "station_name":"Bludenz",
-    "lat":47.15472622,
-    "lon":9.8145616
   },
   {
     "station_key":"Parent8503113",
@@ -1212,18 +1050,6 @@
     "lon":8.18455954
   },
   {
-    "station_key":"Parent8774633",
-    "station_name":"Bonneville",
-    "lat":46.07774079,
-    "lon":6.41648641
-  },
-  {
-    "station_key":"Parent8774559",
-    "station_name":"Bons-en-Chablais",
-    "lat":46.27039131,
-    "lon":6.36548007
-  },
-  {
     "station_key":"Parent8502222",
     "station_name":"Bonstetten-Wettswil",
     "lat":47.32595215,
@@ -1244,8 +1070,8 @@
   {
     "station_key":"Parent8502214",
     "station_name":"Boswil-B\u00fcnzen",
-    "lat":47.3054038,
-    "lon":8.31464457
+    "lat":47.30518451,
+    "lon":8.31528238
   },
   {
     "station_key":"Parent8506127",
@@ -1294,24 +1120,6 @@
     "station_name":"Bowil",
     "lat":46.90017938,
     "lon":7.69933454
-  },
-  {
-    "station_key":"Parent8102336",
-    "station_name":"Bregenz",
-    "lat":47.50300331,
-    "lon":9.73962414
-  },
-  {
-    "station_key":"Parent8102338",
-    "station_name":"Bregenz Hafen",
-    "lat":47.5061164,
-    "lon":9.74829288
-  },
-  {
-    "station_key":"Parent8102335",
-    "station_name":"Bregenz Riedenburg",
-    "lat":47.49291029,
-    "lon":9.72131648
   },
   {
     "station_key":"Parent8502273",
@@ -1478,8 +1286,8 @@
   {
     "station_key":"Parent8509404",
     "station_name":"Buchs SG",
-    "lat":47.16790112,
-    "lon":9.47887016
+    "lat":47.16841413,
+    "lon":9.4786366
   },
   {
     "station_key":"Parent8503527",
@@ -1614,12 +1422,6 @@
     "lon":6.8383712
   },
   {
-    "station_key":"Parent8014570",
-    "station_name":"B\u00f6hringen-Rickelshausen",
-    "lat":47.74894866,
-    "lon":8.92576846
-  },
-  {
     "station_key":"Parent8506377",
     "station_name":"B\u00fchler",
     "lat":47.37297498,
@@ -1668,12 +1470,6 @@
     "lon":10.05142039
   },
   {
-    "station_key":"Parent8301117",
-    "station_name":"Calde",
-    "lat":45.94568205,
-    "lon":8.66346938
-  },
-  {
     "station_key":"Parent8505499",
     "station_name":"Camedo",
     "lat":46.1547513,
@@ -1690,12 +1486,6 @@
     "station_name":"Campocologno",
     "lat":46.23340653,
     "lon":10.14186278
-  },
-  {
-    "station_key":"Parent8301206",
-    "station_name":"Cantello Gaggiolo",
-    "lat":45.83782787,
-    "lon":8.90741588
   },
   {
     "station_key":"Parent8505304",
@@ -1770,12 +1560,6 @@
     "lon":9.86502896
   },
   {
-    "station_key":"Parent8718241",
-    "station_name":"Cernay",
-    "lat":47.80179077,
-    "lon":7.17369433
-  },
-  {
     "station_key":"Parent8501164",
     "station_name":"Cery-Fleur-de-Lys",
     "lat":46.54452324,
@@ -1815,19 +1599,7 @@
     "station_key":"Parent8501020",
     "station_name":"Chamb\u00e9sy",
     "lat":46.24094341,
-    "lon":6.14744098
-  },
-  {
-    "station_key":"Parent8746208",
-    "station_name":"Chamonix-Aiguille du Midi",
-    "lat":45.91995364,
-    "lon":6.86672203
-  },
-  {
-    "station_key":"Parent8774678",
-    "station_name":"Chamonix-Mont-Blanc",
-    "lat":45.922622,
-    "lon":6.87383669
+    "lon":6.14730624
   },
   {
     "station_key":"Parent8501504",
@@ -1840,24 +1612,6 @@
     "station_name":"Champ-du-Moulin",
     "lat":46.95991112,
     "lon":6.77498607
-  },
-  {
-    "station_key":"Parent8718534",
-    "station_name":"Champagney",
-    "lat":47.7032655,
-    "lon":6.70131524
-  },
-  {
-    "station_key":"Parent8771532",
-    "station_name":"Champagnole",
-    "lat":46.7494291,
-    "lon":5.91011507
-  },
-  {
-    "station_key":"Parent8735204",
-    "station_name":"Champagnole Paul-\u00c9mile Victor",
-    "lat":46.74249793,
-    "lon":5.91987077
   },
   {
     "station_key":"Parent8501448",
@@ -1888,12 +1642,6 @@
     "station_name":"Chavornay",
     "lat":46.71008322,
     "lon":6.56816695
-  },
-  {
-    "station_key":"Parent8774670",
-    "station_name":"Chedde",
-    "lat":45.92627751,
-    "lon":6.72006308
   },
   {
     "station_key":"Parent8512191",
@@ -2040,18 +1788,6 @@
     "lon":6.89578253
   },
   {
-    "station_key":"Parent8718462",
-    "station_name":"Clerval",
-    "lat":47.39665311,
-    "lon":6.49205269
-  },
-  {
-    "station_key":"Parent8774637",
-    "station_name":"Cluses (Haute-Savoie)",
-    "lat":46.06129978,
-    "lon":6.58298915
-  },
-  {
     "station_key":"Parent8501499",
     "station_name":"Col-de-Bretaye",
     "lat":46.32190103,
@@ -2074,12 +1810,6 @@
     "station_name":"Collombey-Village",
     "lat":46.26937912,
     "lon":6.94598937
-  },
-  {
-    "station_key":"Parent8505874",
-    "station_name":"Colmegna",
-    "lat":46.02476053,
-    "lon":8.75188157
   },
   {
     "station_key":"Parent8504209",
@@ -2106,22 +1836,10 @@
     "lon":6.86541947
   },
   {
-    "station_key":"Parent8718455",
-    "station_name":"Colombier-Fontaine",
-    "lat":47.45548302,
-    "lon":6.68899934
-  },
-  {
     "station_key":"Parent8500199",
     "station_name":"Combe-Tabeillon",
     "lat":47.31351081,
     "lon":7.15778517
-  },
-  {
-    "station_key":"Parent8301307",
-    "station_name":"Como S. Giovanni",
-    "lat":45.80896877,
-    "lon":9.07271488
   },
   {
     "station_key":"Parent8504203",
@@ -2274,12 +1992,6 @@
     "lon":6.63529805
   },
   {
-    "station_key":"Parent8505588",
-    "station_name":"Creggio",
-    "lat":46.12466233,
-    "lon":8.32455299
-  },
-  {
     "station_key":"Parent8504185",
     "station_name":"Cressier FR",
     "lat":46.90068883,
@@ -2294,8 +2006,8 @@
   {
     "station_key":"Parent8501012",
     "station_name":"Creux-de-Genthod",
-    "lat":46.26422477,
-    "lon":6.16153555
+    "lat":46.2637652,
+    "lon":6.16131097
   },
   {
     "station_key":"Parent8501460",
@@ -2356,18 +2068,6 @@
     "station_name":"Dallenwil",
     "lat":46.93382924,
     "lon":8.39206138
-  },
-  {
-    "station_key":"Parent8770014",
-    "station_name":"Danjoutin",
-    "lat":47.62055338,
-    "lon":6.86611118
-  },
-  {
-    "station_key":"Parent8718225",
-    "station_name":"Dannemarie",
-    "lat":47.62780069,
-    "lon":7.1246014
   },
   {
     "station_key":"Parent8509072",
@@ -2436,28 +2136,16 @@
     "lon":7.61895328
   },
   {
-    "station_key":"Parent8718444",
-    "station_name":"Delle",
-    "lat":47.50579478,
-    "lon":7.010174
-  },
-  {
-    "station_key":"Parent8771842",
-    "station_name":"Deluz",
-    "lat":47.29308557,
-    "lon":6.2004326
-  },
-  {
     "station_key":"Parent8500109",
     "station_name":"Del\u00e9mont",
-    "lat":47.36201119,
-    "lon":7.35006057
+    "lat":47.36182256,
+    "lon":7.34941378
   },
   {
     "station_key":"Parent8501045",
     "station_name":"Denges-Echandens",
-    "lat":46.52896347,
-    "lon":6.54040002
+    "lat":46.52912416,
+    "lon":6.54050782
   },
   {
     "station_key":"Parent8503315",
@@ -2486,8 +2174,8 @@
   {
     "station_key":"Parent8503428",
     "station_name":"Diessenhofen",
-    "lat":47.68523502,
-    "lon":8.75264514
+    "lat":47.68547087,
+    "lon":8.7522948
   },
   {
     "station_key":"Parent8506202",
@@ -2498,8 +2186,8 @@
   {
     "station_key":"Parent8503508",
     "station_name":"Dietikon",
-    "lat":47.40521427,
-    "lon":8.40533848
+    "lat":47.40578578,
+    "lon":8.40498814
   },
   {
     "station_key":"Parent8517376",
@@ -2538,12 +2226,6 @@
     "lon":8.04926427
   },
   {
-    "station_key":"Parent8014181",
-    "station_name":"Dogern",
-    "lat":47.60888413,
-    "lon":8.1673568
-  },
-  {
     "station_key":"Parent8509181",
     "station_name":"Domat\/Ems",
     "lat":46.83309897,
@@ -2562,12 +2244,6 @@
     "lon":7.0111891
   },
   {
-    "station_key":"Parent8301003",
-    "station_name":"Domodossola (I)",
-    "lat":46.11529118,
-    "lon":8.29623809
-  },
-  {
     "station_key":"Parent8504124",
     "station_name":"Dompierre FR",
     "lat":46.85452443,
@@ -2580,28 +2256,16 @@
     "lon":7.61111099
   },
   {
-    "station_key":"Parent8102329",
-    "station_name":"Dornbirn",
-    "lat":47.41768871,
-    "lon":9.73880668
-  },
-  {
     "station_key":"Parent8502212",
     "station_name":"Dottikon-Dintikon",
-    "lat":47.37402743,
-    "lon":8.23403874
+    "lat":47.37364417,
+    "lon":8.23471248
   },
   {
     "station_key":"Parent8500220",
     "station_name":"Dotzigen",
     "lat":47.11942436,
     "lon":7.3384184
-  },
-  {
-    "station_key":"Parent8505585",
-    "station_name":"Druogno",
-    "lat":46.13309811,
-    "lon":8.43365338
   },
   {
     "station_key":"Parent8500116",
@@ -2652,12 +2316,6 @@
     "lon":7.79201372
   },
   {
-    "station_key":"Parent8014547",
-    "station_name":"Eberfingen",
-    "lat":47.72059477,
-    "lon":8.42988944
-  },
-  {
     "station_key":"Parent8502200",
     "station_name":"Ebikon",
     "lat":47.08426422,
@@ -2688,12 +2346,6 @@
     "lon":6.55241948
   },
   {
-    "station_key":"Parent8771073",
-    "station_name":"Ecole-Valentin",
-    "lat":47.2745541,
-    "lon":5.99430518
-  },
-  {
     "station_key":"Parent8504018",
     "station_name":"Ecublens-Rue",
     "lat":46.6104328,
@@ -2706,12 +2358,6 @@
     "lon":8.68662795
   },
   {
-    "station_key":"Parent8014422",
-    "station_name":"Efringen-Kirchen",
-    "lat":47.65561812,
-    "lon":7.56392249
-  },
-  {
     "station_key":"Parent8500214",
     "station_name":"Egerkingen",
     "lat":47.31488724,
@@ -2722,12 +2368,6 @@
     "station_name":"Eggerberg",
     "lat":46.30695399,
     "lon":7.88076727
-  },
-  {
-    "station_key":"Parent8088575",
-    "station_name":"Eggingen",
-    "lat":47.69373104,
-    "lon":8.39665178
   },
   {
     "station_key":"Parent8503402",
@@ -2758,12 +2398,6 @@
     "station_name":"Eiken",
     "lat":47.53294929,
     "lon":7.99011919
-  },
-  {
-    "station_key":"Parent8014423",
-    "station_name":"Eimeldingen",
-    "lat":47.62794599,
-    "lon":7.59559709
   },
   {
     "station_key":"Parent8503283",
@@ -2844,12 +2478,6 @@
     "lon":8.06236171
   },
   {
-    "station_key":"Parent8002373",
-    "station_name":"Enzisweiler",
-    "lat":47.56413899,
-    "lon":9.66543228
-  },
-  {
     "station_key":"Parent8501110",
     "station_name":"Ependes VD",
     "lat":46.74641298,
@@ -2866,12 +2494,6 @@
     "station_name":"Erdmannlistein",
     "lat":47.34932882,
     "lon":8.3123898
-  },
-  {
-    "station_key":"Parent8029167",
-    "station_name":"Eriskirch",
-    "lat":47.62840005,
-    "lon":9.52666952
   },
   {
     "station_key":"Parent8506107",
@@ -2894,8 +2516,8 @@
   {
     "station_key":"Parent8506133",
     "station_name":"Ermatingen",
-    "lat":47.67025324,
-    "lon":9.08538112
+    "lat":47.66999918,
+    "lon":9.08566858
   },
   {
     "station_key":"Parent8502019",
@@ -2910,12 +2532,6 @@
     "lon":8.65045279
   },
   {
-    "station_key":"Parent8014481",
-    "station_name":"Erzingen (Baden)",
-    "lat":47.65953897,
-    "lon":8.430123
-  },
-  {
     "station_key":"Parent8502022",
     "station_name":"Eschenbach LU",
     "lat":47.13239412,
@@ -2924,8 +2540,8 @@
   {
     "station_key":"Parent8506138",
     "station_name":"Eschenz",
-    "lat":47.64548185,
-    "lon":8.87672045
+    "lat":47.64540922,
+    "lon":8.87655875
   },
   {
     "station_key":"Parent8506011",
@@ -2982,12 +2598,6 @@
     "lon":8.81861741
   },
   {
-    "station_key":"Parent8774567",
-    "station_name":"Evian-les-Bains",
-    "lat":46.39777069,
-    "lon":6.57776095
-  },
-  {
     "station_key":"Parent8501404",
     "station_name":"Evionnaz",
     "lat":46.16915508,
@@ -3010,12 +2620,6 @@
     "station_name":"Eyholz",
     "lat":46.2967822,
     "lon":7.91630463
-  },
-  {
-    "station_key":"Parent8014448",
-    "station_name":"Fahrnau",
-    "lat":47.66155979,
-    "lon":7.8394268
   },
   {
     "station_key":"Parent8505204",
@@ -3064,12 +2668,6 @@
     "station_name":"Feldbrunnen",
     "lat":47.22065957,
     "lon":7.55585562
-  },
-  {
-    "station_key":"Parent8101236",
-    "station_name":"Feldkirch",
-    "lat":47.2409786,
-    "lon":9.6041043
   },
   {
     "station_key":"Parent8509180",
@@ -3140,14 +2738,8 @@
   {
     "station_key":"Parent8506209",
     "station_name":"Flawil",
-    "lat":47.41519041,
-    "lon":9.18978332
-  },
-  {
-    "station_key":"Parent8718104",
-    "station_name":"Flaxlanden",
-    "lat":47.698828,
-    "lon":7.30463277
+    "lat":47.41627849,
+    "lon":9.18832805
   },
   {
     "station_key":"Parent8501396",
@@ -3180,12 +2772,6 @@
     "lon":8.62430283
   },
   {
-    "station_key":"Parent8505589",
-    "station_name":"Folsogno-Dissimo",
-    "lat":46.13437426,
-    "lon":8.55810598
-  },
-  {
     "station_key":"Parent8501374",
     "station_name":"Fontanivent",
     "lat":46.45273168,
@@ -3204,34 +2790,10 @@
     "lon":6.98227233
   },
   {
-    "station_key":"Parent8101237",
-    "station_name":"Forst (FL) Hilti",
-    "lat":47.1809079,
-    "lon":9.52070471
-  },
-  {
     "station_key":"Parent8530246",
     "station_name":"Foyer Dents-du-Midi",
     "lat":46.25651096,
     "lon":7.03008965
-  },
-  {
-    "station_key":"Parent8771830",
-    "station_name":"Franois",
-    "lat":47.22740701,
-    "lon":5.93738792
-  },
-  {
-    "station_key":"Parent8771513",
-    "station_name":"Frasne",
-    "lat":46.85774949,
-    "lon":6.15788839
-  },
-  {
-    "station_key":"Parent8101235",
-    "station_name":"Frastanz",
-    "lat":47.22006775,
-    "lon":9.63918351
   },
   {
     "station_key":"Parent8508061",
@@ -3266,8 +2828,8 @@
   {
     "station_key":"Parent8500022",
     "station_name":"Frenkendorf-F\u00fcllinsdorf",
-    "lat":47.50146794,
-    "lon":7.71911544
+    "lat":47.50123732,
+    "lon":7.71909747
   },
   {
     "station_key":"Parent8504100",
@@ -3286,48 +2848,6 @@
     "station_name":"Frick",
     "lat":47.50701449,
     "lon":8.01274776
-  },
-  {
-    "station_key":"Parent8064618",
-    "station_name":"Friedrichshafen Landratsamt",
-    "lat":47.65714898,
-    "lon":9.45198359
-  },
-  {
-    "station_key":"Parent8029169",
-    "station_name":"Friedrichshafen Ost",
-    "lat":47.65170303,
-    "lon":9.50201975
-  },
-  {
-    "station_key":"Parent8029162",
-    "station_name":"Friedrichshafen Stadt",
-    "lat":47.6532219,
-    "lon":9.47390248
-  },
-  {
-    "station_key":"Parent8029166",
-    "station_name":"Friedrichshafen-Fischbach",
-    "lat":47.67247931,
-    "lon":9.41738048
-  },
-  {
-    "station_key":"Parent8029163",
-    "station_name":"Friedrichshafen-Hafen",
-    "lat":47.65120682,
-    "lon":9.48282275
-  },
-  {
-    "station_key":"Parent8084736",
-    "station_name":"Friedrichshafen-Kluftern",
-    "lat":47.68814983,
-    "lon":9.40951124
-  },
-  {
-    "station_key":"Parent8029165",
-    "station_name":"Friedrichshafen-Manzell",
-    "lat":47.66431862,
-    "lon":9.4291574
   },
   {
     "station_key":"Parent8504301",
@@ -3364,12 +2884,6 @@
     "station_name":"F\u00fcrgangen-Bellwald Talstation",
     "lat":46.41189394,
     "lon":8.152319
-  },
-  {
-    "station_key":"Parent8505590",
-    "station_name":"Gagnone-Orcesco",
-    "lat":46.12860956,
-    "lon":8.41961271
   },
   {
     "station_key":"Parent8506378",
@@ -3470,8 +2984,8 @@
   {
     "station_key":"Parent8516283",
     "station_name":"Gen\u00e8ve-S\u00e9cheron",
-    "lat":46.22257473,
-    "lon":6.14466519
+    "lat":46.222438,
+    "lon":6.14455739
   },
   {
     "station_key":"Parent8508088",
@@ -3516,22 +3030,10 @@
     "lon":8.91616547
   },
   {
-    "station_key":"Parent8771857",
-    "station_name":"Gilley",
-    "lat":47.05006018,
-    "lon":6.49256473
-  },
-  {
     "station_key":"Parent8502201",
     "station_name":"Gisikon-Root",
     "lat":47.12132541,
     "lon":8.39479226
-  },
-  {
-    "station_key":"Parent8101239",
-    "station_name":"Gisingen (Feldkirch)",
-    "lat":47.25569298,
-    "lon":9.59786101
   },
   {
     "station_key":"Parent8508312",
@@ -3566,8 +3068,8 @@
   {
     "station_key":"Parent8503512",
     "station_name":"Glanzenberg",
-    "lat":47.39862935,
-    "lon":8.42143629
+    "lat":47.39887866,
+    "lon":8.42043916
   },
   {
     "station_key":"Parent8503230",
@@ -3590,8 +3092,8 @@
   {
     "station_key":"Parent8501370",
     "station_name":"Glion",
-    "lat":46.43180276,
-    "lon":6.92418726
+    "lat":46.43177799,
+    "lon":6.92471727
   },
   {
     "station_key":"Parent8501230",
@@ -3666,12 +3168,6 @@
     "lon":9.25305167
   },
   {
-    "station_key":"Parent8014492",
-    "station_name":"Gottmadingen",
-    "lat":47.73739872,
-    "lon":8.77542641
-  },
-  {
     "station_key":"Parent8508396",
     "station_name":"Grafenort",
     "lat":46.87080747,
@@ -3682,12 +3178,6 @@
     "station_name":"Grafenried",
     "lat":47.08007403,
     "lon":7.51163156
-  },
-  {
-    "station_key":"Parent8718113",
-    "station_name":"Graffenwald",
-    "lat":47.78084267,
-    "lon":7.22477254
   },
   {
     "station_key":"Parent8530066",
@@ -3714,12 +3204,6 @@
     "lon":6.72246158
   },
   {
-    "station_key":"Parent8718443",
-    "station_name":"Grandvillars",
-    "lat":47.53910503,
-    "lon":6.97356765
-  },
-  {
     "station_key":"Parent8504122",
     "station_name":"Granges-Marnand",
     "lat":46.75884568,
@@ -3734,14 +3218,14 @@
   {
     "station_key":"Parent8500159",
     "station_name":"Grenchen Nord",
-    "lat":47.19169561,
-    "lon":7.38962238
+    "lat":47.1918116,
+    "lon":7.38963136
   },
   {
     "station_key":"Parent8500202",
     "station_name":"Grenchen S\u00fcd",
-    "lat":47.18877759,
-    "lon":7.39818332
+    "lat":47.18899126,
+    "lon":7.39958469
   },
   {
     "station_key":"Parent8501674",
@@ -3750,22 +3234,10 @@
     "lon":8.09164679
   },
   {
-    "station_key":"Parent8014458",
-    "station_name":"Grenzach",
-    "lat":47.55089897,
-    "lon":7.65950324
-  },
-  {
     "station_key":"Parent8508286",
     "station_name":"Griesbach",
     "lat":47.04432473,
     "lon":7.74208536
-  },
-  {
-    "station_key":"Parent8014480",
-    "station_name":"Griessen (Baden)",
-    "lat":47.62843032,
-    "lon":8.39600499
   },
   {
     "station_key":"Parent8507380",
@@ -3778,12 +3250,6 @@
     "station_name":"Grindelwald Terminal",
     "lat":46.62551268,
     "lon":8.01671831
-  },
-  {
-    "station_key":"Parent8774624",
-    "station_name":"Groisy-Thorens-la-Caille",
-    "lat":46.01110511,
-    "lon":6.17550435
   },
   {
     "station_key":"Parent8504138",
@@ -3942,12 +3408,6 @@
     "lon":9.29268534
   },
   {
-    "station_key":"Parent8718208",
-    "station_name":"Habsheim",
-    "lat":47.7381116,
-    "lon":7.41800914
-  },
-  {
     "station_key":"Parent8504464",
     "station_name":"Hagneck",
     "lat":47.05827972,
@@ -3964,18 +3424,6 @@
     "station_name":"Hallwil",
     "lat":47.32863734,
     "lon":8.17594469
-  },
-  {
-    "station_key":"Parent8014424",
-    "station_name":"Haltingen",
-    "lat":47.61082818,
-    "lon":7.61365322
-  },
-  {
-    "station_key":"Parent8102351",
-    "station_name":"Hard-Fussach",
-    "lat":47.4798587,
-    "lon":9.68813271
   },
   {
     "station_key":"Parent8508152",
@@ -4000,12 +3448,6 @@
     "station_name":"Hauptwil",
     "lat":47.47686549,
     "lon":9.2515964
-  },
-  {
-    "station_key":"Parent8014449",
-    "station_name":"Hausen-Raitbach",
-    "lat":47.67930814,
-    "lon":7.84603841
   },
   {
     "station_key":"Parent8501357",
@@ -4038,12 +3480,6 @@
     "lon":9.62783779
   },
   {
-    "station_key":"Parent8014582",
-    "station_name":"Hegne",
-    "lat":47.70603422,
-    "lon":9.0995745
-  },
-  {
     "station_key":"Parent8506355",
     "station_name":"Heiden",
     "lat":47.44600054,
@@ -4058,8 +3494,8 @@
   {
     "station_key":"Parent8502211",
     "station_name":"Hendschiken",
-    "lat":47.38902715,
-    "lon":8.20790675
+    "lat":47.38942855,
+    "lon":8.20738573
   },
   {
     "station_key":"Parent8506046",
@@ -4114,12 +3550,6 @@
     "station_name":"Herrliberg-Feldmeilen",
     "lat":47.28178221,
     "lon":8.61298406
-  },
-  {
-    "station_key":"Parent8014460",
-    "station_name":"Herten (Baden)",
-    "lat":47.54950445,
-    "lon":7.73965991
   },
   {
     "station_key":"Parent8508008",
@@ -4266,16 +3696,10 @@
     "lon":7.74968511
   },
   {
-    "station_key":"Parent8718450",
-    "station_name":"H\u00e9ricourt",
-    "lat":47.5729335,
-    "lon":6.7695872
-  },
-  {
     "station_key":"Parent8502306",
     "station_name":"H\u00fcnenberg Ch\u00e4mleten",
-    "lat":47.16914698,
-    "lon":8.44976916
+    "lat":47.16915919,
+    "lon":8.44991289
   },
   {
     "station_key":"Parent8515996",
@@ -4314,12 +3738,6 @@
     "lon":9.2077137
   },
   {
-    "station_key":"Parent8718220",
-    "station_name":"Illfurth",
-    "lat":47.67642309,
-    "lon":7.26832286
-  },
-  {
     "station_key":"Parent8503303",
     "station_name":"Illnau",
     "lat":47.40883168,
@@ -4336,12 +3754,6 @@
     "station_name":"Immensee",
     "lat":47.09161614,
     "lon":8.46266897
-  },
-  {
-    "station_key":"Parent8301204",
-    "station_name":"Induno Olona",
-    "lat":45.84671421,
-    "lon":8.83784136
   },
   {
     "station_key":"Parent8508395",
@@ -4404,28 +3816,16 @@
     "lon":7.22893174
   },
   {
-    "station_key":"Parent8501952",
-    "station_name":"Iselle di Trasquera",
-    "lat":46.20700998,
-    "lon":8.20701742
-  },
-  {
     "station_key":"Parent8506019",
     "station_name":"Islikon",
     "lat":47.54786736,
     "lon":8.84602501
   },
   {
-    "station_key":"Parent8014421",
-    "station_name":"Istein",
-    "lat":47.66088821,
-    "lon":7.54294683
-  },
-  {
     "station_key":"Parent8500025",
     "station_name":"Itingen",
-    "lat":47.46727755,
-    "lon":7.7872257
+    "lat":47.46726541,
+    "lon":7.78831266
   },
   {
     "station_key":"Parent8507069",
@@ -4464,22 +3864,10 @@
     "lon":9.71856763
   },
   {
-    "station_key":"Parent8503421",
-    "station_name":"Jestetten",
-    "lat":47.65488596,
-    "lon":8.5753716
-  },
-  {
     "station_key":"Parent8503120",
     "station_name":"Jona",
     "lat":47.23091461,
     "lon":8.83464336
-  },
-  {
-    "station_key":"Parent8770015",
-    "station_name":"Joncherey",
-    "lat":47.5256949,
-    "lon":7.00108305
   },
   {
     "station_key":"Parent8501386",
@@ -4616,8 +4004,8 @@
   {
     "station_key":"Parent8503506",
     "station_name":"Killwangen-Spreitenbach",
-    "lat":47.43352674,
-    "lon":8.35407163
+    "lat":47.43332621,
+    "lon":8.35421536
   },
   {
     "station_key":"Parent8508084",
@@ -4630,12 +4018,6 @@
     "station_name":"Kleindietwil",
     "lat":47.14630772,
     "lon":7.79097168
-  },
-  {
-    "station_key":"Parent8014420",
-    "station_name":"Kleinkems",
-    "lat":47.68613004,
-    "lon":7.52466611
   },
   {
     "station_key":"Parent8516176",
@@ -4704,46 +4086,16 @@
     "lon":7.62089365
   },
   {
-    "station_key":"Parent8014586",
-    "station_name":"Konstanz",
-    "lat":47.6587524,
-    "lon":9.17731471
-  },
-  {
-    "station_key":"Parent8080251",
-    "station_name":"Konstanz-F\u00fcrstenberg",
-    "lat":47.67748156,
-    "lon":9.16284285
-  },
-  {
-    "station_key":"Parent8014584",
-    "station_name":"Konstanz-Petershausen",
-    "lat":47.67395524,
-    "lon":9.17388314
-  },
-  {
-    "station_key":"Parent8099982",
-    "station_name":"Konstanz-Wollmatingen",
-    "lat":47.6824531,
-    "lon":9.14732894
-  },
-  {
     "station_key":"Parent8506216",
     "station_name":"Kradolf",
     "lat":47.52472434,
     "lon":9.2015782
   },
   {
-    "station_key":"Parent8029170",
-    "station_name":"Kressbronn",
-    "lat":47.59423787,
-    "lon":9.59885814
-  },
-  {
     "station_key":"Parent8506131",
     "station_name":"Kreuzlingen",
-    "lat":47.65278621,
-    "lon":9.16844833
+    "lat":47.65255022,
+    "lon":9.16907716
   },
   {
     "station_key":"Parent8506197",
@@ -4784,14 +4136,14 @@
   {
     "station_key":"Parent8502101",
     "station_name":"K\u00f6lliken",
-    "lat":47.33738001,
-    "lon":8.02659978
+    "lat":47.33730087,
+    "lon":8.02646503
   },
   {
     "station_key":"Parent8502122",
     "station_name":"K\u00f6lliken Oberdorf",
-    "lat":47.32450294,
-    "lon":8.01810171
+    "lat":47.32468562,
+    "lon":8.01908986
   },
   {
     "station_key":"Parent8507083",
@@ -4808,8 +4160,8 @@
   {
     "station_key":"Parent8502120",
     "station_name":"K\u00fcngoldingen",
-    "lat":47.3021509,
-    "lon":7.9417539
+    "lat":47.3021448,
+    "lon":7.94179881
   },
   {
     "station_key":"Parent8503141",
@@ -4832,26 +4184,14 @@
   {
     "station_key":"Parent8501069",
     "station_name":"L'Asse",
-    "lat":46.40173548,
-    "lon":6.21181426
-  },
-  {
-    "station_key":"Parent8771852",
-    "station_name":"L'H\u00f4pital-du-Grosbois",
-    "lat":47.16910423,
-    "lon":6.21308088
+    "lat":46.40182221,
+    "lon":6.21175138
   },
   {
     "station_key":"Parent8501099",
     "station_name":"L'Isle",
     "lat":46.61726986,
     "lon":6.41117737
-  },
-  {
-    "station_key":"Parent8718457",
-    "station_name":"L'Isle-sur-le-Doubs",
-    "lat":47.44728238,
-    "lon":6.58140811
   },
   {
     "station_key":"Parent8504291",
@@ -4864,12 +4204,6 @@
     "station_name":"La Chaudanne-Les Moulins",
     "lat":46.4660549,
     "lon":7.09673566
-  },
-  {
-    "station_key":"Parent8771539",
-    "station_name":"La Chaumusse - Fort-du-Plasne",
-    "lat":46.60498968,
-    "lon":5.96148972
   },
   {
     "station_key":"Parent8500181",
@@ -4906,12 +4240,6 @@
     "station_name":"La Chaux-des-Breuleux",
     "lat":47.22048874,
     "lon":7.02537349
-  },
-  {
-    "station_key":"Parent8771538",
-    "station_name":"La Chaux-des-Crotenay",
-    "lat":46.65451915,
-    "lon":5.94378393
   },
   {
     "station_key":"Parent8501265",
@@ -5004,12 +4332,6 @@
     "lon":7.22461084
   },
   {
-    "station_key":"Parent8774684",
-    "station_name":"La Joux (F)",
-    "lat":45.96571671,
-    "lon":6.91014659
-  },
-  {
     "station_key":"Parent8500180",
     "station_name":"La Large-Journ\u00e9e",
     "lat":47.16131103,
@@ -5036,8 +4358,8 @@
   {
     "station_key":"Parent8501001",
     "station_name":"La Plaine",
-    "lat":46.17866634,
-    "lon":5.99999151
+    "lat":46.17869122,
+    "lon":6.0000544
   },
   {
     "station_key":"Parent8504284",
@@ -5050,18 +4372,6 @@
     "station_name":"La Punt Chamues-ch",
     "lat":46.57884647,
     "lon":9.92390454
-  },
-  {
-    "station_key":"Parent8771514",
-    "station_name":"La Rivi\u00e8re",
-    "lat":46.87015035,
-    "lon":6.21333241
-  },
-  {
-    "station_key":"Parent8774630",
-    "station_name":"La Roche-sur-Foron",
-    "lat":46.06736445,
-    "lon":6.30375683
   },
   {
     "station_key":"Parent8501199",
@@ -5126,26 +4436,14 @@
   {
     "station_key":"Parent8501053",
     "station_name":"La Vuarpilli\u00e8re",
-    "lat":46.39907167,
-    "lon":6.21702449
-  },
-  {
-    "station_key":"Parent8771521",
-    "station_name":"Labergement-Sainte-Marie",
-    "lat":46.77638815,
-    "lon":6.28040063
+    "lat":46.39892299,
+    "lon":6.21724906
   },
   {
     "station_key":"Parent8503220",
     "station_name":"Lachen SZ",
     "lat":47.18990087,
     "lon":8.85265458
-  },
-  {
-    "station_key":"Parent8771843",
-    "station_name":"Laissey",
-    "lat":47.29886124,
-    "lon":6.23326603
   },
   {
     "station_key":"Parent8507470",
@@ -5194,12 +4492,6 @@
     "station_name":"Landschlacht",
     "lat":47.62884199,
     "lon":9.24720364
-  },
-  {
-    "station_key":"Parent8029168",
-    "station_name":"Langenargen",
-    "lat":47.59948991,
-    "lon":9.54483346
   },
   {
     "station_key":"Parent8500261",
@@ -5252,8 +4544,8 @@
   {
     "station_key":"Parent8503426",
     "station_name":"Langwiesen",
-    "lat":47.68346912,
-    "lon":8.66189733
+    "lat":47.68345098,
+    "lon":8.66231954
   },
   {
     "station_key":"Parent8507088",
@@ -5274,18 +4566,6 @@
     "lon":7.2141275
   },
   {
-    "station_key":"Parent8014479",
-    "station_name":"Lauchringen",
-    "lat":47.62909021,
-    "lon":8.32219042
-  },
-  {
-    "station_key":"Parent8085022",
-    "station_name":"Lauchringen West",
-    "lat":47.63277696,
-    "lon":8.30810484
-  },
-  {
     "station_key":"Parent8500113",
     "station_name":"Laufen",
     "lat":47.41976141,
@@ -5296,18 +4576,6 @@
     "station_name":"Laufenburg",
     "lat":47.55981695,
     "lon":8.06150831
-  },
-  {
-    "station_key":"Parent8014468",
-    "station_name":"Laufenburg (Baden)",
-    "lat":47.56340554,
-    "lon":8.05831031
-  },
-  {
-    "station_key":"Parent8014469",
-    "station_name":"Laufenburg (Baden) Ost",
-    "lat":47.56616349,
-    "lon":8.07368946
   },
   {
     "station_key":"Parent8504194",
@@ -5340,22 +4608,10 @@
     "lon":7.75975522
   },
   {
-    "station_key":"Parent8105481",
-    "station_name":"Lauterach Unterfeld",
-    "lat":47.48077546,
-    "lon":9.71474979
-  },
-  {
     "station_key":"Parent8507384",
     "station_name":"Lauterbrunnen",
     "lat":46.59810169,
     "lon":7.90804911
-  },
-  {
-    "station_key":"Parent8301118",
-    "station_name":"Laveno-Mombello",
-    "lat":45.90314062,
-    "lon":8.62452741
   },
   {
     "station_key":"Parent8509264",
@@ -5386,12 +4642,6 @@
     "station_name":"Le Brassus",
     "lat":46.58558256,
     "lon":6.21388937
-  },
-  {
-    "station_key":"Parent8774688",
-    "station_name":"Le Buet",
-    "lat":46.01832312,
-    "lon":6.92080061
   },
   {
     "station_key":"Parent8500192",
@@ -5568,18 +4818,6 @@
     "lon":6.99772335
   },
   {
-    "station_key":"Parent8771854",
-    "station_name":"Le Valdahon",
-    "lat":47.14988178,
-    "lon":6.34231252
-  },
-  {
-    "station_key":"Parent8771860",
-    "station_name":"Le Valdahon Camp Militaire",
-    "lat":47.15104253,
-    "lon":6.31486
-  },
-  {
     "station_key":"Parent8502166",
     "station_name":"Leimbach AG",
     "lat":47.27290844,
@@ -5632,12 +4870,6 @@
     "station_name":"Les Bois",
     "lat":47.17696346,
     "lon":6.90610417
-  },
-  {
-    "station_key":"Parent8774676",
-    "station_name":"Les Bossons",
-    "lat":45.90699744,
-    "lon":6.83937731
   },
   {
     "station_key":"Parent8593773",
@@ -5772,12 +5004,6 @@
     "lon":6.87469009
   },
   {
-    "station_key":"Parent8774674",
-    "station_name":"Les Houches",
-    "lat":45.89393193,
-    "lon":6.79758769
-  },
-  {
     "station_key":"Parent8501563",
     "station_name":"Les Mar\u00e9cottes",
     "lat":46.11231449,
@@ -5788,12 +5014,6 @@
     "station_name":"Les Montuires",
     "lat":46.06694063,
     "lon":6.94633073
-  },
-  {
-    "station_key":"Parent8774681",
-    "station_name":"Les Moussoux",
-    "lat":45.91658519,
-    "lon":6.85886177
   },
   {
     "station_key":"Parent8530378",
@@ -5816,8 +5036,8 @@
   {
     "station_key":"Parent8501059",
     "station_name":"Les Plantaz",
-    "lat":46.39097412,
-    "lon":6.22923259
+    "lat":46.39099271,
+    "lon":6.22922361
   },
   {
     "station_key":"Parent8501288",
@@ -5844,18 +5064,6 @@
     "lon":6.1268516
   },
   {
-    "station_key":"Parent8774682",
-    "station_name":"Les Praz-de-Chamonix",
-    "lat":45.93970398,
-    "lon":6.88864991
-  },
-  {
-    "station_key":"Parent8774677",
-    "station_name":"Les P\u00e9lerins",
-    "lat":45.91259154,
-    "lon":6.84740825
-  },
-  {
     "station_key":"Parent8500171",
     "station_name":"Les Reussilles",
     "lat":47.22432013,
@@ -5878,12 +5086,6 @@
     "station_name":"Les Sciernes",
     "lat":46.4916773,
     "lon":7.03446444
-  },
-  {
-    "station_key":"Parent8774683",
-    "station_name":"Les Tines",
-    "lat":45.95095997,
-    "lon":6.89914223
   },
   {
     "station_key":"Parent8501011",
@@ -5952,30 +5154,6 @@
     "lon":7.73136846
   },
   {
-    "station_key":"Parent8515272",
-    "station_name":"Liestal Nord (Abzw)",
-    "lat":47.48788429,
-    "lon":7.7262301
-  },
-  {
-    "station_key":"Parent8002370",
-    "station_name":"Lindau-Aeschach",
-    "lat":47.55962297,
-    "lon":9.68465623
-  },
-  {
-    "station_key":"Parent8002371",
-    "station_name":"Lindau-Insel",
-    "lat":47.54433835,
-    "lon":9.68047008
-  },
-  {
-    "station_key":"Parent8002301",
-    "station_name":"Lindau-Reutin",
-    "lat":47.5523844,
-    "lon":9.70329627
-  },
-  {
     "station_key":"Parent8508184",
     "station_name":"Lindenholz",
     "lat":47.15456129,
@@ -6036,12 +5214,6 @@
     "lon":6.51954114
   },
   {
-    "station_key":"Parent8503420",
-    "station_name":"Lottstetten",
-    "lat":47.62552428,
-    "lon":8.56619082
-  },
-  {
     "station_key":"Parent8508182",
     "station_name":"Lotzwil",
     "lat":47.18949185,
@@ -6060,18 +5232,6 @@
     "lon":9.03954907
   },
   {
-    "station_key":"Parent8101232",
-    "station_name":"Ludesch",
-    "lat":47.18030343,
-    "lon":9.77125382
-  },
-  {
-    "station_key":"Parent8014597",
-    "station_name":"Ludwigshafen (Bodensee)",
-    "lat":47.81561273,
-    "lon":9.05305075
-  },
-  {
     "station_key":"Parent8505300",
     "station_name":"Lugano",
     "lat":46.00550223,
@@ -6084,12 +5244,6 @@
     "lon":8.94775024
   },
   {
-    "station_key":"Parent8301113",
-    "station_name":"Luino (I)",
-    "lat":45.99670369,
-    "lon":8.73740073
-  },
-  {
     "station_key":"Parent8508310",
     "station_name":"Lungern",
     "lat":46.78659965,
@@ -6100,18 +5254,6 @@
     "station_name":"Lupfig",
     "lat":47.44617672,
     "lon":8.21501242
-  },
-  {
-    "station_key":"Parent8718524",
-    "station_name":"Lure",
-    "lat":47.68314255,
-    "lon":6.4924749
-  },
-  {
-    "station_key":"Parent8102352",
-    "station_name":"Lustenau",
-    "lat":47.4503441,
-    "lon":9.66711213
   },
   {
     "station_key":"Parent8506372",
@@ -6130,18 +5272,6 @@
     "station_name":"Lutry",
     "lat":46.50378528,
     "lon":6.69060732
-  },
-  {
-    "station_key":"Parent8718266",
-    "station_name":"Lutterbach",
-    "lat":47.75810464,
-    "lon":7.27686584
-  },
-  {
-    "station_key":"Parent8718559",
-    "station_name":"Luxeuil-les-Bains",
-    "lat":47.81485265,
-    "lon":6.37258574
   },
   {
     "station_key":"Parent8505000",
@@ -6204,54 +5334,6 @@
     "lon":7.01110825
   },
   {
-    "station_key":"Parent8014444",
-    "station_name":"L\u00f6rrach Brombach\/Hauingen",
-    "lat":47.63761353,
-    "lon":7.69521127
-  },
-  {
-    "station_key":"Parent8069220",
-    "station_name":"L\u00f6rrach Dammstrasse",
-    "lat":47.59771506,
-    "lon":7.65522726
-  },
-  {
-    "station_key":"Parent8014443",
-    "station_name":"L\u00f6rrach Haagen\/Messe",
-    "lat":47.63323097,
-    "lon":7.68089212
-  },
-  {
-    "station_key":"Parent8014441",
-    "station_name":"L\u00f6rrach Hbf",
-    "lat":47.61405598,
-    "lon":7.66542313
-  },
-  {
-    "station_key":"Parent8069221",
-    "station_name":"L\u00f6rrach Museum\/Burghof",
-    "lat":47.60774553,
-    "lon":7.6611741
-  },
-  {
-    "station_key":"Parent8083846",
-    "station_name":"L\u00f6rrach Schwarzwaldstrasse",
-    "lat":47.62442237,
-    "lon":7.67248389
-  },
-  {
-    "station_key":"Parent8014440",
-    "station_name":"L\u00f6rrach-Stetten",
-    "lat":47.60141614,
-    "lon":7.65903611
-  },
-  {
-    "station_key":"Parent8029159",
-    "station_name":"L\u00f6wental",
-    "lat":47.66143273,
-    "lon":9.49938769
-  },
-  {
     "station_key":"Parent8506179",
     "station_name":"L\u00fcdem",
     "lat":47.54188245,
@@ -6288,18 +5370,6 @@
     "lon":7.68230248
   },
   {
-    "station_key":"Parent8505861",
-    "station_name":"Maccagno",
-    "lat":46.0454088,
-    "lon":8.73558613
-  },
-  {
-    "station_key":"Parent8774558",
-    "station_name":"Machilly",
-    "lat":46.25142373,
-    "lon":6.32806524
-  },
-  {
     "station_key":"Parent8508183",
     "station_name":"Madiswil",
     "lat":47.1670461,
@@ -6316,12 +5386,6 @@
     "station_name":"Magadino-Vira",
     "lat":46.14519856,
     "lon":8.85022015
-  },
-  {
-    "station_key":"Parent8774641",
-    "station_name":"Magland",
-    "lat":46.01691328,
-    "lon":6.62153586
   },
   {
     "station_key":"Parent8505396",
@@ -6348,12 +5412,6 @@
     "lon":9.57383107
   },
   {
-    "station_key":"Parent8505584",
-    "station_name":"Malesco",
-    "lat":46.12918855,
-    "lon":8.49889802
-  },
-  {
     "station_key":"Parent8500102",
     "station_name":"Malleray-B\u00e9vilard",
     "lat":47.23871589,
@@ -6366,46 +5424,22 @@
     "lon":8.18135255
   },
   {
-    "station_key":"Parent8771851",
-    "station_name":"Mamirolle",
-    "lat":47.20008251,
-    "lon":6.16195776
-  },
-  {
     "station_key":"Parent8506137",
     "station_name":"Mammern",
-    "lat":47.64407169,
-    "lon":8.91394663
+    "lat":47.64416248,
+    "lon":8.91400053
   },
   {
     "station_key":"Parent8506134",
     "station_name":"Mannenbach-Salenstein",
-    "lat":47.67374353,
-    "lon":9.0524938
-  },
-  {
-    "station_key":"Parent8774634",
-    "station_name":"Marignier",
-    "lat":46.08872574,
-    "lon":6.50778219
+    "lat":47.67364675,
+    "lon":9.05280821
   },
   {
     "station_key":"Parent8504481",
     "station_name":"Marin-Epagnier",
     "lat":47.00929264,
     "lon":7.01044349
-  },
-  {
-    "station_key":"Parent8014625",
-    "station_name":"Markdorf (Baden)",
-    "lat":47.71665434,
-    "lon":9.38876914
-  },
-  {
-    "station_key":"Parent8014580",
-    "station_name":"Markelfingen",
-    "lat":47.7390178,
-    "lon":9.00340985
   },
   {
     "station_key":"Parent8505303",
@@ -6438,18 +5472,6 @@
     "lon":7.05856624
   },
   {
-    "station_key":"Parent8594466",
-    "station_name":"Martigny-Expo",
-    "lat":46.09732898,
-    "lon":7.07567017
-  },
-  {
-    "station_key":"Parent8505593",
-    "station_name":"Masera",
-    "lat":46.13190286,
-    "lon":8.32379841
-  },
-  {
     "station_key":"Parent8501420",
     "station_name":"Massongex",
     "lat":46.24167654,
@@ -6474,22 +5496,10 @@
     "lon":8.93285617
   },
   {
-    "station_key":"Parent8014446",
-    "station_name":"Maulburg",
-    "lat":47.6443743,
-    "lon":7.78065902
-  },
-  {
     "station_key":"Parent8501087",
     "station_name":"Mauraz",
     "lat":46.58492195,
     "lon":6.4297186
-  },
-  {
-    "station_key":"Parent8029156",
-    "station_name":"Meckenbeuren",
-    "lat":47.69975906,
-    "lon":9.55838903
   },
   {
     "station_key":"Parent8505001",
@@ -6536,8 +5546,8 @@
   {
     "station_key":"Parent8516219",
     "station_name":"Mellingen Heitersberg",
-    "lat":47.42814866,
-    "lon":8.27624159
+    "lat":47.42807573,
+    "lon":8.27636736
   },
   {
     "station_key":"Parent8509412",
@@ -6576,12 +5586,6 @@
     "lon":8.40905751
   },
   {
-    "station_key":"Parent8718440",
-    "station_name":"Meroux",
-    "lat":47.58600436,
-    "lon":6.89802832
-  },
-  {
     "station_key":"Parent8502225",
     "station_name":"Mettmenstetten",
     "lat":47.24427185,
@@ -6590,8 +5594,8 @@
   {
     "station_key":"Parent8501006",
     "station_name":"Meyrin",
-    "lat":46.22233234,
-    "lon":6.07690527
+    "lat":46.2223137,
+    "lon":6.07645611
   },
   {
     "station_key":"Parent8505217",
@@ -6602,8 +5606,8 @@
   {
     "station_key":"Parent8501014",
     "station_name":"Mies",
-    "lat":46.29842695,
-    "lon":6.16774291
+    "lat":46.29848901,
+    "lon":6.16765308
   },
   {
     "station_key":"Parent8505417",
@@ -6648,18 +5652,6 @@
     "lon":7.04213606
   },
   {
-    "station_key":"Parent8718452",
-    "station_name":"Montb\u00e9liard",
-    "lat":47.51059456,
-    "lon":6.80159417
-  },
-  {
-    "station_key":"Parent8771810",
-    "station_name":"Montferrand - Thoraise",
-    "lat":47.18469331,
-    "lon":5.90743809
-  },
-  {
     "station_key":"Parent8501421",
     "station_name":"Monthey",
     "lat":46.25565381,
@@ -6702,22 +5694,10 @@
     "lon":6.91755769
   },
   {
-    "station_key":"Parent8718427",
-    "station_name":"Montreux-Vieux",
-    "lat":47.61757425,
-    "lon":7.02481654
-  },
-  {
     "station_key":"Parent8501098",
     "station_name":"Montricher",
     "lat":46.59633017,
     "lon":6.39304937
-  },
-  {
-    "station_key":"Parent8774686",
-    "station_name":"Montroc-le-Planet",
-    "lat":45.99666625,
-    "lon":6.93423043
   },
   {
     "station_key":"Parent8507084",
@@ -6732,22 +5712,10 @@
     "lon":7.48438565
   },
   {
-    "station_key":"Parent8771543",
-    "station_name":"Morbier",
-    "lat":46.53926506,
-    "lon":6.01784104
-  },
-  {
     "station_key":"Parent8504007",
     "station_name":"Moreillon",
     "lat":46.50822461,
     "lon":6.78569399
-  },
-  {
-    "station_key":"Parent8771544",
-    "station_name":"Morez",
-    "lat":46.52604011,
-    "lon":6.02343754
   },
   {
     "station_key":"Parent8501037",
@@ -6762,28 +5730,10 @@
     "lon":6.50804271
   },
   {
-    "station_key":"Parent8739130",
-    "station_name":"Morre",
-    "lat":47.22588189,
-    "lon":6.06733821
-  },
-  {
-    "station_key":"Parent8771861",
-    "station_name":"Morteau",
-    "lat":47.05373251,
-    "lon":6.60487211
-  },
-  {
     "station_key":"Parent8509353",
     "station_name":"Morteratsch",
     "lat":46.45069547,
     "lon":9.94032574
-  },
-  {
-    "station_key":"Parent8718442",
-    "station_name":"Morvillars",
-    "lat":47.54961965,
-    "lon":6.9353623
   },
   {
     "station_key":"Parent8502029",
@@ -6800,8 +5750,8 @@
   {
     "station_key":"Parent8500105",
     "station_name":"Moutier",
-    "lat":47.28067307,
-    "lon":7.38104346
+    "lat":47.28046586,
+    "lon":7.3810255
   },
   {
     "station_key":"Parent8502195",
@@ -6814,18 +5764,6 @@
     "station_name":"Muhen Nord",
     "lat":47.34378997,
     "lon":8.05249821
-  },
-  {
-    "station_key":"Parent8718206",
-    "station_name":"Mulhouse",
-    "lat":47.74195376,
-    "lon":7.34304473
-  },
-  {
-    "station_key":"Parent8718205",
-    "station_name":"Mulhouse Dornach",
-    "lat":47.7468225,
-    "lon":7.30821704
   },
   {
     "station_key":"Parent8500303",
@@ -6856,12 +5794,6 @@
     "station_name":"Murg",
     "lat":47.11329288,
     "lon":9.21471157
-  },
-  {
-    "station_key":"Parent8014467",
-    "station_name":"Murg (Baden)",
-    "lat":47.55345145,
-    "lon":8.01872155
   },
   {
     "station_key":"Parent8508102",
@@ -6896,14 +5828,14 @@
   {
     "station_key":"Parent8500020",
     "station_name":"Muttenz",
-    "lat":47.53359219,
-    "lon":7.647897
+    "lat":47.53395609,
+    "lon":7.64708852
   },
   {
     "station_key":"Parent8502106",
     "station_name":"M\u00e4genwil",
-    "lat":47.41494118,
-    "lon":8.23634741
+    "lat":47.41450959,
+    "lon":8.23515265
   },
   {
     "station_key":"Parent8503106",
@@ -6956,8 +5888,8 @@
   {
     "station_key":"Parent8502217",
     "station_name":"M\u00fchlau",
-    "lat":47.22523523,
-    "lon":8.38796507
+    "lat":47.22502171,
+    "lon":8.38852202
   },
   {
     "station_key":"Parent8509418",
@@ -6966,22 +5898,10 @@
     "lon":9.17179905
   },
   {
-    "station_key":"Parent8014556",
-    "station_name":"M\u00fchlhausen (b Engen)",
-    "lat":47.81362805,
-    "lon":8.80425335
-  },
-  {
     "station_key":"Parent8507481",
     "station_name":"M\u00fclenen",
     "lat":46.63850368,
     "lon":7.69104309
-  },
-  {
-    "station_key":"Parent8014413",
-    "station_name":"M\u00fcllheim im Markgr\u00e4flerland",
-    "lat":47.80974292,
-    "lon":7.59933408
   },
   {
     "station_key":"Parent8506103",
@@ -7068,18 +5988,6 @@
     "lon":7.06134204
   },
   {
-    "station_key":"Parent8101242",
-    "station_name":"Nendeln",
-    "lat":47.20020458,
-    "lon":9.54162647
-  },
-  {
-    "station_key":"Parent8101233",
-    "station_name":"Nenzing",
-    "lat":47.19156131,
-    "lon":9.70825497
-  },
-  {
     "station_key":"Parent8506299",
     "station_name":"Nesslau-Neu St. Johann",
     "lat":47.22663226,
@@ -7132,12 +6040,6 @@
     "station_name":"Neuch\u00e2tel-Serri\u00e8res",
     "lat":46.98396411,
     "lon":6.90336431
-  },
-  {
-    "station_key":"Parent8030446",
-    "station_name":"Neuenburg(Baden)",
-    "lat":47.81148041,
-    "lon":7.56275468
   },
   {
     "station_key":"Parent8504192",
@@ -7302,22 +6204,10 @@
     "lon":6.72179683
   },
   {
-    "station_key":"Parent8002375",
-    "station_name":"Nonnenhorn",
-    "lat":47.57511524,
-    "lon":9.61267423
-  },
-  {
     "station_key":"Parent8502008",
     "station_name":"Nottwil",
     "lat":47.13881059,
     "lon":8.13860173
-  },
-  {
-    "station_key":"Parent8771841",
-    "station_name":"Novillars",
-    "lat":47.28395776,
-    "lon":6.13270861
   },
   {
     "station_key":"Parent8501030",
@@ -7342,12 +6232,6 @@
     "station_name":"N\u00e4tschen",
     "lat":46.64229059,
     "lon":8.60910334
-  },
-  {
-    "station_key":"Parent8101231",
-    "station_name":"N\u00fcziders",
-    "lat":47.17075312,
-    "lon":9.79440341
   },
   {
     "station_key":"Parent8506108",
@@ -7472,8 +6356,8 @@
   {
     "station_key":"Parent8502219",
     "station_name":"Oberr\u00fcti",
-    "lat":47.16599564,
-    "lon":8.40484441
+    "lat":47.16592845,
+    "lon":8.40478153
   },
   {
     "station_key":"Parent8501661",
@@ -7496,8 +6380,8 @@
   {
     "station_key":"Parent8506016",
     "station_name":"Oberwinterthur",
-    "lat":47.50708124,
-    "lon":8.75994844
+    "lat":47.5079247,
+    "lon":8.76038862
   },
   {
     "station_key":"Parent8508070",
@@ -7508,8 +6392,8 @@
   {
     "station_key":"Parent8500212",
     "station_name":"Oensingen",
-    "lat":47.28503636,
-    "lon":7.70987177
+    "lat":47.28510949,
+    "lon":7.71036585
   },
   {
     "station_key":"Parent8507273",
@@ -7604,8 +6488,8 @@
   {
     "station_key":"Parent8502105",
     "station_name":"Othmarsingen",
-    "lat":47.40711724,
-    "lon":8.21408716
+    "lat":47.40743338,
+    "lon":8.21480581
   },
   {
     "station_key":"Parent8501366",
@@ -7668,18 +6552,6 @@
     "lon":7.13609984
   },
   {
-    "station_key":"Parent8774562",
-    "station_name":"Perrignier",
-    "lat":46.30345396,
-    "lon":6.42497549
-  },
-  {
-    "station_key":"Parent8718426",
-    "station_name":"Petit-Croix",
-    "lat":47.61024679,
-    "lon":6.99483976
-  },
-  {
     "station_key":"Parent8504387",
     "station_name":"Petit-Martel",
     "lat":47.01009507,
@@ -7720,12 +6592,6 @@
     "station_name":"Pieterlen",
     "lat":47.1714493,
     "lon":7.34032283
-  },
-  {
-    "station_key":"Parent8505862",
-    "station_name":"Pino-Tronzano",
-    "lat":46.09892988,
-    "lon":8.73695157
   },
   {
     "station_key":"Parent8501471",
@@ -7770,12 +6636,6 @@
     "lon":6.98674594
   },
   {
-    "station_key":"Parent8771500",
-    "station_name":"Pontarlier",
-    "lat":46.90059676,
-    "lon":6.35331688
-  },
-  {
     "station_key":"Parent8505398",
     "station_name":"Ponte Tresa",
     "lat":45.9699875,
@@ -7800,28 +6660,16 @@
     "lon":7.08024259
   },
   {
-    "station_key":"Parent8301116",
-    "station_name":"Porto Valtravaglia",
-    "lat":45.95814211,
-    "lon":8.67372814
-  },
-  {
     "station_key":"Parent8509361",
     "station_name":"Poschiavo",
     "lat":46.32457481,
     "lon":10.05435788
   },
   {
-    "station_key":"Parent8774538",
-    "station_name":"Pougny-Chancy",
-    "lat":46.14473799,
-    "lon":5.96118429
-  },
-  {
     "station_key":"Parent8500021",
     "station_name":"Pratteln",
-    "lat":47.5226679,
-    "lon":7.69081851
+    "lat":47.5226861,
+    "lon":7.6912497
   },
   {
     "station_key":"Parent8517131",
@@ -7836,18 +6684,6 @@
     "lon":9.77682338
   },
   {
-    "station_key":"Parent8501950",
-    "station_name":"Preglia",
-    "lat":46.14542884,
-    "lon":8.29304907
-  },
-  {
-    "station_key":"Parent8505594",
-    "station_name":"Prestinone",
-    "lat":46.13304208,
-    "lon":8.47951238
-  },
-  {
     "station_key":"Parent8501163",
     "station_name":"Prilly-Chasseur",
     "lat":46.53970995,
@@ -7858,12 +6694,6 @@
     "station_name":"Prilly-Malley",
     "lat":46.52668907,
     "lon":6.60262632
-  },
-  {
-    "station_key":"Parent8774620",
-    "station_name":"Pringy (Haute-Savoie)",
-    "lat":45.93958529,
-    "lon":6.12336613
   },
   {
     "station_key":"Parent8500194",
@@ -7926,12 +6756,6 @@
     "lon":8.95716458
   },
   {
-    "station_key":"Parent8014571",
-    "station_name":"Radolfzell",
-    "lat":47.73587021,
-    "lon":8.96898641
-  },
-  {
     "station_key":"Parent8503404",
     "station_name":"Rafz",
     "lat":47.60319087,
@@ -7968,18 +6792,6 @@
     "lon":7.80143705
   },
   {
-    "station_key":"Parent8029153",
-    "station_name":"Ravensburg",
-    "lat":47.78448249,
-    "lon":9.60609856
-  },
-  {
-    "station_key":"Parent8505580",
-    "station_name":"Re",
-    "lat":46.1272897,
-    "lon":8.53888203
-  },
-  {
     "station_key":"Parent8505163",
     "station_name":"Realp",
     "lat":46.59844735,
@@ -8010,12 +6822,6 @@
     "lon":8.47133771
   },
   {
-    "station_key":"Parent8014583",
-    "station_name":"Reichenau (Baden)",
-    "lat":47.68934715,
-    "lon":9.12595802
-  },
-  {
     "station_key":"Parent8509183",
     "station_name":"Reichenau-Tamins",
     "lat":46.82395968,
@@ -8038,12 +6844,6 @@
     "station_name":"Reiden",
     "lat":47.24187512,
     "lon":7.96852369
-  },
-  {
-    "station_key":"Parent8774651",
-    "station_name":"Reignier",
-    "lat":46.12543436,
-    "lon":6.26758167
   },
   {
     "station_key":"Parent8502168",
@@ -8108,8 +6908,8 @@
   {
     "station_key":"Parent8506036",
     "station_name":"Reutlingen",
-    "lat":47.52901288,
-    "lon":8.75312125
+    "lat":47.52966189,
+    "lon":8.75215107
   },
   {
     "station_key":"Parent8501083",
@@ -8130,22 +6930,10 @@
     "lon":7.79169033
   },
   {
-    "station_key":"Parent8014462",
-    "station_name":"Rheinfelden (Baden)",
-    "lat":47.55692529,
-    "lon":7.78420736
-  },
-  {
     "station_key":"Parent8500313",
     "station_name":"Rheinfelden Augarten",
     "lat":47.54570269,
     "lon":7.7676065
-  },
-  {
-    "station_key":"Parent8014419",
-    "station_name":"Rheinweiler",
-    "lat":47.7095342,
-    "lon":7.53164602
   },
   {
     "station_key":"Parent8509185",
@@ -8250,22 +7038,10 @@
     "lon":8.92552592
   },
   {
-    "station_key":"Parent8718207",
-    "station_name":"Rixheim",
-    "lat":47.74873726,
-    "lon":7.40615138
-  },
-  {
     "station_key":"Parent8501304",
     "station_name":"Roche VD",
     "lat":46.35869591,
     "lon":6.92705289
-  },
-  {
-    "station_key":"Parent8771840",
-    "station_name":"Roche-lez-Beaupr\u00e9",
-    "lat":47.27628503,
-    "lon":6.1109604
   },
   {
     "station_key":"Parent8501369",
@@ -8342,14 +7118,8 @@
   {
     "station_key":"Parent8504023",
     "station_name":"Romont FR",
-    "lat":46.69350503,
-    "lon":6.91180848
-  },
-  {
-    "station_key":"Parent8718531",
-    "station_name":"Ronchamp",
-    "lat":47.69911215,
-    "lon":6.62331452
+    "lat":46.69371452,
+    "lon":6.91207797
   },
   {
     "station_key":"Parent8515997",
@@ -8360,8 +7130,8 @@
   {
     "station_key":"Parent8506311",
     "station_name":"Rorschach",
-    "lat":47.47800087,
-    "lon":9.5051369
+    "lat":47.47792801,
+    "lon":9.505083
   },
   {
     "station_key":"Parent8506306",
@@ -8478,12 +7248,6 @@
     "lon":9.14546045
   },
   {
-    "station_key":"Parent8774614",
-    "station_name":"Rumilly",
-    "lat":45.86298756,
-    "lon":5.94817669
-  },
-  {
     "station_key":"Parent8502114",
     "station_name":"Rupperswil",
     "lat":47.403293,
@@ -8492,8 +7256,8 @@
   {
     "station_key":"Parent8501002",
     "station_name":"Russin",
-    "lat":46.18839363,
-    "lon":6.01803867
+    "lat":46.18839984,
+    "lon":6.01798477
   },
   {
     "station_key":"Parent8506006",
@@ -8568,12 +7332,6 @@
     "lon":8.9695254
   },
   {
-    "station_key":"Parent8505581",
-    "station_name":"S. Maria Maggiore",
-    "lat":46.13644716,
-    "lon":8.46059386
-  },
-  {
     "station_key":"Parent8505407",
     "station_name":"S. Nazzaro",
     "lat":46.13501544,
@@ -8606,8 +7364,8 @@
   {
     "station_key":"Parent8502100",
     "station_name":"Safenwil",
-    "lat":47.32181754,
-    "lon":7.98360641
+    "lat":47.32175665,
+    "lon":7.98351658
   },
   {
     "station_key":"Parent8509269",
@@ -8622,52 +7380,10 @@
     "lon":6.994175
   },
   {
-    "station_key":"Parent8774407",
-    "station_name":"Saint-Gervais-les-Bains",
-    "lat":45.90641612,
-    "lon":6.70055167
-  },
-  {
-    "station_key":"Parent8774543",
-    "station_name":"Saint-Julien-en-Genevois",
-    "lat":46.14193095,
-    "lon":6.08559198
-  },
-  {
-    "station_key":"Parent8771541",
-    "station_name":"Saint-Laurent-en-Grandvaux",
-    "lat":46.57478959,
-    "lon":5.95119503
-  },
-  {
-    "station_key":"Parent8718213",
-    "station_name":"Saint-Louis (Haut-Rhin)",
-    "lat":47.59031212,
-    "lon":7.55537951
-  },
-  {
-    "station_key":"Parent8718101",
-    "station_name":"Saint-Louis la Chauss\u00e9e",
-    "lat":47.60944131,
-    "lon":7.53125076
-  },
-  {
-    "station_key":"Parent8771515",
-    "station_name":"Sainte-Colombe",
-    "lat":46.87920811,
-    "lon":6.26597369
-  },
-  {
     "station_key":"Parent8506009",
     "station_name":"Saland",
     "lat":47.39474976,
     "lon":8.85384036
-  },
-  {
-    "station_key":"Parent8014616",
-    "station_name":"Salem",
-    "lat":47.75779665,
-    "lon":9.29726675
   },
   {
     "station_key":"Parent8509402",
@@ -8680,12 +7396,6 @@
     "station_name":"Salgesch",
     "lat":46.30935547,
     "lon":7.57878961
-  },
-  {
-    "station_key":"Parent8774643",
-    "station_name":"Sallanches-Combloux-Meg\u00e8ve",
-    "lat":45.93564327,
-    "lon":6.63648382
   },
   {
     "station_key":"Parent8501562",
@@ -8718,12 +7428,6 @@
     "lon":9.5216659
   },
   {
-    "station_key":"Parent8301140",
-    "station_name":"Sangiano",
-    "lat":45.87436543,
-    "lon":8.63081562
-  },
-  {
     "station_key":"Parent8509411",
     "station_name":"Sargans",
     "lat":47.04482668,
@@ -8744,8 +7448,8 @@
   {
     "station_key":"Parent8501003",
     "station_name":"Satigny",
-    "lat":46.21422725,
-    "lon":6.03766686
+    "lat":46.21425212,
+    "lon":6.03763092
   },
   {
     "station_key":"Parent8505350",
@@ -8758,18 +7462,6 @@
     "station_name":"Saxon",
     "lat":46.14964841,
     "lon":7.17375721
-  },
-  {
-    "station_key":"Parent8771850",
-    "station_name":"Sa\u00f4ne",
-    "lat":47.2097679,
-    "lon":6.10131249
-  },
-  {
-    "station_key":"Parent8101243",
-    "station_name":"Schaan-Vaduz",
-    "lat":47.16829198,
-    "lon":9.50779592
   },
   {
     "station_key":"Parent8506384",
@@ -8840,26 +7532,14 @@
   {
     "station_key":"Parent8503429",
     "station_name":"Schlattingen",
-    "lat":47.66678692,
-    "lon":8.77041382
-  },
-  {
-    "station_key":"Parent8014417",
-    "station_name":"Schliengen",
-    "lat":47.76159509,
-    "lon":7.56893509
+    "lat":47.66662358,
+    "lon":8.77043178
   },
   {
     "station_key":"Parent8503509",
     "station_name":"Schlieren",
-    "lat":47.39918269,
-    "lon":8.44685862
-  },
-  {
-    "station_key":"Parent8101234",
-    "station_name":"Schlins-Beschling",
-    "lat":47.19489426,
-    "lon":9.69052223
+    "lat":47.39917661,
+    "lon":8.44724489
   },
   {
     "station_key":"Parent8506039",
@@ -8884,24 +7564,6 @@
     "station_name":"Schmitten GR Landwasserviadukt",
     "lat":46.68028688,
     "lon":9.67223253
-  },
-  {
-    "station_key":"Parent8014447",
-    "station_name":"Schopfheim",
-    "lat":47.6479692,
-    "lon":7.82267322
-  },
-  {
-    "station_key":"Parent8083840",
-    "station_name":"Schopfheim West",
-    "lat":47.64554237,
-    "lon":7.80171553
-  },
-  {
-    "station_key":"Parent8021703",
-    "station_name":"Schopfheim-Schlattholz",
-    "lat":47.65380281,
-    "lon":7.83379437
   },
   {
     "station_key":"Parent8506035",
@@ -8968,12 +7630,6 @@
     "station_name":"Schw\u00e4bis",
     "lat":46.76266724,
     "lon":7.61928566
-  },
-  {
-    "station_key":"Parent8014464",
-    "station_name":"Schw\u00f6rstadt",
-    "lat":47.59102096,
-    "lon":7.87032885
   },
   {
     "station_key":"Parent8503119",
@@ -9122,8 +7778,8 @@
   {
     "station_key":"Parent8506003",
     "station_name":"Sennhof-Kyburg",
-    "lat":47.46468444,
-    "lon":8.76038862
+    "lat":47.46517635,
+    "lon":8.7603437
   },
   {
     "station_key":"Parent8502030",
@@ -9144,16 +7800,10 @@
     "lon":8.90471195
   },
   {
-    "station_key":"Parent8774671",
-    "station_name":"Servoz",
-    "lat":45.92430294,
-    "lon":6.76382002
-  },
-  {
     "station_key":"Parent8506020",
     "station_name":"Seuzach",
-    "lat":47.53553903,
-    "lon":8.73931414
+    "lat":47.53576949,
+    "lon":8.73888295
   },
   {
     "station_key":"Parent8509406",
@@ -9174,16 +7824,10 @@
     "lon":9.16825969
   },
   {
-    "station_key":"Parent8718210",
-    "station_name":"Sierentz",
-    "lat":47.65610219,
-    "lon":7.45933164
-  },
-  {
     "station_key":"Parent8501509",
     "station_name":"Sierre\/Siders",
-    "lat":46.29201528,
-    "lon":7.53264315
+    "lat":46.2921208,
+    "lon":7.53282281
   },
   {
     "station_key":"Parent8503502",
@@ -9210,40 +7854,16 @@
     "lon":8.55751309
   },
   {
-    "station_key":"Parent8014558",
-    "station_name":"Singen (Hohentwiel)",
-    "lat":47.75887763,
-    "lon":8.84127293
-  },
-  {
-    "station_key":"Parent8099985",
-    "station_name":"Singen (Htw) Industriegebiet",
-    "lat":47.75945133,
-    "lon":8.87213006
-  },
-  {
-    "station_key":"Parent8063365",
-    "station_name":"Singen (Htw)-Landesgartenschau",
-    "lat":47.76094291,
-    "lon":8.82711548
-  },
-  {
     "station_key":"Parent8502218",
     "station_name":"Sins",
-    "lat":47.18993749,
-    "lon":8.39772077
+    "lat":47.18831362,
+    "lon":8.39782857
   },
   {
     "station_key":"Parent8501506",
     "station_name":"Sion",
     "lat":46.22755278,
     "lon":7.35919644
-  },
-  {
-    "station_key":"Parent8014599",
-    "station_name":"Sipplingen",
-    "lat":47.79558749,
-    "lon":9.0955231
   },
   {
     "station_key":"Parent8506010",
@@ -9296,8 +7916,8 @@
   {
     "station_key":"Parent8500207",
     "station_name":"Solothurn",
-    "lat":47.20419001,
-    "lon":7.54268632
+    "lat":47.20417781,
+    "lon":7.54339599
   },
   {
     "station_key":"Parent8518963",
@@ -9414,12 +8034,6 @@
     "lon":6.14725234
   },
   {
-    "station_key":"Parent8774647",
-    "station_name":"St-Gervais-les-Bains-Le Fayet",
-    "lat":45.90642237,
-    "lon":6.70107269
-  },
-  {
     "station_key":"Parent8501428",
     "station_name":"St-Gingolph (Suisse)",
     "lat":46.39239298,
@@ -9454,12 +8068,6 @@
     "station_name":"St-Maurice",
     "lat":46.21637174,
     "lon":7.00204425
-  },
-  {
-    "station_key":"Parent8774631",
-    "station_name":"St-Pierre-en-Faucigny",
-    "lat":46.05931132,
-    "lon":6.37571188
   },
   {
     "station_key":"Parent8501036",
@@ -9572,8 +8180,8 @@
   {
     "station_key":"Parent8506148",
     "station_name":"St. Katharinental",
-    "lat":47.68752092,
-    "lon":8.73182219
+    "lat":47.68756325,
+    "lon":8.73203779
   },
   {
     "station_key":"Parent8506314",
@@ -9628,12 +8236,6 @@
     "station_name":"Stabio",
     "lat":45.84983661,
     "lon":8.94459715
-  },
-  {
-    "station_key":"Parent8718269",
-    "station_name":"Staffelfelden",
-    "lat":47.82797759,
-    "lon":7.26509791
   },
   {
     "station_key":"Parent8508256",
@@ -9698,8 +8300,8 @@
   {
     "station_key":"Parent8506139",
     "station_name":"Stein am Rhein",
-    "lat":47.65647735,
-    "lon":8.85421765
+    "lat":47.65610824,
+    "lon":8.85501715
   },
   {
     "station_key":"Parent8500320",
@@ -9730,12 +8332,6 @@
     "station_name":"Steinen",
     "lat":47.04766692,
     "lon":8.60745044
-  },
-  {
-    "station_key":"Parent8014445",
-    "station_name":"Steinen (D)",
-    "lat":47.64160231,
-    "lon":7.74156434
   },
   {
     "station_key":"Parent8503280",
@@ -9776,8 +8372,8 @@
   {
     "station_key":"Parent8503147",
     "station_name":"Stettbach",
-    "lat":47.39704836,
-    "lon":8.59613167
+    "lat":47.39721255,
+    "lon":8.59614065
   },
   {
     "station_key":"Parent8507066",
@@ -9814,12 +8410,6 @@
     "station_name":"St\u00f6ckli",
     "lat":46.51681164,
     "lon":7.38840067
-  },
-  {
-    "station_key":"Parent8014546",
-    "station_name":"St\u00fchlingen",
-    "lat":47.74312568,
-    "lon":8.44613098
   },
   {
     "station_key":"Parent8504413",
@@ -9904,12 +8494,6 @@
     "station_name":"Sutz",
     "lat":47.10187165,
     "lon":7.21941858
-  },
-  {
-    "station_key":"Parent8774675",
-    "station_name":"Taconnaz",
-    "lat":45.89920852,
-    "lon":6.8258936
   },
   {
     "station_key":"Parent8503139",
@@ -10002,34 +8586,10 @@
     "lon":8.56477148
   },
   {
-    "station_key":"Parent8718256",
-    "station_name":"Thann",
-    "lat":47.80912151,
-    "lon":7.10704832
-  },
-  {
-    "station_key":"Parent8747260",
-    "station_name":"Thann Centre",
-    "lat":47.81006267,
-    "lon":7.10096673
-  },
-  {
-    "station_key":"Parent8718288",
-    "station_name":"Thann Saint-Jacques",
-    "lat":47.81327816,
-    "lon":7.09355562
-  },
-  {
     "station_key":"Parent8503461",
     "station_name":"Thayngen",
     "lat":47.74552381,
     "lon":8.70322882
-  },
-  {
-    "station_key":"Parent8774564",
-    "station_name":"Thonon-les-Bains",
-    "lat":46.36895536,
-    "lon":6.4819736
   },
   {
     "station_key":"Parent8507100",
@@ -10066,24 +8626,6 @@
     "station_name":"Tiefencastel",
     "lat":46.66399546,
     "lon":9.57244767
-  },
-  {
-    "station_key":"Parent8014478",
-    "station_name":"Tiengen (Hochrhein)",
-    "lat":47.63547073,
-    "lon":8.27200155
-  },
-  {
-    "station_key":"Parent8509369",
-    "station_name":"Tirano",
-    "lat":46.21581853,
-    "lon":10.16567711
-  },
-  {
-    "station_key":"Parent8101240",
-    "station_name":"Tisis (Feldkirch)",
-    "lat":47.22801094,
-    "lon":9.57506177
   },
   {
     "station_key":"Parent8506183",
@@ -10136,8 +8678,8 @@
   {
     "station_key":"Parent8506118",
     "station_name":"Triboltingen",
-    "lat":47.66301182,
-    "lon":9.10917749
+    "lat":47.66289687,
+    "lon":9.10876427
   },
   {
     "station_key":"Parent8500037",
@@ -10158,22 +8700,10 @@
     "lon":9.4614159
   },
   {
-    "station_key":"Parent8718424",
-    "station_name":"Trois Ch\u00eanes",
-    "lat":47.64808418,
-    "lon":6.84627638
-  },
-  {
     "station_key":"Parent8501464",
     "station_name":"Troistorrents",
     "lat":46.22811208,
     "lon":6.9156892
-  },
-  {
-    "station_key":"Parent8505597",
-    "station_name":"Trontano",
-    "lat":46.12260766,
-    "lon":8.33399428
   },
   {
     "station_key":"Parent8508208",
@@ -10272,6 +8802,12 @@
     "lon":7.77489183
   },
   {
+    "station_key":"Parent8518885",
+    "station_name":"T\u00e4sch Monte Rosa",
+    "lat":46.0745315,
+    "lon":7.77475709
+  },
+  {
     "station_key":"Parent8504463",
     "station_name":"T\u00e4uffelen",
     "lat":47.06650411,
@@ -10312,12 +8848,6 @@
     "station_name":"Uetliberg",
     "lat":47.3519763,
     "lon":8.48750738
-  },
-  {
-    "station_key":"Parent8014607",
-    "station_name":"Uhldingen-M\u00fchlhofen",
-    "lat":47.73699998,
-    "lon":9.24841636
   },
   {
     "station_key":"Parent8503055",
@@ -10436,8 +8966,8 @@
   {
     "station_key":"Parent8506208",
     "station_name":"Uzwil",
-    "lat":47.43644343,
-    "lon":9.13098859
+    "lat":47.43725764,
+    "lon":9.13150063
   },
   {
     "station_key":"Parent8501465",
@@ -10458,46 +8988,16 @@
     "lon":6.61133998
   },
   {
-    "station_key":"Parent8774541",
-    "station_name":"Valleiry",
-    "lat":46.10932519,
-    "lon":5.96722097
-  },
-  {
     "station_key":"Parent8501103",
     "station_name":"Vallorbe",
     "lat":46.71240536,
     "lon":6.37056453
   },
   {
-    "station_key":"Parent8774687",
-    "station_name":"Vallorcine (F)",
-    "lat":46.03340493,
-    "lon":6.93398788
-  },
-  {
     "station_key":"Parent8501362",
     "station_name":"Valmont",
     "lat":46.4285522,
     "lon":6.92929867
-  },
-  {
-    "station_key":"Parent8301205",
-    "station_name":"Varese",
-    "lat":45.81621312,
-    "lon":8.8332869
-  },
-  {
-    "station_key":"Parent8501951",
-    "station_name":"Varzo",
-    "lat":46.20630748,
-    "lon":8.24514192
-  },
-  {
-    "station_key":"Parent8774672",
-    "station_name":"Vaudagne",
-    "lat":45.90879761,
-    "lon":6.77270435
   },
   {
     "station_key":"Parent8504021",
@@ -10530,12 +9030,6 @@
     "lon":8.64920413
   },
   {
-    "station_key":"Parent8505599",
-    "station_name":"Verigo",
-    "lat":46.12174218,
-    "lon":8.35152042
-  },
-  {
     "station_key":"Parent8501168",
     "station_name":"Vernand-Camar\u00e8s",
     "lat":46.57023836,
@@ -10556,8 +9050,8 @@
   {
     "station_key":"Parent8501007",
     "station_name":"Vernier",
-    "lat":46.22071639,
-    "lon":6.09389241
+    "lat":46.22065424,
+    "lon":6.09403614
   },
   {
     "station_key":"Parent8501477",
@@ -10592,14 +9086,8 @@
   {
     "station_key":"Parent8501022",
     "station_name":"Versoix",
-    "lat":46.27953116,
-    "lon":6.16574865
-  },
-  {
-    "station_key":"Parent8718500",
-    "station_name":"Vesoul",
-    "lat":47.61754397,
-    "lon":6.15204036
+    "lat":46.27972983,
+    "lon":6.16573967
   },
   {
     "station_key":"Parent8501200",
@@ -10618,24 +9106,6 @@
     "station_name":"Veytaux-Chillon",
     "lat":46.41762273,
     "lon":6.92786137
-  },
-  {
-    "station_key":"Parent8774673",
-    "station_name":"Viaduc-Ste-Marie",
-    "lat":45.8971017,
-    "lon":6.78507416
-  },
-  {
-    "station_key":"Parent8718255",
-    "station_name":"Vieux-Thann",
-    "lat":47.8058032,
-    "lon":7.11956185
-  },
-  {
-    "station_key":"Parent8718128",
-    "station_name":"Vieux-Thann Zone Industrielle",
-    "lat":47.80210453,
-    "lon":7.13259641
   },
   {
     "station_key":"Parent8501089",
@@ -10710,12 +9180,6 @@
     "lon":7.88146796
   },
   {
-    "station_key":"Parent8718453",
-    "station_name":"Voujeaucourt",
-    "lat":47.47897229,
-    "lon":6.76997348
-  },
-  {
     "station_key":"Parent8501424",
     "station_name":"Vouvry",
     "lat":46.33649667,
@@ -10788,12 +9252,6 @@
     "lon":8.31971107
   },
   {
-    "station_key":"Parent8014474",
-    "station_name":"Waldshut",
-    "lat":47.6213708,
-    "lon":8.21952197
-  },
-  {
     "station_key":"Parent8506281",
     "station_name":"Waldstatt",
     "lat":47.3575934,
@@ -10804,12 +9262,6 @@
     "station_name":"Walenstadt",
     "lat":47.11987671,
     "lon":9.31297828
-  },
-  {
-    "station_key":"Parent8718106",
-    "station_name":"Walheim",
-    "lat":47.64169915,
-    "lon":7.26339111
   },
   {
     "station_key":"Parent8508262",
@@ -10832,8 +9284,8 @@
   {
     "station_key":"Parent8502121",
     "station_name":"Walterswil-Striegel",
-    "lat":47.31960701,
-    "lon":7.96241515
+    "lat":47.31992367,
+    "lon":7.96320567
   },
   {
     "station_key":"Parent8506350",
@@ -10878,12 +9330,6 @@
     "lon":9.42881604
   },
   {
-    "station_key":"Parent8002374",
-    "station_name":"Wasserburg (Bodensee)",
-    "lat":47.57190321,
-    "lon":9.63906673
-  },
-  {
     "station_key":"Parent8506200",
     "station_name":"Wattwil",
     "lat":47.29937907,
@@ -10900,36 +9346,6 @@
     "station_name":"Weberei Matzingen",
     "lat":47.52729023,
     "lon":8.9219596
-  },
-  {
-    "station_key":"Parent8014465",
-    "station_name":"Wehr-Brennet",
-    "lat":47.58092063,
-    "lon":7.91052846
-  },
-  {
-    "station_key":"Parent8014428",
-    "station_name":"Weil am Rhein",
-    "lat":47.59396526,
-    "lon":7.60841605
-  },
-  {
-    "station_key":"Parent8060978",
-    "station_name":"Weil am Rhein Gartenstadt",
-    "lat":47.5887066,
-    "lon":7.61628529
-  },
-  {
-    "station_key":"Parent8060979",
-    "station_name":"Weil am Rhein Pf\u00e4dlistrasse",
-    "lat":47.58901559,
-    "lon":7.62649015
-  },
-  {
-    "station_key":"Parent8014429",
-    "station_name":"Weil am Rhein-Ost",
-    "lat":47.59062716,
-    "lon":7.6347816
   },
   {
     "station_key":"Parent8506105",
@@ -10954,18 +9370,6 @@
     "station_name":"Weissenburg",
     "lat":46.65929759,
     "lon":7.47592352
-  },
-  {
-    "station_key":"Parent8014545",
-    "station_name":"Weizen",
-    "lat":47.7688349,
-    "lon":8.476512
-  },
-  {
-    "station_key":"Parent8014555",
-    "station_name":"Welschingen-Neuhausen",
-    "lat":47.83403228,
-    "lon":8.76921906
   },
   {
     "station_key":"Parent8508216",
@@ -11024,8 +9428,8 @@
   {
     "station_key":"Parent8506206",
     "station_name":"Wil SG",
-    "lat":47.46241308,
-    "lon":9.04099536
+    "lat":47.46235235,
+    "lon":9.04094146
   },
   {
     "station_key":"Parent8506008",
@@ -11070,12 +9474,6 @@
     "lon":7.55592748
   },
   {
-    "station_key":"Parent8718258",
-    "station_name":"Willer-sur-Thur",
-    "lat":47.84223875,
-    "lon":7.06975925
-  },
-  {
     "station_key":"Parent8508295",
     "station_name":"Willisau",
     "lat":47.12271905,
@@ -11108,8 +9506,8 @@
   {
     "station_key":"Parent8506001",
     "station_name":"Winterthur Gr\u00fcze",
-    "lat":47.49894327,
-    "lon":8.75083953
+    "lat":47.49875513,
+    "lon":8.75105512
   },
   {
     "station_key":"Parent8516218",
@@ -11120,8 +9518,8 @@
   {
     "station_key":"Parent8506002",
     "station_name":"Winterthur Seen",
-    "lat":47.48687661,
-    "lon":8.7672248
+    "lat":47.48743509,
+    "lon":8.76681157
   },
   {
     "station_key":"Parent8506044",
@@ -11132,8 +9530,8 @@
   {
     "station_key":"Parent8506038",
     "station_name":"Winterthur Wallr\u00fcti",
-    "lat":47.51703807,
-    "lon":8.76086472
+    "lat":47.51672258,
+    "lon":8.76088269
   },
   {
     "station_key":"Parent8506043",
@@ -11186,8 +9584,8 @@
   {
     "station_key":"Parent8507063",
     "station_name":"Worb Dorf",
-    "lat":46.93006891,
-    "lon":7.56239535
+    "lat":46.92998303,
+    "lon":7.56246722
   },
   {
     "station_key":"Parent8508200",
@@ -11206,18 +9604,6 @@
     "station_name":"Worblaufen",
     "lat":46.97884058,
     "lon":7.4574362
-  },
-  {
-    "station_key":"Parent8080100",
-    "station_name":"Wut\u00f6schingen",
-    "lat":47.66208615,
-    "lon":8.36365665
-  },
-  {
-    "station_key":"Parent8014459",
-    "station_name":"Wyhlen",
-    "lat":47.54632724,
-    "lon":7.69091732
   },
   {
     "station_key":"Parent8508006",
@@ -11274,12 +9660,6 @@
     "lon":6.74683287
   },
   {
-    "station_key":"Parent8014450",
-    "station_name":"Zell (Wiesental)",
-    "lat":47.70562316,
-    "lon":7.84914658
-  },
-  {
     "station_key":"Parent8508293",
     "station_name":"Zell LU",
     "lat":47.13675129,
@@ -11316,16 +9696,10 @@
     "lon":7.03057474
   },
   {
-    "station_key":"Parent8718219",
-    "station_name":"Zillisheim",
-    "lat":47.69450499,
-    "lon":7.29447282
-  },
-  {
     "station_key":"Parent8501000",
     "station_name":"Zimeysa",
-    "lat":46.22123847,
-    "lon":6.06598175
+    "lat":46.22126955,
+    "lon":6.06597277
   },
   {
     "station_key":"Parent8509054",
@@ -11356,12 +9730,6 @@
     "station_name":"Zollikon",
     "lat":47.3373313,
     "lon":8.5695595
-  },
-  {
-    "station_key":"Parent8505578",
-    "station_name":"Zornasco",
-    "lat":46.12970527,
-    "lon":8.4908042
   },
   {
     "station_key":"Parent8502274",
@@ -11528,8 +9896,8 @@
   {
     "station_key":"Parent8503020",
     "station_name":"Z\u00fcrich Hardbr\u00fccke",
-    "lat":47.3853354,
-    "lon":8.51717874
+    "lat":47.38519551,
+    "lon":8.51712484
   },
   {
     "station_key":"Parent8503094",
@@ -11576,8 +9944,8 @@
   {
     "station_key":"Parent8503003",
     "station_name":"Z\u00fcrich Stadelhofen",
-    "lat":47.36662332,
-    "lon":8.54868265
+    "lat":47.36661115,
+    "lon":8.54848502
   },
   {
     "station_key":"Parent8503004",
@@ -11608,29 +9976,5 @@
     "station_name":"Z\u00fcrich Wollishofen",
     "lat":47.34823327,
     "lon":8.53370774
-  },
-  {
-    "station_key":"Parent8771853",
-    "station_name":"\u00c9talans",
-    "lat":47.15575859,
-    "lon":6.27049221
-  },
-  {
-    "station_key":"Parent8038379",
-    "station_name":"\u00dcberlingen",
-    "lat":47.76910056,
-    "lon":9.16285183
-  },
-  {
-    "station_key":"Parent8014601",
-    "station_name":"\u00dcberlingen Therme",
-    "lat":47.76926962,
-    "lon":9.14564011
-  },
-  {
-    "station_key":"Parent8064617",
-    "station_name":"\u00dcberlingen-Nussdorf",
-    "lat":47.75486158,
-    "lon":9.18814839
   }
 ]
