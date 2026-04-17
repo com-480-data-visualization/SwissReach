@@ -41,6 +41,7 @@ from reachability import (
     load_active_stop_times,
     resolve_start_station,
 )
+from spatial import filter_stops_within_switzerland, load_swiss_boundary
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "docs" / "public" / "data"
@@ -63,15 +64,11 @@ def main() -> None:
     rail_trips  = filter_rail_trips(trips_df, rail_routes)
     rail_stop_ids = filter_rail_stop_ids(stop_times_raw, rail_trips)
 
-    # Keep only rail stops inside Switzerland's bounding box, then dedup
+    # Keep only rail stops strictly inside Switzerland's boundary, then dedup
     # (Swiss GTFS includes cross-border trains to Germany, France, Netherlands, etc.)
-    CH_LAT = (45.80, 47.85)
-    CH_LON = (5.90, 10.55)
-    train_stops = stops_df[
-        stops_df["stop_id"].astype(str).isin([str(s) for s in rail_stop_ids])
-        & stops_df["stop_lat"].between(*CH_LAT)
-        & stops_df["stop_lon"].between(*CH_LON)
-    ].copy()
+    boundary_wgs84, _ = load_swiss_boundary()
+    rail_stops_df = stops_df[stops_df["stop_id"].astype(str).isin([str(s) for s in rail_stop_ids])].copy()
+    train_stops = filter_stops_within_switzerland(rail_stops_df, boundary_wgs84)
     swiss_train_meta = build_station_meta(train_stops)
     print(f"  {len(swiss_train_meta)} rail stations (inside Switzerland)")
 
