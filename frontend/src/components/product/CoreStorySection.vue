@@ -117,8 +117,12 @@ const transitionName = computed(() => (direction.value > 0 ? 'story-forward' : '
 }
 
 @media (max-width: 720px) {
-  .story-shell,
+  .story-shell {
+    height: calc(var(--panel-count) * 100dvh);
+  }
+
   .story-stage {
+    height: 100dvh;
     min-height: 100dvh;
   }
 }

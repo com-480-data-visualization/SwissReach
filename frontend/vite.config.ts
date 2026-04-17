@@ -57,6 +57,20 @@ function copyDocsFonts(): Plugin {
   }
 }
 
+function copyDocsData(): Plugin {
+  const docsData = path.resolve(fileURLToPath(new URL('../docs/public/data', import.meta.url)))
+  return {
+    name: 'copy-docs-data',
+    closeBundle() {
+      const distDir = path.resolve(fileURLToPath(new URL('./dist', import.meta.url)))
+      const dataOutDir = path.join(distDir, 'data')
+      fs.mkdirSync(distDir, { recursive: true })
+      fs.rmSync(dataOutDir, { recursive: true, force: true })
+      fs.cpSync(docsData, dataOutDir, { recursive: true })
+    },
+  }
+}
+
 const docsPublicDir = path.resolve(fileURLToPath(new URL('../docs/public', import.meta.url)))
 
 // https://vite.dev/config/
@@ -66,6 +80,7 @@ export default defineConfig({
     vueDevTools(),
     serveDocsPublic(),
     copyDocsFonts(),
+    copyDocsData(),
   ],
   server: {
     fs: {

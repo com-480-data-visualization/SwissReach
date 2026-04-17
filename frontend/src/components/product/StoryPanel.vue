@@ -19,7 +19,10 @@ defineProps<{
     <div class="story-panel__inner">
       <div class="story-panel__copy">
         <div class="story-panel__copy-main">
-          <p class="story-panel__eyebrow">{{ panel.eyebrow }}</p>
+          <div class="story-panel__meta">
+            <span class="story-panel__topic">{{ panel.topic }}</span>
+            <span class="story-panel__kind">{{ panel.panelKind }}</span>
+          </div>
           <h3 class="story-panel__title">{{ panel.title }}</h3>
         </div>
         <div class="story-panel__copy-side">
@@ -29,7 +32,9 @@ defineProps<{
 
       <div class="story-panel__media-wrap">
         <StoryMedia :panel="panel" />
-        <p class="story-panel__caption">{{ panel.mediaCaption }}</p>
+        <div class="story-panel__footer">
+          <p class="story-panel__caption">{{ panel.mediaCaption }}</p>
+        </div>
       </div>
     </div>
   </article>
@@ -38,42 +43,75 @@ defineProps<{
 <style scoped>
 .story-panel {
   height: 100svh;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   padding:
-    clamp(6.5rem, 10vw, 7.75rem)
+    var(--section-top-padding)
     0
-    clamp(4.5rem, 8vw, 6rem);
+    var(--section-bottom-padding);
 }
 
 .story-panel__inner {
   width: 100%;
   height: 100%;
-  max-height: calc(100svh - 8rem);
+  max-height: calc(100svh - var(--section-top-padding) - var(--section-bottom-padding));
   display: flex;
   flex-direction: column;
-  gap: clamp(1.2rem, 2.5vw, 2.2rem);
-  padding: clamp(0.6rem, 1.4vw, 1rem);
+  gap: clamp(0.7rem, 1.5vw, 1rem);
+  padding: clamp(0.25rem, 1vw, 0.5rem);
 }
 
 .story-panel__copy {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 1.6rem);
+  align-items: end;
   width: 100%;
 }
 
 .story-panel__copy-main {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.story-panel__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.story-panel__topic,
+.story-panel__kind {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.7rem;
+  padding: 0 0.62rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.story-panel__topic {
+  background: rgba(189, 45, 45, 0.12);
+  color: var(--brand);
+}
+
+.story-panel__kind {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
 }
 
 .story-panel__copy-side {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 
 .story-panel__count {
@@ -91,31 +129,23 @@ defineProps<{
   text-transform: uppercase;
 }
 
-.story-panel__eyebrow {
-  margin: 0;
-  color: var(--brand);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
 .story-panel__title {
   margin: 0;
-  max-width: 25ch;
+  max-width: 22ch;
   color: var(--ink-strong);
-  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-size: clamp(1.45rem, 2vw, 2.05rem);
   line-height: 1.02;
   letter-spacing: -0.045em;
   font-weight: 700;
+  text-wrap: balance;
 }
 
 .story-panel__description {
   margin: 0;
-  max-width: 55rem;
+  max-width: 48rem;
   color: var(--ink-soft);
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 0.94rem;
+  line-height: 1.54;
   padding-bottom: 0;
 }
 
@@ -124,15 +154,22 @@ defineProps<{
   flex-direction: column;
   flex: 1;
   min-height: 0;
-  gap: 0.8rem;
+  gap: 0.7rem;
   align-self: stretch;
+}
+
+.story-panel__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
 .story-panel__caption {
   margin: 0;
-  max-width: 42rem;
+  max-width: 48rem;
   color: var(--ink-soft);
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   line-height: 1.48;
 }
 
@@ -144,10 +181,14 @@ defineProps<{
 
 @media (max-width: 1024px) {
   .story-panel__inner {
-    max-height: calc(100svh - 11rem);
+    max-height: calc(100svh - var(--section-top-padding) - var(--section-bottom-padding));
     padding-right: 0.25rem;
   }
 
+  .story-panel__copy {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
 
   .story-panel__title {
     max-width: none;
@@ -157,7 +198,7 @@ defineProps<{
 @media (max-width: 720px) {
   .story-panel {
     height: 100dvh;
-    padding: 5.7rem 0 4.5rem;
+    padding: var(--section-top-padding) 0 var(--section-bottom-padding);
   }
 
   .story-panel__description {
@@ -165,9 +206,12 @@ defineProps<{
   }
 
   .story-panel__inner {
-    max-height: calc(100dvh - 10.2rem);
-    padding: 0.4rem;
-    border-radius: 24px;
+    max-height: calc(100dvh - var(--section-top-padding) - var(--section-bottom-padding));
+    padding: 0.2rem;
+  }
+
+  .story-panel__caption {
+    font-size: 0.8rem;
   }
 }
 </style>

@@ -263,8 +263,7 @@ function onEndInput(e: Event) {
     </div>
 
     <div v-if="loadError" class="chart-fallback">
-      <p>This little ranking couldn’t load. Refresh the page, or try again later — the rest of the story still
-        works.</p>
+      <p>Rail load data is unavailable right now. Refresh and try again.</p>
     </div>
 
     <div v-else class="chart-body">

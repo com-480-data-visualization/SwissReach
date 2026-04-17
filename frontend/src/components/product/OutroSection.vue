@@ -2,12 +2,12 @@
   <section id="outro" class="page-section outro-shell">
     <div class="outro-grid">
       <div class="outro-copy">
-        <p class="section-label">Methodology</p>
+        <p class="section-label">Closing</p>
         <h2 class="section-title">
-          Built on open data from Swiss GTFS and structured POI datasets.
+          Mobility explains connection. Retail explains opportunity. SwissReach is useful because it keeps both in the same frame.
         </h2>
         <p class="section-text">
-          By processing national timetables and combining them with geospatial amenity data, SwissReach provides a trustworthy sense of what daily movement really looks like and how infrastructure caters to public needs.
+          The transport network tells us where Switzerland is well linked; the retail layer tells us what that linkage means for everyday life. Reading those layers together makes it easier to spot where a strong backbone really expands choice and where it still leaves daily opportunity uneven.
         </p>
 
         <div class="button-row outro-actions">
@@ -18,15 +18,15 @@
 
       <div class="outro-cards">
         <article class="outro-card section-frame">
-          <span class="outro-card__label">Data Layer</span>
-          <strong>Retail competition stories</strong>
-          <p>A dedicated supermarket dataset supports Migros vs Coop density analysis and broader food-retail mapping.</p>
+          <span class="outro-card__label">Argument</span>
+          <strong>Transport alone is not the whole story</strong>
+          <p>The page deliberately moves from rail geometry to reachable supermarkets so “coverage” never stays abstract for long.</p>
         </article>
         <article class="outro-card section-frame">
-          <span class="outro-card__label">Data Layer</span>
-          <strong>Consistent POI mappings</strong>
+          <span class="outro-card__label">Method</span>
+          <strong>Open GTFS and POI layers stay visible</strong>
           <p>
-            30-minute access counts for supermarkets, schools, and hospitals, alongside a 60-minute IKEA access coverage.
+            The current demo combines national timetable structure, station-level POI counts, and a branded supermarket export without pretending to be a live router.
           </p>
         </article>
       </div>
@@ -36,9 +36,11 @@
 
 <style scoped>
 .outro-shell {
+  height: 100svh;
   min-height: 100svh;
-  padding-top: clamp(5rem, 8vw, 7rem);
-  padding-bottom: clamp(5rem, 8vw, 7rem);
+  box-sizing: border-box;
+  padding-top: var(--section-top-padding);
+  padding-bottom: var(--section-bottom-padding);
   display: grid;
   align-items: center;
 }
@@ -97,10 +99,9 @@
 
 @media (max-width: 720px) {
   .outro-shell {
+    height: 100dvh;
     min-height: 100dvh;
     align-items: start;
-    padding-top: 6.5rem;
-    padding-bottom: 3rem;
   }
 }
 </style>
