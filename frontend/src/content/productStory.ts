@@ -94,7 +94,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'reachability-lab',
     mediaPreset: 'transport-story',
-    mediaCaption: 'Fixed on Lausanne so the first panel reads like an argument, not like a control surface.',
+    mediaCaption: 'Lausanne at 08:00 provides a consistent morning baseline for the national map.',
   },
   {
     id: 'transport-playground',
@@ -128,7 +128,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'reachability-map',
     mediaPreset: 'transport-playground',
-    mediaCaption: 'Choose an origin, choose a departure, then read the national footprint.',
+    mediaCaption: 'Switch origin and departure to compare the national reachability footprint.',
   },
   {
     id: 'transport-load',
@@ -162,7 +162,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'busiest-rail',
     mediaPreset: 'transport-load',
-    mediaCaption: 'A dedicated rail-load view gives the ranking enough space to read as part of the transport story.',
+    mediaCaption: 'Rail load is shown separately so the ranking stays readable at a glance.',
   },
   {
     id: 'retail-story',
@@ -192,7 +192,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'retail-density',
     mediaPreset: 'retail-story',
-    mediaCaption: 'A national store footprint is enough to show that retail logic is related to transport, but not reducible to it.',
+    mediaCaption: 'National retail density follows its own spatial pattern across Switzerland.',
   },
   {
     id: 'retail-playground',
@@ -226,7 +226,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'retail-density',
     mediaPreset: 'retail-playground',
-    mediaCaption: 'Filtering the footprint is enough to make retail structure legible in three to five seconds.',
+    mediaCaption: 'Brand filters reveal how the national supermarket footprint changes by network.',
   },
   {
     id: 'retail-access-story',
@@ -260,7 +260,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'retail-access',
     mediaPreset: 'retail-access-story',
-    mediaCaption: 'This view is fixed to the morning baseline, so the takeaway is about opportunity shape rather than arbitrary control changes.',
+    mediaCaption: 'Retail access is shown on a fixed 08:00 baseline.',
   },
   {
     id: 'retail-access-playground',
@@ -294,7 +294,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'retail-access',
     mediaPreset: 'retail-access-playground',
-    mediaCaption: 'The interaction remains honest and light: compare station cases, switch the retail lens, and keep the fixed morning baseline in view.',
+    mediaCaption: 'Compare stations and retail types on the same published morning baseline.',
   },
   {
     id: 'brand-story',
@@ -328,7 +328,7 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'retail-density',
     mediaPreset: 'brand-story',
-    mediaCaption: 'Difference mode is a retail reading of the same Swiss surface, not a detached appendix.',
+    mediaCaption: 'Difference mode highlights where one supermarket network is denser than the other.',
   },
   {
     id: 'brand-playground',
@@ -362,6 +362,6 @@ export const storyPanels: StoryPanelContent[] = [
     ],
     mediaVariant: 'retail-density',
     mediaPreset: 'brand-playground',
-    mediaCaption: 'Brand switching is the last step in the sequence because it depends on the transport and retail layers that came before it.',
+    mediaCaption: 'Switch between Both, Migros, Coop, and Difference to compare brand structure directly.',
   },
 ]

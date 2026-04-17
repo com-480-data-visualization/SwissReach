@@ -13,17 +13,17 @@ import { heroPreviewUrl } from '@/content/productStory'
         </h1>
 
         <p class="hero-summary">
-          Start with the rail backbone, then read what it means for daily supermarket access, regional retail density, and brand structure across Switzerland.
+          Swiss public transport, retail density, and everyday access in one national view.
         </p>
 
         <div class="button-row hero-actions">
-          <a class="button-primary" href="#story">Explore the map</a>
-          <a class="button-secondary" href="https://swissreach.online/docs/">Read the docs</a>
+          <a class="button-primary" href="#story">Enter</a>
+          <a class="button-secondary" href="https://swissreach.online/docs/">Docs</a>
         </div>
 
         <div class="hero-guidance">
           <span class="hero-guidance__line" />
-          <span class="hero-guidance__text">Scroll to move through the story</span>
+          <span class="hero-guidance__text">Scroll to continue</span>
         </div>
       </div>
 

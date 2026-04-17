@@ -13,8 +13,8 @@ import { brandLogoUrl } from '@/content/productStory'
       <nav class="nav-links" aria-label="Primary">
         <a href="#hero">Home</a>
         <a href="#intro">Overview</a>
-        <a href="#story">Map Layers</a>
-        <a href="#outro">Methodology</a>
+        <a href="#story">Experience</a>
+        <a href="#outro">Closing</a>
       </nav>
     </div>
   </header>
