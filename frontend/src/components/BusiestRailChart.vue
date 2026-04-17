@@ -78,40 +78,42 @@ function draw() {
     .padding(0.12)
 
   const svg = d3.select(svgEl)
-  svg.selectAll('*').remove()
   svg.attr('viewBox', `0 0 ${w} ${h}`).attr('width', '100%').attr('height', h)
 
-  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`)
+  let g = svg.select<SVGGElement>('g.main-group')
+  if (g.empty()) {
+    g = svg.append('g').attr('class', 'main-group')
+    g.append('g').attr('class', 'x-grid')
+    g.append('g').attr('class', 'x-axis')
+    g.append('text').attr('class', 'x-axis-label')
+  }
+  g.attr('transform', `translate(${margin.left},${margin.top})`)
 
-  g.append('g')
-    .attr('class', 'x-grid')
+  const t = d3.transition().duration(420).ease(d3.easeCubicOut)
+
+  g.select<SVGGElement>('.x-grid')
     .attr('transform', `translate(0,${innerH})`)
-    .call(
-      d3
-        .axisBottom(x)
-        .ticks(5)
-        .tickSize(-innerH)
-        /* Grid only: tick lines, no labels (labels come from .x-axis below). */
-        .tickFormat(() => ''),
-    )
-    .call(g2 => {
-      g2.select('.domain').remove()
-      g2.selectAll('text').remove()
-    })
+    .transition(t as any)
+    .call(d3.axisBottom(x).ticks(5).tickSize(-innerH).tickFormat(() => ''))
     .selectAll('line')
     .attr('stroke', 'rgba(120,90,92,0.12)')
     .attr('stroke-dasharray', '3 4')
 
-  g.append('g')
-    .attr('class', 'x-axis')
-    .attr('transform', `translate(0,${innerH})`)
-    .call(d3.axisBottom(x).ticks(5).tickSizeOuter(0))
-    .call(g2 => {
-      g2.selectAll('text').attr('fill', '#7a6568').attr('font-size', '11px')
-      g2.selectAll('path, line').attr('stroke', 'rgba(120,90,92,0.35)')
-    })
+  g.select('.x-grid .domain').remove()
 
-  g.append('text')
+  g.select<SVGGElement>('.x-axis')
+    .attr('transform', `translate(0,${innerH})`)
+    .transition(t as any)
+    .call(d3.axisBottom(x).ticks(5).tickSizeOuter(0))
+    .selectAll('text')
+    .attr('fill', '#7a6568')
+    .attr('font-size', '11px')
+
+  g.selectAll('.x-axis path, .x-axis line')
+    .transition(t as any)
+    .attr('stroke', 'rgba(120,90,92,0.35)')
+
+  g.select('.x-axis-label')
     .attr('x', innerW)
     .attr('y', innerH + 30)
     .attr('text-anchor', 'end')
@@ -120,50 +122,81 @@ function draw() {
     .text('Unique rail trips')
 
   g.selectAll('rect.bar')
-    .data(rows)
-    .join('rect')
-    .attr('class', 'bar')
-    .attr('x', 0)
-    .attr('y', d => y(d.name)!)
-    .attr('height', y.bandwidth())
-    .attr('rx', 4)
-    .attr('fill', d => stationColor(d.trips, minT, maxT))
-    .attr('stroke', 'rgba(255,255,255,0.85)')
-    .attr('stroke-width', 0.5)
-    .attr('width', 0)
-    .transition()
-    .duration(420)
-    .ease(d3.easeCubicOut)
-    .attr('width', d => x(d.trips))
+    .data(rows, (d: any) => d.name)
+    .join(
+      enter => enter.append('rect')
+        .attr('class', 'bar')
+        .attr('x', 0)
+        .attr('y', (d: any) => (y(d.name) || 0))
+        .attr('height', y.bandwidth())
+        .attr('rx', 4)
+        .attr('fill', (d: any) => stationColor(d.trips, minT, maxT))
+        .attr('stroke', 'rgba(255,255,255,0.85)')
+        .attr('stroke-width', 0.5)
+        .attr('width', 0)
+        .call(e => e.transition(t as any).attr('width', (d: any) => x(d.trips))),
+      update => update
+        .call(u => u.transition(t as any)
+          .attr('y', (d: any) => (y(d.name) || 0))
+          .attr('height', y.bandwidth())
+          .attr('width', (d: any) => x(d.trips))
+          .attr('fill', (d: any) => stationColor(d.trips, minT, maxT))
+        ),
+      exit => exit.call(ex => ex.transition(t as any).attr('width', 0).attr('opacity', 0).remove())
+    )
 
   g.selectAll('text.label')
-    .data(rows)
-    .join('text')
-    .attr('class', 'label')
-    .attr('x', -10)
-    .attr('y', d => (y(d.name)! + y.bandwidth() / 2) as number)
-    .attr('dy', '0.35em')
-    .attr('text-anchor', 'end')
-    .attr('fill', '#3d3335')
-    .attr('font-size', '11px')
-    .attr('font-weight', '600')
-    .text(d => d.name)
+    .data(rows, (d: any) => d.name)
+    .join(
+      enter => enter.append('text')
+        .attr('class', 'label')
+        .attr('x', -10)
+        .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+        .attr('dy', '0.35em')
+        .attr('text-anchor', 'end')
+        .attr('fill', '#3d3335')
+        .attr('font-size', '11px')
+        .attr('font-weight', '600')
+        .text((d: any) => d.name)
+        .attr('opacity', 0)
+        .call(e => e.transition(t as any).attr('opacity', 1)),
+      update => update
+        .call(u => u.transition(t as any)
+          .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+          .attr('opacity', 1)
+        ),
+      exit => exit.call(ex => ex.transition(t as any).attr('opacity', 0).remove())
+    )
 
   g.selectAll('text.val')
-    .data(rows)
-    .join('text')
-    .attr('class', 'val')
-    .attr('x', d => x(d.trips) + 6)
-    .attr('y', d => (y(d.name)! + y.bandwidth() / 2) as number)
-    .attr('dy', '0.35em')
-    .attr('fill', '#5b4b4d')
-    .attr('font-size', '10px')
-    .attr('opacity', 0)
-    .text(d => d.trips)
-    .transition()
-    .delay(200)
-    .duration(280)
-    .attr('opacity', 1)
+    .data(rows, (d: any) => d.name)
+    .join(
+      enter => enter.append('text')
+        .attr('class', 'val')
+        .attr('x', (d: any) => x(d.trips) + 6)
+        .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+        .attr('dy', '0.35em')
+        .attr('fill', '#5b4b4d')
+        .attr('font-size', '10px')
+        .attr('opacity', 0)
+        .text((d: any) => d.trips)
+        .call(e => e.transition(t as any).attr('opacity', 1)),
+      update => update
+        .call(u => u.transition(t as any)
+          .attr('x', (d: any) => x(d.trips) + 6)
+          .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+          .attr('opacity', 1)
+          .tween('text', function(this: SVGTextElement, d: any) {
+            const startStr = this.textContent || '0'
+            const startVal = parseInt(startStr.replace(/,/g, ''), 10) || 0
+            const iter = d3.interpolateRound(startVal, d.trips)
+            return function(tParam: number) {
+              this.textContent = iter(tParam).toString()
+            }
+          })
+        ),
+      exit => exit.call(ex => ex.transition(t as any).attr('opacity', 0).remove())
+    )
 }
 
 onMounted(async () => {
