@@ -2,35 +2,31 @@
   <section id="outro" class="page-section outro-shell">
     <div class="outro-grid">
       <div class="outro-copy">
-        <p class="section-label">Outro</p>
+        <p class="section-label">Methodology</p>
         <h2 class="section-title">
-          The page closes the way the product reads: calm, direct and ready for the next layer of
-          depth.
+          Built on open data from Swiss GTFS and structured POI datasets.
         </h2>
         <p class="section-text">
-          Once the horizontal story ends, vertical scrolling returns naturally. The takeaway is
-          concise: clearer reachability, stronger comparison and a more trustworthy sense of what
-          daily movement really looks like across the network.
+          By processing national timetables and combining them with geospatial amenity data, SwissReach provides a trustworthy sense of what daily movement really looks like and how infrastructure caters to public needs.
         </p>
 
         <div class="button-row outro-actions">
           <a class="button-primary" href="#hero">Back to top</a>
-          <a class="button-secondary" href="#story">Replay the core story</a>
+          <a class="button-secondary" href="https://swissreach.online/docs/">Read the methodology</a>
         </div>
       </div>
 
       <div class="outro-cards">
         <article class="outro-card section-frame">
-          <span class="outro-card__label">Why it works</span>
-          <strong>Story first, controls second</strong>
-          <p>The experience leads with clarity and only then opens into richer comparison.</p>
+          <span class="outro-card__label">Data Layer</span>
+          <strong>Retail competition stories</strong>
+          <p>A dedicated supermarket dataset supports Migros vs Coop density analysis and broader food-retail mapping.</p>
         </article>
         <article class="outro-card section-frame">
-          <span class="outro-card__label">What stays ready</span>
-          <strong>Built for steady iteration</strong>
+          <span class="outro-card__label">Data Layer</span>
+          <strong>Consistent POI mappings</strong>
           <p>
-            Each section is modular, restrained and prepared for future content without visual
-            drift.
+            30-minute access counts for supermarkets, schools, and hospitals, alongside a 60-minute IKEA access coverage.
           </p>
         </article>
       </div>

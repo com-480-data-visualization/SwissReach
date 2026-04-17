@@ -32,13 +32,13 @@ export const introMetrics: MetricItem[] = [
     tone: 'brand',
   },
   {
-    value: '08:00 focus',
-    label: 'A clear morning departure frame keeps comparison grounded in everyday routines.',
+    value: '1,938 stations',
+    label: 'Swiss GTFS is collapsed from raw stops into logical rail stations.',
     tone: 'neutral',
   },
   {
     value: 'Daily essentials',
-    label: 'Coverage is framed around the places people actually need on an ordinary weekday.',
+    label: 'Coverage is framed around supermarkets, schools, hospitals, and more.',
     tone: 'warm',
   },
 ]
@@ -69,8 +69,8 @@ export const storyPanels: StoryPanelContent[] = [
     id: 'feature-coverage',
     navLabel: 'Lausanne Lab',
     eyebrow: 'Lausanne',
-    title: 'Departure & window',
-    description: 'Stay in Lausanne. Slide when you leave — dawn, coffee time, noon, or the evening rush — and watch the country repaint itself. Then tighten or loosen how much time you are willing to spend: inside that budget the dots stay warm; anything that would take longer quietly steps back into the fog.',
+    title: 'Departure & Window',
+    description: 'Stay in Lausanne and adjust your departure time — 06:00, 08:00, or 18:00 — to observe the shift in national reachability. Budget your travel time to see which stations remain accessible and where the coverage begins to thin out.',
     highlights: [
       'Time-based comparative analysis.',
       'Detailed regional distribution and isolated gaps.',

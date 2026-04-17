@@ -6,19 +6,15 @@ import { heroPreviewUrl } from '@/content/productStory'
   <section id="hero" class="page-section hero-shell">
     <div class="hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow-pill">Swiss mobility, made legible</span>
+        <span class="eyebrow-pill">Swiss Mobility & Infrastructure Reachability Analysis</span>
         <h1 class="hero-title">
-          A quieter way to understand how public transport shapes daily reach across Swiss cities.
+          <span class="text-brand">SwissReach</span><br />
+          everyday reachability, visualized Switzerland
         </h1>
-        <p class="hero-text">
-          SwissReach reframes national transit coverage as a product experience: cleaner hierarchy,
-          calmer reading, and a story that moves from broad network access to ordinary decisions
-          that happen every day.
-        </p>
 
         <div class="button-row hero-actions">
-          <a class="button-primary" href="#story">Enter the product story</a>
-          <a class="button-secondary" href="#intro">See what it clarifies</a>
+          <a class="button-primary" href="#story">Explore the map</a>
+          <a class="button-secondary" href="https://swissreach.online/docs/">Read the docs</a>
         </div>
 
         <div class="hero-guidance">
@@ -46,12 +42,12 @@ import { heroPreviewUrl } from '@/content/productStory'
 
           <div class="hero-figure__footer">
             <div class="hero-note">
-              <strong>Clean framing</strong>
-              <span>One decisive view before deeper comparison begins.</span>
+              <strong>Nationwide rail backbone</strong>
+              <span>Swiss GTFS is filtered and collapsed into 1,938 logical rail stations.</span>
             </div>
             <div class="hero-note">
-              <strong>Measured emphasis</strong>
-              <span>Brand colour only highlights state changes and key moments.</span>
+              <strong>Accessibility plus amenities</strong>
+              <span>Connecting timetable reachability with supermarkets, schools, hospitals, and IKEA.</span>
             </div>
           </div>
         </figure>
@@ -82,24 +78,20 @@ import { heroPreviewUrl } from '@/content/productStory'
 
 .hero-title {
   margin: 1.15rem 0 0;
-  max-width: 12ch;
+  max-width: 40ch;
   color: var(--ink-strong);
-  font-size: clamp(2.7rem, 4vw, 4.7rem);
-  line-height: 0.98;
-  letter-spacing: -0.055em;
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   font-weight: 700;
-}
-
-.hero-text {
-  margin: 1.35rem 0 0;
-  max-width: 37rem;
-  color: var(--ink-soft);
-  font-size: 1.05rem;
-  line-height: 1.78;
 }
 
 .hero-actions {
   margin-top: 1.9rem;
+}
+
+.text-brand {
+  color: var(--brand);
 }
 
 .hero-guidance {
@@ -200,7 +192,7 @@ import { heroPreviewUrl } from '@/content/productStory'
   }
 
   .hero-title {
-    font-size: clamp(2.35rem, 11vw, 3.6rem);
+    font-size: clamp(2.1rem, 10vw, 3.1rem);
   }
 
   .hero-figure__head,

@@ -5,15 +5,12 @@ import { introMetrics } from '@/content/productStory'
 <template>
   <section id="intro" class="page-section intro-shell">
     <div class="intro-copy">
-      <p class="section-label">Intro</p>
+      <p class="section-label">Overview</p>
       <h2 class="section-title">
-        The page is built around one outcome: helping people understand practical reach, not just
-        abstract network scale.
+        Understanding practical reach, not just abstract network scale.
       </h2>
       <p class="section-text">
-        SwissReach keeps the product promise simple. It shows where the network carries weight,
-        where coverage begins to thin out, and why that difference matters once daily routines enter
-        the picture. The structure stays sparse on purpose so the story can breathe.
+        SwissReach illustrates where the railway network carries weight, where coverage begins to thin out, and why that difference matters once daily routines—like accessing schools or hospitals—enter the picture. We connect transit schedules with everyday points of interest.
       </p>
     </div>
 
