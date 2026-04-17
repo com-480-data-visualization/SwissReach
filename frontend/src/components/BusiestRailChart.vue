@@ -168,30 +168,31 @@ function draw() {
       exit => exit.call(ex => ex.transition(t as any).attr('opacity', 0).remove())
     )
 
-  g.selectAll('text.val')
-    .data(rows, (d: any) => d.name)
+  g.selectAll<SVGTextElement, Row>('text.val')
+    .data(rows, (d: Row) => d.name)
     .join(
       enter => enter.append('text')
         .attr('class', 'val')
-        .attr('x', (d: any) => x(d.trips) + 6)
-        .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+        .attr('x', (d: Row) => x(d.trips) + 6)
+        .attr('y', (d: Row) => (y(d.name) || 0) + y.bandwidth() / 2)
         .attr('dy', '0.35em')
         .attr('fill', '#5b4b4d')
         .attr('font-size', '10px')
         .attr('opacity', 0)
-        .text((d: any) => d.trips)
+        .text((d: Row) => d.trips)
         .call(e => e.transition(t as any).attr('opacity', 1)),
       update => update
         .call(u => u.transition(t as any)
-          .attr('x', (d: any) => x(d.trips) + 6)
-          .attr('y', (d: any) => (y(d.name) || 0) + y.bandwidth() / 2)
+          .attr('x', (d: Row) => x(d.trips) + 6)
+          .attr('y', (d: Row) => (y(d.name) || 0) + y.bandwidth() / 2)
           .attr('opacity', 1)
-          .tween('text', function(this: SVGTextElement, d: any) {
-            const startStr = this.textContent || '0'
+          .tween('text', function(d: Row) {
+            const node = this as SVGTextElement
+            const startStr = node.textContent || '0'
             const startVal = parseInt(startStr.replace(/,/g, ''), 10) || 0
             const iter = d3.interpolateRound(startVal, d.trips)
             return function(tParam: number) {
-              this.textContent = iter(tParam).toString()
+              node.textContent = iter(tParam).toString()
             }
           })
         ),
