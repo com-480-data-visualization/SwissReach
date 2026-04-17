@@ -7,10 +7,10 @@ import { introMetrics } from '@/content/productStory'
     <div class="intro-copy">
       <p class="section-label">Overview</p>
       <h2 class="section-title">
-        Understanding practical reach, not just abstract network scale.
+        Strong transport coverage does not automatically turn into strong daily retail opportunity.
       </h2>
       <p class="section-text">
-        SwissReach illustrates where the railway network carries weight, where coverage begins to thin out, and why that difference matters once daily routines—like accessing schools or hospitals—enter the picture. We connect transit schedules with everyday points of interest.
+        SwissReach starts with the national rail backbone, then asks the more practical question hiding underneath it: once the network is there, what kind of everyday choice does it actually unlock? That is why the page moves from reachability, to store geography, to retail access, instead of treating supermarkets as a small add-on at the end.
       </p>
     </div>
 
@@ -27,9 +27,11 @@ import { introMetrics } from '@/content/productStory'
 
 <style scoped>
 .intro-shell {
+  height: 100svh;
   min-height: 100svh;
-  padding-top: clamp(5rem, 8vw, 7rem);
-  padding-bottom: clamp(4.5rem, 7vw, 6.5rem);
+  box-sizing: border-box;
+  padding-top: var(--section-top-padding);
+  padding-bottom: var(--section-bottom-padding);
   display: grid;
   align-content: center;
   gap: 2.25rem;
@@ -53,10 +55,9 @@ import { introMetrics } from '@/content/productStory'
 
 @media (max-width: 720px) {
   .intro-shell {
+    height: 100dvh;
     min-height: 100dvh;
     align-content: start;
-    padding-top: 6.5rem;
-    padding-bottom: 3rem;
   }
 }
 </style>

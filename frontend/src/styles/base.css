@@ -23,6 +23,8 @@
   --content-width: min(var(--content-max-width), calc(100vw - (var(--page-inline-padding) * 2)));
   --section-gap: clamp(5rem, 7vw, 8rem);
   --copy-width: 48rem;
+  --section-top-padding: clamp(5.8rem, 9vw, 7.4rem);
+  --section-bottom-padding: clamp(2.8rem, 5vw, 4.2rem);
   font-family: var(--swissreach-font-sans);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -244,6 +246,8 @@ button {
     --page-inline-padding: 10px;
     --radius-shell: 24px;
     --radius-card: 20px;
+    --section-top-padding: 8.8rem;
+    --section-bottom-padding: 2.2rem;
   }
 
   .section-text {

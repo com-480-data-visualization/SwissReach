@@ -12,6 +12,10 @@ import { heroPreviewUrl } from '@/content/productStory'
           everyday reachability, visualized Switzerland
         </h1>
 
+        <p class="hero-summary">
+          Start with the rail backbone, then read what it means for daily supermarket access, regional retail density, and brand structure across Switzerland.
+        </p>
+
         <div class="button-row hero-actions">
           <a class="button-primary" href="#story">Explore the map</a>
           <a class="button-secondary" href="https://swissreach.online/docs/">Read the docs</a>
@@ -58,9 +62,11 @@ import { heroPreviewUrl } from '@/content/productStory'
 
 <style scoped>
 .hero-shell {
+  height: 100svh;
   min-height: 100svh;
-  padding-top: clamp(3.5rem, 8vw, 7rem);
-  padding-bottom: clamp(4rem, 8vw, 7rem);
+  box-sizing: border-box;
+  padding-top: var(--section-top-padding);
+  padding-bottom: var(--section-bottom-padding);
   display: grid;
   align-items: center;
 }
@@ -88,6 +94,14 @@ import { heroPreviewUrl } from '@/content/productStory'
 
 .hero-actions {
   margin-top: 1.9rem;
+}
+
+.hero-summary {
+  margin: 1.2rem 0 0;
+  max-width: 38rem;
+  color: var(--ink-soft);
+  font-size: 1.03rem;
+  line-height: 1.7;
 }
 
 .text-brand {
@@ -187,6 +201,7 @@ import { heroPreviewUrl } from '@/content/productStory'
 
 @media (max-width: 720px) {
   .hero-shell {
+    height: 100dvh;
     min-height: 100dvh;
     align-items: start;
   }
