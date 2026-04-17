@@ -68,9 +68,9 @@ export const storyPanels: StoryPanelContent[] = [
   {
     id: 'feature-coverage',
     navLabel: 'Lausanne Lab',
-    eyebrow: 'Local Nuance',
-    title: 'Lausanne Reachability Lab',
-    description: 'See how the transit network evolves throughout the day by comparing different departure windows.',
+    eyebrow: 'Lausanne',
+    title: 'Departure & window',
+    description: 'Stay in Lausanne. Slide when you leave — dawn, coffee time, noon, or the evening rush — and watch the country repaint itself. Then tighten or loosen how much time you are willing to spend: inside that budget the dots stay warm; anything that would take longer quietly steps back into the fog.',
     highlights: [
       'Time-based comparative analysis.',
       'Detailed regional distribution and isolated gaps.',

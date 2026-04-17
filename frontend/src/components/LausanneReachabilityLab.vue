@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch, onMounted, nextTick } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import * as d3 from 'd3'
 
 interface Station {
@@ -28,8 +28,9 @@ const svgRef = ref<SVGSVGElement | null>(null)
 let currentTransform = d3.zoomIdentity
 let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null
 
-const VB_W = 1000
-const VB_H = 560
+const vbWidth = ref(1000)
+const vbHeight = ref(560)
+let resizeObserver: ResizeObserver | null = null
 
 const dataBase = `${import.meta.env.BASE_URL}data/`.replace(/\/{2,}/g, '/')
 
@@ -142,18 +143,18 @@ function draw() {
 
   let projection: d3.GeoProjection
   /* Extra inset so northern/southern stops are not flush against the frame. */
-  const padX = 58
-  const padY = 50
+  const padX = 24
+  const padY = 24
   if (boundary.value) {
     projection = d3.geoMercator().fitExtent(
-      [[padX, padY], [VB_W - padX, VB_H - padY]],
+      [[padX, padY], [vbWidth.value - padX, vbHeight.value - padY]],
       boundary.value as any,
     )
   } else {
     projection = d3.geoMercator()
       .scale(9000)
       .center([8.23, 46.825])
-      .translate([VB_W / 2, VB_H / 2])
+      .translate([vbWidth.value / 2, vbHeight.value / 2])
   }
 
   const k = currentTransform.k
@@ -218,7 +219,6 @@ function draw() {
 
   zoomBehavior = d3.zoom<SVGSVGElement, unknown>()
     .scaleExtent([1, 20])
-    .translateExtent([[0, 0], [VB_W, VB_H]])
     .on('zoom', (event: d3.D3ZoomEvent<SVGSVGElement, unknown>) => {
       currentTransform = event.transform
       const zg = d3.select(svgRef.value!).select<SVGGElement>('g.zoom-layer')
@@ -243,7 +243,26 @@ function resetZoom() {
 onMounted(async () => {
   await Promise.all([loadStations(), loadBoundary()])
   await nextTick()
-  draw()
+  
+  if (svgRef.value && svgRef.value.parentElement) {
+    resizeObserver = new ResizeObserver((entries) => {
+      const entry = entries[0]
+      if (entry) {
+        vbWidth.value = Math.round(entry.contentRect.width) || 1000
+        vbHeight.value = Math.round(entry.contentRect.height) || 560
+        draw()
+      }
+    })
+    resizeObserver.observe(svgRef.value.parentElement)
+  } else {
+    draw()
+  }
+})
+
+onUnmounted(() => {
+  if (resizeObserver) {
+    resizeObserver.disconnect()
+  }
 })
 
 watch(depIndex, async () => {
@@ -259,94 +278,56 @@ watch([windowMinutes, stations, boundary], async () => {
 </script>
 
 <template>
-  <div class="lab">
-    <div class="lab-heading">
-      <span class="lab-kicker">Lausanne</span>
-      <h3 class="lab-title">Departure &amp; window</h3>
-      <p class="lab-lead">
-        Stay in Lausanne. Slide <strong>when you leave</strong> — dawn, coffee time, noon, or the evening rush —
-        and watch the country repaint itself. Then tighten or loosen <strong>how much time you are willing to
-        spend</strong>: inside that budget the dots stay warm; anything that would take longer quietly steps back
-        into the fog.
-      </p>
-    </div>
-
+  <div class="lab-wrapper">
     <div class="lab-controls">
-      <div class="lab-slider-block">
+      <label class="lab-control-group">
         <span class="lab-label">Departure</span>
-        <input
-          v-model.number="depIndex"
-          type="range"
-          class="lab-range"
-          min="0"
-          max="3"
-          step="1"
-        >
-        <div class="lab-slider-meta">
-          <span class="lab-pill">{{ depLabel(depMinutes) }}</span>
-          <span class="lab-hint">06:00 · 08:00 · 12:00 · 18:00</span>
-        </div>
-      </div>
+        <input v-model.number="depIndex" type="range" class="lab-range" min="0" max="3" step="1">
+        <span class="lab-pill">{{ depLabel(depMinutes) }}</span>
+      </label>
 
-      <div class="lab-slider-block">
+      <label class="lab-control-group">
         <span class="lab-label">Window</span>
-        <input
-          v-model.number="windowMinutes"
-          type="range"
-          class="lab-range"
-          min="30"
-          max="360"
-          step="15"
-        >
-        <div class="lab-slider-meta">
-          <span class="lab-pill">{{ windowLabel(windowMinutes) }}</span>
-          <span class="lab-hint">up to six hours on the map</span>
-        </div>
-      </div>
+        <input v-model.number="windowMinutes" type="range" class="lab-range" min="30" max="360" step="15">
+        <span class="lab-pill">{{ windowLabel(windowMinutes) }}</span>
+      </label>
+
+      <span v-if="loading" class="lab-loading">Loading…</span>
 
       <div class="lab-controls-right">
-        <button type="button" class="lab-reset" @click="resetZoom">⊙ Reset</button>
-        <span v-if="loading" class="lab-loading">Loading…</span>
+        <button type="button" class="lab-reset" @click="resetZoom" title="Reset zoom">⊙ Reset</button>
       </div>
     </div>
 
-    <p class="lab-status">
-      Departure {{ depLabel(depMinutes) }} · window {{ windowLabel(windowMinutes) }} · reachable in window
-      <strong>{{ reachableStats.inWindow }}</strong>
-      <span class="lab-status-muted">/ {{ reachableStats.total }} stations</span>
-      <span v-if="reachableStats.rawReach < reachableStats.total" class="lab-status-muted">
-        · {{ reachableStats.rawReach }} stations reachable within six hours on this map
-      </span>
-    </p>
-
-    <div class="lab-map-card">
-      <div class="lab-map">
-        <div v-if="error" class="lab-empty">
-          <p>This Lausanne map couldn’t load. Check your connection and try a refresh.</p>
-        </div>
-        <svg
-          v-else
-          ref="svgRef"
-          class="lab-svg"
-          :viewBox="`0 0 ${VB_W} ${VB_H}`"
-          overflow="hidden"
-        />
+    <div class="lab-map-container">
+      <div v-if="error" class="lab-empty">
+        <p>This Lausanne map couldn’t load. Check your connection and try a refresh.</p>
       </div>
+      <svg
+        v-else
+        ref="svgRef"
+        class="lab-svg"
+        :viewBox="`0 0 ${vbWidth} ${vbHeight}`"
+        overflow="hidden"
+      />
+    </div>
 
-      <div class="lab-legend">
-        <span class="lab-legend-title">Travel time (≤ {{ windowLabel(windowMinutes) }})</span>
-        <div class="lab-gradient-wrap">
-          <div class="lab-gradient" />
-          <div class="lab-ticks">
-            <span>0</span>
-            <span>{{ windowLabel(Math.round(windowMinutes / 2)) }}</span>
-            <span>{{ windowLabel(windowMinutes) }}</span>
-          </div>
+    <div class="lab-legend">
+      <span class="lab-legend-title">Travel time (≤ {{ windowLabel(windowMinutes) }})</span>
+      <div class="lab-gradient-wrap">
+        <div class="lab-gradient" />
+        <div class="lab-ticks">
+          <span>0</span>
+          <span>{{ windowLabel(Math.round(windowMinutes / 2)) }}</span>
+          <span>{{ windowLabel(windowMinutes) }}</span>
         </div>
-        <div class="lab-unreach">
-          <span class="lab-swatch" />
-          Beyond your time limit
-        </div>
+      </div>
+      <div class="lab-unreach">
+        <span class="lab-swatch" />
+        Unreachable
+      </div>
+      <div class="lab-status-mini" v-if="reachableStats.total > 0">
+        Reachable: <strong>{{ reachableStats.inWindow }}</strong> / {{ reachableStats.total }}
       </div>
     </div>
 
@@ -385,112 +366,73 @@ watch([windowMinutes, stations, boundary], async () => {
 </template>
 
 <style scoped>
-.lab {
+.lab-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-}
-
-.lab-heading {
-  max-width: 70ch;
-}
-
-.lab-kicker {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #c84f56;
-}
-
-.lab-title {
-  margin: 6px 0 0;
-  font-family: var(--swissreach-font-sans);
-  font-size: 1.22rem;
-  font-weight: 700;
-  color: #1a1415;
-}
-
-.lab-lead {
-  margin: 8px 0 0;
-  font-size: 0.88rem;
-  line-height: 1.55;
-  color: #6b5c5e;
+  gap: 16px;
+  padding: 22px clamp(18px, 2.5vw, 28px) 24px;
+  height: 100%;
 }
 
 .lab-controls {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px 32px;
-  align-items: end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.lab-slider-block {
-  min-width: 0;
+.lab-control-group {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.92rem;
 }
 
 .lab-label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #9a787c;
+  font-weight: 600;
+  color: #5b4b4d;
 }
 
 .lab-range {
-  width: 100%;
+  width: 120px;
   accent-color: #b8444b;
   height: 6px;
 }
 
-.lab-slider-meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
-
 .lab-pill {
   display: inline-block;
-  padding: 4px 11px;
+  padding: 3px 10px;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 700;
   color: #5c2a2e;
   background: rgba(200, 79, 86, 0.1);
   border: 1px solid rgba(184, 68, 75, 0.16);
-}
-
-.lab-hint {
-  font-size: 0.76rem;
-  color: #9a8588;
+  min-width: 48px;
+  text-align: center;
 }
 
 .lab-controls-right {
-  grid-column: 1 / -1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 12px;
-  padding-top: 6px;
+  margin-left: auto;
 }
 
 .lab-reset {
-  flex-shrink: 0;
-  padding: 7px 14px;
+  padding: 5px 12px;
   border: 1px solid rgba(184, 68, 75, 0.22);
   border-radius: 8px;
   font-size: 0.85rem;
   background: white;
   color: #7a3136;
   cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
 }
 
 .lab-reset:hover {
   background: rgba(200, 79, 86, 0.07);
+  border-color: #c84f56;
 }
 
 .lab-loading {
@@ -499,32 +441,16 @@ watch([windowMinutes, stations, boundary], async () => {
   font-style: italic;
 }
 
-.lab-status {
-  margin: 0 0 4px;
-  padding: 6px 6px 12px;
-  font-size: 0.82rem;
-  color: #5b4b4d;
-  line-height: 1.55;
-}
-
-.lab-status-muted {
-  color: #9a8588;
-  font-weight: 400;
-}
-
-.lab-map-card {
-  border-radius: 16px;
-  overflow: hidden;
-  background: #e4e9f0;
-  box-sizing: border-box;
-}
-
-.lab-map {
-  padding: 14px 16px 8px;
-  box-sizing: border-box;
-  background: #d8dfe8;
+.lab-map-container {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #d8dfe8;
 }
 
 .lab-svg {
@@ -532,11 +458,10 @@ watch([windowMinutes, stations, boundary], async () => {
   width: 100%;
   flex: 1;
   min-height: 0;
-  border-radius: 10px;
 }
 
 .lab-empty {
-  min-height: 220px;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -546,34 +471,26 @@ watch([windowMinutes, stations, boundary], async () => {
 
 .lab-legend {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 14px 22px;
-  row-gap: 12px;
-  font-size: 0.82rem;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 0.84rem;
   color: #5b4b4d;
-  padding: 12px 18px 16px;
-  background: rgba(255, 253, 252, 0.92);
 }
 
 .lab-legend-title {
   font-weight: 600;
-  flex: 1 1 12rem;
-  min-width: 0;
+  white-space: nowrap;
 }
 
 .lab-gradient-wrap {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  flex: 1 1 200px;
-  min-width: min(200px, 100%);
-  max-width: 280px;
+  gap: 3px;
 }
 
 .lab-gradient {
-  width: 100%;
-  max-width: 260px;
+  width: 180px;
   height: 10px;
   border-radius: 5px;
   background: linear-gradient(to right, #800026, #e31a1c, #fd8d3c, #feb24c, #ffffcc);
@@ -582,32 +499,28 @@ watch([windowMinutes, stations, boundary], async () => {
 .lab-ticks {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 260px;
-  font-size: 0.76rem;
+  width: 180px;
+  font-size: 0.78rem;
   color: #8a7070;
 }
 
 .lab-unreach {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex: 1 1 200px;
-  min-width: 0;
-  padding-right: 4px;
-  line-height: 1.35;
-}
-
-@media (max-width: 640px) {
-  .lab-controls {
-    grid-template-columns: 1fr;
-  }
+  gap: 6px;
 }
 
 .lab-swatch {
+  display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: #ccc8c8;
+}
+
+.lab-status-mini {
+  margin-left: auto;
+  font-size: 0.82rem;
+  color: #7a4b4f;
 }
 </style>
