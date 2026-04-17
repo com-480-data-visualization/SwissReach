@@ -24,6 +24,7 @@ function serveDocsPublic(): Plugin {
               ext === '.json' ? 'application/json' :
               ext === '.csv'  ? 'text/csv' :
               ext === '.png'  ? 'image/png' :
+              ext === '.svg'  ? 'image/svg+xml' :
               ext === '.css'  ? 'text/css' :
               ext === '.woff' ? 'font/woff' :
               ext === '.woff2' ? 'font/woff2' :

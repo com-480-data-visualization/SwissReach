@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import * as d3 from 'd3'
-import { swissBoundaryData } from '@/utils/swissBoundary'
 
 interface Station {
   station_key: string
@@ -23,11 +22,11 @@ const loading = ref(false)
 const mapReady = ref(false)
 const error = ref(false)
 const stations = ref<Station[]>([])
-const boundary = ref<object | null>(swissBoundaryData)
-const skeletonPath = ref('')
+const boundary = ref<object | null>(null)
 const tooltip = ref({ visible: false, x: 0, y: 0, name: '', raw: null as number | null, inWindow: true })
 
 const svgRef = ref<SVGSVGElement | null>(null)
+const skeletonUrl = `${import.meta.env.BASE_URL}data/swiss_boundary_skeleton.svg`.replace(/\/{2,}/g, '/')
 let currentTransform = d3.zoomIdentity
 let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null
 
@@ -39,20 +38,6 @@ function waitForPaint(): Promise<void> {
   return new Promise(resolve => {
     requestAnimationFrame(() => resolve())
   })
-}
-
-function updateSkeletonPath() {
-  if (!boundary.value) {
-    skeletonPath.value = ''
-    return
-  }
-
-  const projection = d3.geoMercator().fitExtent(
-    [[28, 28], [vbWidth.value - 28, vbHeight.value - 28]],
-    boundary.value as any,
-  )
-  const pathGen = d3.geoPath(projection)
-  skeletonPath.value = pathGen(boundary.value as any) ?? ''
 }
 
 const dataBase = `${import.meta.env.BASE_URL}data/`.replace(/\/{2,}/g, '/')
@@ -146,6 +131,15 @@ async function loadStations() {
     stations.value = []
   } finally {
     loading.value = false
+  }
+}
+
+async function loadBoundary() {
+  try {
+    const res = await fetch(`${dataBase}swiss_boundary_wgs84.geojson`)
+    if (res.ok) boundary.value = await res.json()
+  } catch {
+    boundary.value = null
   }
 }
 
@@ -266,8 +260,7 @@ async function revealMap() {
 }
 
 onMounted(async () => {
-  updateSkeletonPath()
-  await loadStations()
+  await Promise.all([loadStations(), loadBoundary()])
   await nextTick()
   
   if (svgRef.value && svgRef.value.parentElement) {
@@ -276,7 +269,6 @@ onMounted(async () => {
       if (entry) {
         vbWidth.value = Math.round(entry.contentRect.width) || 1000
         vbHeight.value = Math.round(entry.contentRect.height) || 560
-        updateSkeletonPath()
         if (stations.value.length > 0 && !error.value) {
           draw()
         }
@@ -330,13 +322,7 @@ watch([windowMinutes, stations, boundary], async () => {
 
     <div class="lab-map-container">
       <div v-if="!error && (!mapReady || loading)" class="lab-skeleton" aria-hidden="true">
-        <svg
-          class="lab-skeleton__outline"
-          :viewBox="`0 0 ${vbWidth} ${vbHeight}`"
-          overflow="hidden"
-        >
-          <path :d="skeletonPath" class="lab-skeleton__land" />
-        </svg>
+        <img :src="skeletonUrl" alt="" class="lab-skeleton__outline" />
       </div>
       <div v-if="error" class="lab-empty">
         <p>This Lausanne map couldn’t load. Check your connection and try a refresh.</p>
