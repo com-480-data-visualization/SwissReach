@@ -277,7 +277,6 @@ function onEndInput(e: Event) {
   gap: 18px;
   padding: 22px 24px 26px;
   border-radius: 20px;
-  border: 1px solid rgba(184, 68, 75, 0.12);
   background:
     linear-gradient(165deg, rgba(255, 252, 251, 0.98) 0%, rgba(248, 244, 242, 0.95) 48%, rgba(255, 255, 255, 0.92) 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 18px 48px rgba(64, 24, 26, 0.06);
@@ -392,10 +391,16 @@ function onEndInput(e: Event) {
 .chart-wrap {
   width: 100%;
   margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .chart-svg {
   display: block;
   width: 100%;
+  flex: 1;
+  min-height: 0;
 }
 </style>

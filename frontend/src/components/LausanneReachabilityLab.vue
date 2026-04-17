@@ -349,46 +349,43 @@ watch([windowMinutes, stations, boundary], async () => {
         </div>
       </div>
     </div>
-  </div>
 
-  <Teleport to="body">
-    <div
-      v-if="tooltip.visible"
-      :style="{
-        position: 'fixed',
-        left: tooltip.x + 'px',
-        top: tooltip.y + 'px',
-        background: 'white',
-        border: '1px solid rgba(184,68,75,0.18)',
-        borderRadius: '10px',
-        padding: '8px 13px',
-        pointerEvents: 'none',
-        boxShadow: '0 4px 18px rgba(64,24,26,0.13)',
-        zIndex: 9999,
-        fontSize: '0.84rem',
-        color: '#271f20',
-        minWidth: '140px',
-      }"
-    >
-      <div style="font-weight: 700; margin-bottom: 2px">{{ tooltip.name }}</div>
-      <div style="color: #7a4b4f">
-        <template v-if="tooltip.raw === null">No train within six hours in this view</template>
-        <template v-else>
-          About {{ formatTime(tooltip.raw) }} from Lausanne by rail
-          <span v-if="!tooltip.inWindow" style="display: block; margin-top: 4px; font-size: 0.78rem">
-            Longer than the time you set — shown grey on the map
-          </span>
-        </template>
+    <Teleport to="body">
+      <div
+        v-if="tooltip.visible"
+        :style="{
+          position: 'fixed',
+          left: tooltip.x + 'px',
+          top: tooltip.y + 'px',
+          background: 'white',
+          border: '1px solid rgba(184,68,75,0.18)',
+          borderRadius: '10px',
+          padding: '8px 13px',
+          pointerEvents: 'none',
+          boxShadow: '0 4px 18px rgba(64,24,26,0.13)',
+          zIndex: 9999,
+          fontSize: '0.84rem',
+          color: '#271f20',
+          minWidth: '140px',
+        }"
+      >
+        <div style="font-weight: 700; margin-bottom: 2px">{{ tooltip.name }}</div>
+        <div style="color: #7a4b4f">
+          <template v-if="tooltip.raw === null">No train within six hours in this view</template>
+          <template v-else>
+            About {{ formatTime(tooltip.raw) }} from Lausanne by rail
+            <span v-if="!tooltip.inWindow" style="display: block; margin-top: 4px; font-size: 0.78rem">
+              Longer than the time you set — shown grey on the map
+            </span>
+          </template>
+        </div>
       </div>
-    </div>
-  </Teleport>
+    </Teleport>
+  </div>
 </template>
 
 <style scoped>
 .lab {
-  margin-top: 8px;
-  padding-top: 28px;
-  border-top: 1px solid rgba(184, 68, 75, 0.14);
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -518,7 +515,6 @@ watch([windowMinutes, stations, boundary], async () => {
 .lab-map-card {
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(184, 68, 75, 0.1);
   background: #e4e9f0;
   box-sizing: border-box;
 }
@@ -527,12 +523,15 @@ watch([windowMinutes, stations, boundary], async () => {
   padding: 14px 16px 8px;
   box-sizing: border-box;
   background: #d8dfe8;
+  display: flex;
+  flex-direction: column;
 }
 
 .lab-svg {
   display: block;
   width: 100%;
-  height: auto;
+  flex: 1;
+  min-height: 0;
   border-radius: 10px;
 }
 
@@ -555,7 +554,6 @@ watch([windowMinutes, stations, boundary], async () => {
   color: #5b4b4d;
   padding: 12px 18px 16px;
   background: rgba(255, 253, 252, 0.92);
-  border-top: 1px solid rgba(184, 68, 75, 0.08);
 }
 
 .lab-legend-title {
