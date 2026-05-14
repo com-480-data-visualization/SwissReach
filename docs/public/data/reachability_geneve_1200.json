@@ -744,8 +744,8 @@
   {
     "station_key":"Parent8502216",
     "station_name":"Benzenschwil",
-    "lat":47.24685143,
-    "lon":8.36561498,
+    "lat":47.24682094,
+    "lon":8.3655521,
     "travel_minutes":202.0
   },
   {
@@ -800,8 +800,8 @@
   {
     "station_key":"Parent8506135",
     "station_name":"Berlingen",
-    "lat":47.67321123,
-    "lon":9.02202294,
+    "lat":47.6731205,
+    "lon":9.02209481,
     "travel_minutes":268.0
   },
   {
@@ -1010,8 +1010,8 @@
   {
     "station_key":"Parent8504300",
     "station_name":"Biel\/Bienne",
-    "lat":47.13271802,
-    "lon":7.24314309,
+    "lat":47.13289524,
+    "lon":7.24290952,
     "travel_minutes":102.0
   },
   {
@@ -1248,8 +1248,8 @@
   {
     "station_key":"Parent8502214",
     "station_name":"Boswil-B\u00fcnzen",
-    "lat":47.30518451,
-    "lon":8.31528238,
+    "lat":47.3054038,
+    "lon":8.31464457,
     "travel_minutes":195.0
   },
   {
@@ -1500,8 +1500,8 @@
   {
     "station_key":"Parent8509404",
     "station_name":"Buchs SG",
-    "lat":47.16841413,
-    "lon":9.4786366,
+    "lat":47.16790112,
+    "lon":9.47887016,
     "travel_minutes":254.0
   },
   {
@@ -1865,7 +1865,7 @@
     "station_key":"Parent8501020",
     "station_name":"Chamb\u00e9sy",
     "lat":46.24094341,
-    "lon":6.14730624,
+    "lon":6.14744098,
     "travel_minutes":5.0
   },
   {
@@ -2340,8 +2340,8 @@
   {
     "station_key":"Parent8501012",
     "station_name":"Creux-de-Genthod",
-    "lat":46.2637652,
-    "lon":6.16131097,
+    "lat":46.26422477,
+    "lon":6.16153555,
     "travel_minutes":13.0
   },
   {
@@ -2494,15 +2494,15 @@
   {
     "station_key":"Parent8500109",
     "station_name":"Del\u00e9mont",
-    "lat":47.36182256,
-    "lon":7.34941378,
+    "lat":47.36201119,
+    "lon":7.35006057,
     "travel_minutes":138.0
   },
   {
     "station_key":"Parent8501045",
     "station_name":"Denges-Echandens",
-    "lat":46.52912416,
-    "lon":6.54050782,
+    "lat":46.52896347,
+    "lon":6.54040002,
     "travel_minutes":76.0
   },
   {
@@ -2536,8 +2536,8 @@
   {
     "station_key":"Parent8503428",
     "station_name":"Diessenhofen",
-    "lat":47.68547087,
-    "lon":8.7522948,
+    "lat":47.68523502,
+    "lon":8.75264514,
     "travel_minutes":242.0
   },
   {
@@ -2550,8 +2550,8 @@
   {
     "station_key":"Parent8503508",
     "station_name":"Dietikon",
-    "lat":47.40578578,
-    "lon":8.40498814,
+    "lat":47.40521427,
+    "lon":8.40533848,
     "travel_minutes":194.0
   },
   {
@@ -2634,8 +2634,8 @@
   {
     "station_key":"Parent8502212",
     "station_name":"Dottikon-Dintikon",
-    "lat":47.37364417,
-    "lon":8.23471248,
+    "lat":47.37402743,
+    "lon":8.23403874,
     "travel_minutes":187.0
   },
   {
@@ -2935,8 +2935,8 @@
   {
     "station_key":"Parent8506133",
     "station_name":"Ermatingen",
-    "lat":47.66999918,
-    "lon":9.08566858,
+    "lat":47.67025324,
+    "lon":9.08538112,
     "travel_minutes":274.0
   },
   {
@@ -2963,8 +2963,8 @@
   {
     "station_key":"Parent8506138",
     "station_name":"Eschenz",
-    "lat":47.64540922,
-    "lon":8.87655875,
+    "lat":47.64548185,
+    "lon":8.87672045,
     "travel_minutes":255.0
   },
   {
@@ -3194,8 +3194,8 @@
   {
     "station_key":"Parent8506209",
     "station_name":"Flawil",
-    "lat":47.41627849,
-    "lon":9.18832805,
+    "lat":47.41519041,
+    "lon":9.18978332,
     "travel_minutes":249.0
   },
   {
@@ -3299,8 +3299,8 @@
   {
     "station_key":"Parent8500022",
     "station_name":"Frenkendorf-F\u00fcllinsdorf",
-    "lat":47.50123732,
-    "lon":7.71909747,
+    "lat":47.50146794,
+    "lon":7.71911544,
     "travel_minutes":179.0
   },
   {
@@ -3481,8 +3481,8 @@
   {
     "station_key":"Parent8516283",
     "station_name":"Gen\u00e8ve-S\u00e9cheron",
-    "lat":46.222438,
-    "lon":6.14455739,
+    "lat":46.22257473,
+    "lon":6.14466519,
     "travel_minutes":3.0
   },
   {
@@ -3579,8 +3579,8 @@
   {
     "station_key":"Parent8503512",
     "station_name":"Glanzenberg",
-    "lat":47.39887866,
-    "lon":8.42043916,
+    "lat":47.39862935,
+    "lon":8.42143629,
     "travel_minutes":191.0
   },
   {
@@ -3607,8 +3607,8 @@
   {
     "station_key":"Parent8501370",
     "station_name":"Glion",
-    "lat":46.43177799,
-    "lon":6.92471727,
+    "lat":46.43180276,
+    "lon":6.92418726,
     "travel_minutes":104.0
   },
   {
@@ -3754,15 +3754,15 @@
   {
     "station_key":"Parent8500159",
     "station_name":"Grenchen Nord",
-    "lat":47.1918116,
-    "lon":7.38963136,
+    "lat":47.19169561,
+    "lon":7.38962238,
     "travel_minutes":118.0
   },
   {
     "station_key":"Parent8500202",
     "station_name":"Grenchen S\u00fcd",
-    "lat":47.18899126,
-    "lon":7.39958469,
+    "lat":47.18877759,
+    "lon":7.39818332,
     "travel_minutes":127.0
   },
   {
@@ -4076,8 +4076,8 @@
   {
     "station_key":"Parent8502211",
     "station_name":"Hendschiken",
-    "lat":47.38942855,
-    "lon":8.20738573,
+    "lat":47.38902715,
+    "lon":8.20790675,
     "travel_minutes":184.0
   },
   {
@@ -4314,8 +4314,8 @@
   {
     "station_key":"Parent8502306",
     "station_name":"H\u00fcnenberg Ch\u00e4mleten",
-    "lat":47.16915919,
-    "lon":8.44991289,
+    "lat":47.16914698,
+    "lon":8.44976916,
     "travel_minutes":234.0
   },
   {
@@ -4461,8 +4461,8 @@
   {
     "station_key":"Parent8500025",
     "station_name":"Itingen",
-    "lat":47.46726541,
-    "lon":7.78831266,
+    "lat":47.46727755,
+    "lon":7.7872257,
     "travel_minutes":184.0
   },
   {
@@ -4671,8 +4671,8 @@
   {
     "station_key":"Parent8503506",
     "station_name":"Killwangen-Spreitenbach",
-    "lat":47.43332621,
-    "lon":8.35421536,
+    "lat":47.43352674,
+    "lon":8.35407163,
     "travel_minutes":189.0
   },
   {
@@ -4776,8 +4776,8 @@
   {
     "station_key":"Parent8506131",
     "station_name":"Kreuzlingen",
-    "lat":47.65255022,
-    "lon":9.16907716,
+    "lat":47.65278621,
+    "lon":9.16844833,
     "travel_minutes":259.0
   },
   {
@@ -4825,15 +4825,15 @@
   {
     "station_key":"Parent8502101",
     "station_name":"K\u00f6lliken",
-    "lat":47.33730087,
-    "lon":8.02646503,
+    "lat":47.33738001,
+    "lon":8.02659978,
     "travel_minutes":183.0
   },
   {
     "station_key":"Parent8502122",
     "station_name":"K\u00f6lliken Oberdorf",
-    "lat":47.32468562,
-    "lon":8.01908986,
+    "lat":47.32450294,
+    "lon":8.01810171,
     "travel_minutes":180.0
   },
   {
@@ -4853,8 +4853,8 @@
   {
     "station_key":"Parent8502120",
     "station_name":"K\u00fcngoldingen",
-    "lat":47.3021448,
-    "lon":7.94179881,
+    "lat":47.3021509,
+    "lon":7.9417539,
     "travel_minutes":170.0
   },
   {
@@ -4881,8 +4881,8 @@
   {
     "station_key":"Parent8501069",
     "station_name":"L'Asse",
-    "lat":46.40182221,
-    "lon":6.21175138,
+    "lat":46.40173548,
+    "lon":6.21181426,
     "travel_minutes":32.0
   },
   {
@@ -5084,8 +5084,8 @@
   {
     "station_key":"Parent8501001",
     "station_name":"La Plaine",
-    "lat":46.17869122,
-    "lon":6.0000544,
+    "lat":46.17866634,
+    "lon":5.99999151,
     "travel_minutes":34.0
   },
   {
@@ -5175,8 +5175,8 @@
   {
     "station_key":"Parent8501053",
     "station_name":"La Vuarpilli\u00e8re",
-    "lat":46.39892299,
-    "lon":6.21724906,
+    "lat":46.39907167,
+    "lon":6.21702449,
     "travel_minutes":31.0
   },
   {
@@ -5301,8 +5301,8 @@
   {
     "station_key":"Parent8503426",
     "station_name":"Langwiesen",
-    "lat":47.68345098,
-    "lon":8.66231954,
+    "lat":47.68346912,
+    "lon":8.66189733,
     "travel_minutes":233.0
   },
   {
@@ -5875,8 +5875,8 @@
   {
     "station_key":"Parent8501059",
     "station_name":"Les Plantaz",
-    "lat":46.39099271,
-    "lon":6.22922361,
+    "lat":46.39097412,
+    "lon":6.22923259,
     "travel_minutes":30.0
   },
   {
@@ -6011,6 +6011,13 @@
     "lat":47.48446052,
     "lon":7.73136846,
     "travel_minutes":169.0
+  },
+  {
+    "station_key":"Parent8515272",
+    "station_name":"Liestal Nord (Abzw)",
+    "lat":47.48788429,
+    "lon":7.7262301,
+    "travel_minutes":null
   },
   {
     "station_key":"Parent8508184",
@@ -6330,15 +6337,15 @@
   {
     "station_key":"Parent8506137",
     "station_name":"Mammern",
-    "lat":47.64416248,
-    "lon":8.91400053,
+    "lat":47.64407169,
+    "lon":8.91394663,
     "travel_minutes":258.0
   },
   {
     "station_key":"Parent8506134",
     "station_name":"Mannenbach-Salenstein",
-    "lat":47.67364675,
-    "lon":9.05280821,
+    "lat":47.67374353,
+    "lon":9.0524938,
     "travel_minutes":271.0
   },
   {
@@ -6382,6 +6389,13 @@
     "lat":46.08655135,
     "lon":7.05856624,
     "travel_minutes":116.0
+  },
+  {
+    "station_key":"Parent8594466",
+    "station_name":"Martigny-Expo",
+    "lat":46.09732898,
+    "lon":7.07567017,
+    "travel_minutes":null
   },
   {
     "station_key":"Parent8501420",
@@ -6470,8 +6484,8 @@
   {
     "station_key":"Parent8516219",
     "station_name":"Mellingen Heitersberg",
-    "lat":47.42807573,
-    "lon":8.27636736,
+    "lat":47.42814866,
+    "lon":8.27624159,
     "travel_minutes":184.0
   },
   {
@@ -6526,8 +6540,8 @@
   {
     "station_key":"Parent8501006",
     "station_name":"Meyrin",
-    "lat":46.2223137,
-    "lon":6.07645611,
+    "lat":46.22233234,
+    "lon":6.07690527,
     "travel_minutes":21.0
   },
   {
@@ -6540,8 +6554,8 @@
   {
     "station_key":"Parent8501014",
     "station_name":"Mies",
-    "lat":46.29848901,
-    "lon":6.16765308,
+    "lat":46.29842695,
+    "lon":6.16774291,
     "travel_minutes":21.0
   },
   {
@@ -6708,8 +6722,8 @@
   {
     "station_key":"Parent8500105",
     "station_name":"Moutier",
-    "lat":47.28046586,
-    "lon":7.3810255,
+    "lat":47.28067307,
+    "lon":7.38104346,
     "travel_minutes":126.0
   },
   {
@@ -6799,15 +6813,15 @@
   {
     "station_key":"Parent8500020",
     "station_name":"Muttenz",
-    "lat":47.53395609,
-    "lon":7.64708852,
+    "lat":47.53359219,
+    "lon":7.647897,
     "travel_minutes":186.0
   },
   {
     "station_key":"Parent8502106",
     "station_name":"M\u00e4genwil",
-    "lat":47.41450959,
-    "lon":8.23515265,
+    "lat":47.41494118,
+    "lon":8.23634741,
     "travel_minutes":181.0
   },
   {
@@ -6869,8 +6883,8 @@
   {
     "station_key":"Parent8502217",
     "station_name":"M\u00fchlau",
-    "lat":47.22502171,
-    "lon":8.38852202,
+    "lat":47.22523523,
+    "lon":8.38796507,
     "travel_minutes":205.0
   },
   {
@@ -7415,8 +7429,8 @@
   {
     "station_key":"Parent8502219",
     "station_name":"Oberr\u00fcti",
-    "lat":47.16592845,
-    "lon":8.40478153,
+    "lat":47.16599564,
+    "lon":8.40484441,
     "travel_minutes":211.0
   },
   {
@@ -7443,8 +7457,8 @@
   {
     "station_key":"Parent8506016",
     "station_name":"Oberwinterthur",
-    "lat":47.5079247,
-    "lon":8.76038862,
+    "lat":47.50708124,
+    "lon":8.75994844,
     "travel_minutes":209.0
   },
   {
@@ -7457,8 +7471,8 @@
   {
     "station_key":"Parent8500212",
     "station_name":"Oensingen",
-    "lat":47.28510949,
-    "lon":7.71036585,
+    "lat":47.28503636,
+    "lon":7.70987177,
     "travel_minutes":152.0
   },
   {
@@ -7569,8 +7583,8 @@
   {
     "station_key":"Parent8502105",
     "station_name":"Othmarsingen",
-    "lat":47.40743338,
-    "lon":8.21480581,
+    "lat":47.40711724,
+    "lon":8.21408716,
     "travel_minutes":179.0
   },
   {
@@ -7779,8 +7793,8 @@
   {
     "station_key":"Parent8500021",
     "station_name":"Pratteln",
-    "lat":47.5226861,
-    "lon":7.6912497,
+    "lat":47.5226679,
+    "lon":7.69081851,
     "travel_minutes":183.0
   },
   {
@@ -8059,8 +8073,8 @@
   {
     "station_key":"Parent8506036",
     "station_name":"Reutlingen",
-    "lat":47.52966189,
-    "lon":8.75215107,
+    "lat":47.52901288,
+    "lon":8.75312125,
     "travel_minutes":214.0
   },
   {
@@ -8304,8 +8318,8 @@
   {
     "station_key":"Parent8504023",
     "station_name":"Romont FR",
-    "lat":46.69371452,
-    "lon":6.91207797,
+    "lat":46.69350503,
+    "lon":6.91180848,
     "travel_minutes":87.0
   },
   {
@@ -8318,8 +8332,8 @@
   {
     "station_key":"Parent8506311",
     "station_name":"Rorschach",
-    "lat":47.47792801,
-    "lon":9.505083,
+    "lat":47.47800087,
+    "lon":9.5051369,
     "travel_minutes":261.0
   },
   {
@@ -8465,8 +8479,8 @@
   {
     "station_key":"Parent8501002",
     "station_name":"Russin",
-    "lat":46.18839984,
-    "lon":6.01798477,
+    "lat":46.18839363,
+    "lon":6.01803867,
     "travel_minutes":31.0
   },
   {
@@ -8591,8 +8605,8 @@
   {
     "station_key":"Parent8502100",
     "station_name":"Safenwil",
-    "lat":47.32175665,
-    "lon":7.98351658,
+    "lat":47.32181754,
+    "lon":7.98360641,
     "travel_minutes":176.0
   },
   {
@@ -8689,8 +8703,8 @@
   {
     "station_key":"Parent8501003",
     "station_name":"Satigny",
-    "lat":46.21425212,
-    "lon":6.03763092,
+    "lat":46.21422725,
+    "lon":6.03766686,
     "travel_minutes":27.0
   },
   {
@@ -8787,15 +8801,15 @@
   {
     "station_key":"Parent8503429",
     "station_name":"Schlattingen",
-    "lat":47.66662358,
-    "lon":8.77043178,
+    "lat":47.66678692,
+    "lon":8.77041382,
     "travel_minutes":245.0
   },
   {
     "station_key":"Parent8503509",
     "station_name":"Schlieren",
-    "lat":47.39917661,
-    "lon":8.44724489,
+    "lat":47.39918269,
+    "lon":8.44685862,
     "travel_minutes":188.0
   },
   {
@@ -9074,8 +9088,8 @@
   {
     "station_key":"Parent8506003",
     "station_name":"Sennhof-Kyburg",
-    "lat":47.46517635,
-    "lon":8.7603437,
+    "lat":47.46468444,
+    "lon":8.76038862,
     "travel_minutes":234.0
   },
   {
@@ -9102,8 +9116,8 @@
   {
     "station_key":"Parent8506020",
     "station_name":"Seuzach",
-    "lat":47.53576949,
-    "lon":8.73888295,
+    "lat":47.53553903,
+    "lon":8.73931414,
     "travel_minutes":217.0
   },
   {
@@ -9130,8 +9144,8 @@
   {
     "station_key":"Parent8501509",
     "station_name":"Sierre\/Siders",
-    "lat":46.2921208,
-    "lon":7.53282281,
+    "lat":46.29201528,
+    "lon":7.53264315,
     "travel_minutes":127.0
   },
   {
@@ -9165,8 +9179,8 @@
   {
     "station_key":"Parent8502218",
     "station_name":"Sins",
-    "lat":47.18831362,
-    "lon":8.39782857,
+    "lat":47.18993749,
+    "lon":8.39772077,
     "travel_minutes":209.0
   },
   {
@@ -9235,8 +9249,8 @@
   {
     "station_key":"Parent8500207",
     "station_name":"Solothurn",
-    "lat":47.20417781,
-    "lon":7.54339599,
+    "lat":47.20419001,
+    "lon":7.54268632,
     "travel_minutes":119.0
   },
   {
@@ -9543,8 +9557,8 @@
   {
     "station_key":"Parent8506148",
     "station_name":"St. Katharinental",
-    "lat":47.68756325,
-    "lon":8.73203779,
+    "lat":47.68752092,
+    "lon":8.73182219,
     "travel_minutes":239.0
   },
   {
@@ -9683,8 +9697,8 @@
   {
     "station_key":"Parent8506139",
     "station_name":"Stein am Rhein",
-    "lat":47.65610824,
-    "lon":8.85501715,
+    "lat":47.65647735,
+    "lon":8.85421765,
     "travel_minutes":253.0
   },
   {
@@ -9767,8 +9781,8 @@
   {
     "station_key":"Parent8503147",
     "station_name":"Stettbach",
-    "lat":47.39721255,
-    "lon":8.59614065,
+    "lat":47.39704836,
+    "lon":8.59613167,
     "travel_minutes":189.0
   },
   {
@@ -10124,8 +10138,8 @@
   {
     "station_key":"Parent8506118",
     "station_name":"Triboltingen",
-    "lat":47.66289687,
-    "lon":9.10876427,
+    "lat":47.66301182,
+    "lon":9.10917749,
     "travel_minutes":276.0
   },
   {
@@ -10267,13 +10281,6 @@
     "lat":46.06749533,
     "lon":7.77489183,
     "travel_minutes":212.0
-  },
-  {
-    "station_key":"Parent8518885",
-    "station_name":"T\u00e4sch Monte Rosa",
-    "lat":46.0745315,
-    "lon":7.77475709,
-    "travel_minutes":262.0
   },
   {
     "station_key":"Parent8504463",
@@ -10460,8 +10467,8 @@
   {
     "station_key":"Parent8506208",
     "station_name":"Uzwil",
-    "lat":47.43725764,
-    "lon":9.13150063,
+    "lat":47.43644343,
+    "lon":9.13098859,
     "travel_minutes":243.0
   },
   {
@@ -10558,8 +10565,8 @@
   {
     "station_key":"Parent8501007",
     "station_name":"Vernier",
-    "lat":46.22065424,
-    "lon":6.09403614,
+    "lat":46.22071639,
+    "lon":6.09389241,
     "travel_minutes":19.0
   },
   {
@@ -10600,8 +10607,8 @@
   {
     "station_key":"Parent8501022",
     "station_name":"Versoix",
-    "lat":46.27972983,
-    "lon":6.16573967,
+    "lat":46.27953116,
+    "lon":6.16574865,
     "travel_minutes":17.0
   },
   {
@@ -10831,8 +10838,8 @@
   {
     "station_key":"Parent8502121",
     "station_name":"Walterswil-Striegel",
-    "lat":47.31992367,
-    "lon":7.96320567,
+    "lat":47.31960701,
+    "lon":7.96241515,
     "travel_minutes":173.0
   },
   {
@@ -10999,8 +11006,8 @@
   {
     "station_key":"Parent8506206",
     "station_name":"Wil SG",
-    "lat":47.46235235,
-    "lon":9.04094146,
+    "lat":47.46241308,
+    "lon":9.04099536,
     "travel_minutes":235.0
   },
   {
@@ -11090,8 +11097,8 @@
   {
     "station_key":"Parent8506001",
     "station_name":"Winterthur Gr\u00fcze",
-    "lat":47.49875513,
-    "lon":8.75105512,
+    "lat":47.49894327,
+    "lon":8.75083953,
     "travel_minutes":224.0
   },
   {
@@ -11104,8 +11111,8 @@
   {
     "station_key":"Parent8506002",
     "station_name":"Winterthur Seen",
-    "lat":47.48743509,
-    "lon":8.76681157,
+    "lat":47.48687661,
+    "lon":8.7672248,
     "travel_minutes":230.0
   },
   {
@@ -11118,8 +11125,8 @@
   {
     "station_key":"Parent8506038",
     "station_name":"Winterthur Wallr\u00fcti",
-    "lat":47.51672258,
-    "lon":8.76088269,
+    "lat":47.51703807,
+    "lon":8.76086472,
     "travel_minutes":212.0
   },
   {
@@ -11181,8 +11188,8 @@
   {
     "station_key":"Parent8507063",
     "station_name":"Worb Dorf",
-    "lat":46.92998303,
-    "lon":7.56246722,
+    "lat":46.93006891,
+    "lon":7.56239535,
     "travel_minutes":159.0
   },
   {
@@ -11314,8 +11321,8 @@
   {
     "station_key":"Parent8501000",
     "station_name":"Zimeysa",
-    "lat":46.22126955,
-    "lon":6.06597277,
+    "lat":46.22123847,
+    "lon":6.06598175,
     "travel_minutes":23.0
   },
   {
@@ -11545,8 +11552,8 @@
   {
     "station_key":"Parent8503020",
     "station_name":"Z\u00fcrich Hardbr\u00fccke",
-    "lat":47.38519551,
-    "lon":8.51712484,
+    "lat":47.3853354,
+    "lon":8.51717874,
     "travel_minutes":181.0
   },
   {
@@ -11601,8 +11608,8 @@
   {
     "station_key":"Parent8503003",
     "station_name":"Z\u00fcrich Stadelhofen",
-    "lat":47.36661115,
-    "lon":8.54848502,
+    "lat":47.36662332,
+    "lon":8.54868265,
     "travel_minutes":182.0
   },
   {

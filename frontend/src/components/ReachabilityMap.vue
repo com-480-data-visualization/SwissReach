@@ -2,6 +2,8 @@
 import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import * as d3 from 'd3'
 
+import { withBase } from '@/utils/assets'
+
 interface Station {
   station_key: string
   station_name: string
@@ -17,15 +19,11 @@ const ORIGINS = [
   { slug: 'zurich_hb', label: 'Zürich HB' },
 ]
 
-const DEPARTURES = [
-  { value: '0600', label: '06:00' },
-  { value: '0800', label: '08:00' },
-  { value: '1200', label: '12:00' },
-  { value: '1800', label: '18:00' },
-]
+const MIN_DEPARTURE = 5 * 60
+const MAX_DEPARTURE = 22 * 60
 
 const origin    = ref('lausanne')
-const departure = ref('0800')
+const requestedDeparture = ref(480)
 const loading   = ref(false)
 const mapReady  = ref(false)
 const error     = ref(false)
@@ -34,7 +32,7 @@ const boundary  = ref<object | null>(null)
 const tooltip   = ref({ visible: false, x: 0, y: 0, name: '', minutes: null as number | null })
 
 const svgRef = ref<SVGSVGElement | null>(null)
-const skeletonUrl = `${import.meta.env.BASE_URL}data/swiss_boundary_skeleton.svg`.replace(/\/{2,}/g, '/')
+const skeletonUrl = withBase('/data/swiss_boundary_skeleton.svg')
 
 // Persist zoom across origin/departure switches
 let currentTransform = d3.zoomIdentity
@@ -49,6 +47,16 @@ function waitForPaint(): Promise<void> {
   return new Promise(resolve => {
     requestAnimationFrame(() => resolve())
   })
+}
+
+function timeLabel(minutes: number): string {
+  const h = Math.floor(minutes / 60)
+  const m = minutes % 60
+  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`
+}
+
+function departureFileTag(minutes: number): string {
+  return `${String(Math.floor(minutes / 60)).padStart(2, '0')}${String(minutes % 60).padStart(2, '0')}`
 }
 
 function stationColor(t: number | null): string {
@@ -74,7 +82,8 @@ async function loadStations() {
   mapReady.value = false
   error.value   = false
   try {
-    const res = await fetch(`/data/reachability_${origin.value}_${departure.value}.json`)
+    const dataUrl = withBase(`/data/reachability_${origin.value}_${departureFileTag(requestedDeparture.value)}.json`)
+    const res = await fetch(dataUrl)
     if (!res.ok) throw new Error('not found')
     stations.value = await res.json()
   } catch {
@@ -87,7 +96,7 @@ async function loadStations() {
 
 async function loadBoundary() {
   try {
-    const res = await fetch(`${import.meta.env.BASE_URL}data/swiss_boundary_wgs84.geojson`.replace(/\/{2,}/g, '/'))
+    const res = await fetch(withBase('/data/swiss_boundary_wgs84.geojson'))
     if (res.ok) boundary.value = await res.json()
   } catch {
     boundary.value = null
@@ -234,7 +243,7 @@ onUnmounted(() => {
   }
 })
 
-watch([origin, departure], async () => {
+watch([origin, requestedDeparture], async () => {
   await loadStations()
   await nextTick()
   await revealMap()
@@ -253,11 +262,17 @@ watch([origin, departure], async () => {
         </select>
       </label>
 
-      <label class="control-group">
+      <label class="control-group control-group--departure">
         <span class="control-label">Departure</span>
-        <select v-model="departure" class="control-select">
-          <option v-for="d in DEPARTURES" :key="d.value" :value="d.value">{{ d.label }}</option>
-        </select>
+        <input
+          v-model.number="requestedDeparture"
+          type="range"
+          class="control-range"
+          :min="MIN_DEPARTURE"
+          :max="MAX_DEPARTURE"
+          step="15"
+        >
+        <span class="control-pill">{{ timeLabel(requestedDeparture) }}</span>
       </label>
 
       <span v-if="loading" class="loading-badge">Loading…</span>
@@ -352,9 +367,38 @@ watch([origin, departure], async () => {
   font-size: 0.92rem;
 }
 
+.control-group--departure {
+  gap: 10px;
+}
+
 .control-label {
   font-weight: 600;
   color: #5b4b4d;
+}
+
+.control-range {
+  width: clamp(120px, 14vw, 190px);
+  height: 6px;
+  accent-color: #b8444b;
+}
+
+.control-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.7rem;
+  padding: 0 0.62rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.control-pill {
+  min-width: 3.45rem;
+  color: #5c2a2e;
+  background: rgba(200, 79, 86, 0.1);
+  border: 1px solid rgba(184, 68, 75, 0.16);
 }
 
 .control-select {
