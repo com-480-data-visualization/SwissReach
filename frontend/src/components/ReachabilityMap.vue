@@ -2,6 +2,8 @@
 import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import * as d3 from 'd3'
 
+import { withBase } from '@/utils/assets'
+
 interface Station {
   station_key: string
   station_name: string
@@ -34,7 +36,7 @@ const boundary  = ref<object | null>(null)
 const tooltip   = ref({ visible: false, x: 0, y: 0, name: '', minutes: null as number | null })
 
 const svgRef = ref<SVGSVGElement | null>(null)
-const skeletonUrl = `${import.meta.env.BASE_URL}data/swiss_boundary_skeleton.svg`.replace(/\/{2,}/g, '/')
+const skeletonUrl = withBase('/data/swiss_boundary_skeleton.svg')
 
 // Persist zoom across origin/departure switches
 let currentTransform = d3.zoomIdentity
@@ -74,7 +76,8 @@ async function loadStations() {
   mapReady.value = false
   error.value   = false
   try {
-    const res = await fetch(`/data/reachability_${origin.value}_${departure.value}.json`)
+    const dataUrl = withBase(`/data/reachability_${origin.value}_${departure.value}.json`)
+    const res = await fetch(dataUrl)
     if (!res.ok) throw new Error('not found')
     stations.value = await res.json()
   } catch {
@@ -87,7 +90,7 @@ async function loadStations() {
 
 async function loadBoundary() {
   try {
-    const res = await fetch(`${import.meta.env.BASE_URL}data/swiss_boundary_wgs84.geojson`.replace(/\/{2,}/g, '/'))
+    const res = await fetch(withBase('/data/swiss_boundary_wgs84.geojson'))
     if (res.ok) boundary.value = await res.json()
   } catch {
     boundary.value = null
