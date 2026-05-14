@@ -6,7 +6,7 @@ Usage:
 
 Outputs to docs/public/data/:
     stations.json
-    reachability_{origin}_{HHMM}.json  (4 origins × 4 departure times = 16 files)
+    reachability_{origin}_{HHMM}.json  (4 origins × 69 departure times = 276 files)
 """
 
 from __future__ import annotations
@@ -116,8 +116,8 @@ def main() -> None:
     idx.to_json(DATA_DIR / "stations.json", orient="records", indent=2)
     print(f"  stations.json ({len(idx)} stations)")
 
-    origins    = ["Lausanne", "Bern", "Genève", "Zürich HB"]
-    departures = [6 * 60, 8 * 60, 12 * 60, 18 * 60]
+    origins = ["Lausanne", "Bern", "Genève", "Zürich HB"]
+    departures = list(range(5 * 60, 22 * 60 + 1, 15))
 
     for origin in origins:
         slug = origin.lower().replace(" ", "_").replace("ü", "u").replace("è", "e")

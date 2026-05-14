@@ -2,6 +2,8 @@
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import * as d3 from 'd3'
 
+import { withBase } from '@/utils/assets'
+
 interface Station {
   station_key: string
   station_name: string
@@ -11,10 +13,10 @@ interface Station {
 }
 
 /** Departure times (minutes from midnight) that have a matching map on the server. */
-const DEPARTURES_MIN = [360, 480, 720, 1080] as const
+const MIN_DEPARTURE = 5 * 60
+const MAX_DEPARTURE = 22 * 60
 
-const depIndex = ref(1)
-const depMinutes = computed(() => DEPARTURES_MIN[depIndex.value]!)
+const requestedDepMinutes = ref(480)
 
 const windowMinutes = ref(360)
 
@@ -26,7 +28,7 @@ const boundary = ref<object | null>(null)
 const tooltip = ref({ visible: false, x: 0, y: 0, name: '', raw: null as number | null, inWindow: true })
 
 const svgRef = ref<SVGSVGElement | null>(null)
-const skeletonUrl = `${import.meta.env.BASE_URL}data/swiss_boundary_skeleton.svg`.replace(/\/{2,}/g, '/')
+const skeletonUrl = withBase('/data/swiss_boundary_skeleton.svg')
 let currentTransform = d3.zoomIdentity
 let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null
 
@@ -39,8 +41,6 @@ function waitForPaint(): Promise<void> {
     requestAnimationFrame(() => resolve())
   })
 }
-
-const dataBase = `${import.meta.env.BASE_URL}data/`.replace(/\/{2,}/g, '/')
 
 function depLabel(m: number): string {
   const h = Math.floor(m / 60)
@@ -121,8 +121,8 @@ async function loadStations() {
   mapReady.value = false
   error.value = false
   try {
-    const tag = depFileTag(depMinutes.value)
-    const res = await fetch(`${dataBase}reachability_lausanne_${tag}.json`)
+    const tag = depFileTag(requestedDepMinutes.value)
+    const res = await fetch(withBase(`/data/reachability_lausanne_${tag}.json`))
     if (!res.ok) throw new Error('not found')
     stations.value = await res.json()
     currentTransform = d3.zoomIdentity
@@ -136,7 +136,7 @@ async function loadStations() {
 
 async function loadBoundary() {
   try {
-    const res = await fetch(`${dataBase}swiss_boundary_wgs84.geojson`)
+    const res = await fetch(withBase('/data/swiss_boundary_wgs84.geojson'))
     if (res.ok) boundary.value = await res.json()
   } catch {
     boundary.value = null
@@ -285,7 +285,7 @@ onUnmounted(() => {
   }
 })
 
-watch(depIndex, async () => {
+watch(requestedDepMinutes, async () => {
   await loadStations()
   await nextTick()
   await revealMap()
@@ -303,8 +303,15 @@ watch([windowMinutes, stations, boundary], async () => {
     <div class="lab-controls">
       <label class="lab-control-group">
         <span class="lab-label">Departure</span>
-        <input v-model.number="depIndex" type="range" class="lab-range" min="0" max="3" step="1">
-        <span class="lab-pill">{{ depLabel(depMinutes) }}</span>
+        <input
+          v-model.number="requestedDepMinutes"
+          type="range"
+          class="lab-range lab-range--departure"
+          :min="MIN_DEPARTURE"
+          :max="MAX_DEPARTURE"
+          step="15"
+        >
+        <span class="lab-pill">{{ depLabel(requestedDepMinutes) }}</span>
       </label>
 
       <label class="lab-control-group">
@@ -422,6 +429,10 @@ watch([windowMinutes, stations, boundary], async () => {
   width: 120px;
   accent-color: #b8444b;
   height: 6px;
+}
+
+.lab-range--departure {
+  width: clamp(120px, 14vw, 190px);
 }
 
 .lab-pill {
